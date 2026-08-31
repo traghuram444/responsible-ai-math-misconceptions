@@ -53,6 +53,8 @@ The fold manifest captures a SHA-256 fingerprint of the input. Do not publish th
 
 E001 established that a lexical baseline is not adequate for the primary task. Future experiments will be preregistered in the experiment log, evaluated on the same frozen question-held-out protocol, and committed as distinct research milestones. The non-root Docker image has pinned dependencies and mounts `data/` and `artifacts/`; raw data stays out of the image. Full protocol: [docs/RESEARCH_PLAN.md](docs/RESEARCH_PLAN.md).
 
+E002 is preregistered as an aggregate-only label-support and cross-question-overlap diagnostic before choosing another model. Its fixed protocol is available in [docs/E002_PROTOCOL.md](docs/E002_PROTOCOL.md).
+
 ## Publication and data policy
 
 This repository contains original code, Docker configuration, protocols, aggregate results, and documentation only. It does **not** contain MAP data, raw student responses, row-level predictions, trained weights, credentials, or competition/private artifacts. The repository's code is MIT-licensed; that license does not relicense MAP data. See [the data register](docs/DATA_AND_LICENSES.md) and [publication audit](docs/PUBLICATION_AUDIT.md).

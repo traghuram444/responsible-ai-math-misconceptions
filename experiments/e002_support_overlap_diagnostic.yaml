@@ -1,0 +1,23 @@
+experiment_id: E002
+status: preregistered
+hypothesis: >-
+  Question-held-out difficulty is partly explained by targets not represented in the
+  fold-local training label set, while cross-question exact and near-text overlap is
+  low enough that E001's gap cannot be dismissed as straightforward contamination.
+motivation: >-
+  E001's large random-versus-grouped gap and the MAP paper's synthetic-paraphrase
+  caveat require a fixed leakage/support diagnostic before selecting a stronger model.
+data: "Author-published MAP train.csv; local-only; SHA-256 recorded in DATA_AND_LICENSES.md"
+splits: "Frozen five-fold QuestionId assignments; use only each fold's train role as the comparison corpus"
+methods:
+  label_support: "Count held-out rows and unique combined labels absent from fold-local train labels."
+  exact_overlap: "NFKC + casefold + whitespace normalization; count held-out explanations exactly present in train."
+  near_overlap: "Character-boundary TF-IDF (3-5 grams, min_df=1), fit on train only; brute-force one-nearest-neighbor cosine similarity."
+thresholds: [0.80, 0.90, 0.95]
+outputs:
+  - "Per-fold and pooled numeric summaries only"
+  - "No text, identifiers, nearest-neighbor pairs, row-level outputs, or model artifacts"
+decision_rule: >-
+  Do not use the diagnostic to select a model. If unsupported-label rates or overlap
+  are material, report them as constraints and preserve E001 conclusions; use them to
+  refine E003's fixed protocol.
