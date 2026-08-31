@@ -1,6 +1,6 @@
 # E002 preregistration — label support and cross-question overlap diagnostic
 
-**Status:** preregistered on 2026-08-31; not yet run.
+**Status:** completed on 2026-08-31. Results: [E002_RESULTS.md](E002_RESULTS.md).
 
 ## Motivation and hypothesis
 

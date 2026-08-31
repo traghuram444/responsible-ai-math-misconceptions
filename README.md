@@ -53,7 +53,7 @@ The fold manifest captures a SHA-256 fingerprint of the input. Do not publish th
 
 E001 established that a lexical baseline is not adequate for the primary task. Future experiments will be preregistered in the experiment log, evaluated on the same frozen question-held-out protocol, and committed as distinct research milestones. The non-root Docker image has pinned dependencies and mounts `data/` and `artifacts/`; raw data stays out of the image. Full protocol: [docs/RESEARCH_PLAN.md](docs/RESEARCH_PLAN.md).
 
-E002 is preregistered as an aggregate-only label-support and cross-question-overlap diagnostic before choosing another model. Its fixed protocol is available in [docs/E002_PROTOCOL.md](docs/E002_PROTOCOL.md).
+E002 is complete: 21.1% of held-out rows have a label absent from their fold-local training set, while exact cross-question response overlap is only 0.59%. The next analysis will separate these two challenges without changing the primary all-row evaluation. See [the E002 report](docs/E002_RESULTS.md).
 
 ## Publication and data policy
 
