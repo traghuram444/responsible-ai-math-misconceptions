@@ -112,6 +112,18 @@ def frequency_probabilities(train: pd.DataFrame, evaluation: pd.DataFrame) -> tu
     return np.tile(prevalence.to_numpy(), (len(evaluation), 1)), classes
 
 
+def supported_label_summary(y_true: np.ndarray, probabilities: np.ndarray, classes: np.ndarray) -> dict:
+    """Score only labels available to the fold-local closed-set classifier."""
+    supported = np.isin(y_true, classes)
+    if not supported.any():
+        raise ValueError("No evaluation labels are represented in the fold-local training classes.")
+    return {
+        "n": int(supported.sum()),
+        "rate": float(supported.mean()),
+        "metrics": classification_summary(y_true[supported], probabilities[supported], classes),
+    }
+
+
 def run_grouped(frame: pd.DataFrame, assignments: pd.DataFrame, variant: str) -> dict:
     fold_results = []
     for fold in range(sum(column.startswith("fold_") for column in assignments.columns)):
@@ -136,6 +148,10 @@ def run_grouped(frame: pd.DataFrame, assignments: pd.DataFrame, variant: str) ->
             per_question.append({"QuestionId": str(question_id), **classification_summary(y_eval[relative], evaluation_probs[relative], classes)})
         freq_probs, freq_classes = frequency_probabilities(train, evaluation)
         train_classes = set(classes)
+        supported_summary = {
+            "frequency_baseline": supported_label_summary(y_eval, freq_probs, freq_classes),
+            "tfidf_logreg": supported_label_summary(y_eval, evaluation_probs, classes),
+        }
         fold_results.append(
             {
                 "fold": fold,
@@ -149,6 +165,7 @@ def run_grouped(frame: pd.DataFrame, assignments: pd.DataFrame, variant: str) ->
                 "calibration_supported_n": calibration_supported_n,
                 "frequency_baseline": classification_summary(y_eval, freq_probs, freq_classes),
                 "tfidf_logreg": metrics,
+                "supported_label_subset": supported_summary,
                 "risk_coverage": risk_coverage(y_eval, evaluation_probs, classes),
                 "per_question": per_question,
             }

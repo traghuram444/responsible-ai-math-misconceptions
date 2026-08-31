@@ -1,0 +1,16 @@
+experiment_id: E003
+status: preregistered
+hypothesis: >-
+  Removing only fold-unsupported labels for a secondary diagnostic will improve
+  closed-set baseline scores, but will not change the primary all-row conclusion
+  that E001's lexical model fails to exceed frequency on unseen questions.
+motivation: "E002 found 21.1% of held-out rows have labels absent from fold-local training."
+splits: "Reuse the frozen five-fold QuestionId assignments and E001 train/calibration/evaluation roles exactly."
+models: "Reproduce E001 frequency and TF-IDF + logistic baselines for both registered input variants."
+selection: "Same inner-fold-only hyperparameter selection and calibration procedure as E001; no E003 result changes the grid or folds."
+reports:
+  primary: "All held-out rows, unchanged from E001."
+  secondary: "Only rows whose combined label is represented in fold-local train classes."
+decision_rule: >-
+  Publish both views; do not discard unsupported labels or use the secondary subset
+  as a deployment/generalization claim. Select E004 only after reporting the result.
