@@ -55,6 +55,8 @@ E001 established that a lexical baseline is not adequate for the primary task. F
 
 E002 is complete: 21.1% of held-out rows have a label absent from their fold-local training set, while exact cross-question response overlap is only 0.59%. The next analysis will separate these two challenges without changing the primary all-row evaluation. See [the E002 report](docs/E002_RESULTS.md).
 
+E003 confirmed that unsupported labels are not the whole explanation: even on the supported-label subset, TF–IDF MAP@3 (0.668) remained below frequency (0.689). See [the E003 report](docs/E003_RESULTS.md).
+
 ## Publication and data policy
 
 This repository contains original code, Docker configuration, protocols, aggregate results, and documentation only. It does **not** contain MAP data, raw student responses, row-level predictions, trained weights, credentials, or competition/private artifacts. The repository's code is MIT-licensed; that license does not relicense MAP data. See [the data register](docs/DATA_AND_LICENSES.md) and [publication audit](docs/PUBLICATION_AUDIT.md).

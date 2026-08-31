@@ -1,6 +1,6 @@
 # E003 preregistration — support-stratified reproduction of E001
 
-**Status:** preregistered on 2026-08-31; not yet run.
+**Status:** completed 2026-08-31.
 
 E002 found that 21.1% of held-out rows use a combined label unavailable to the fold-local training classifier. E003 therefore reproduces both grouped E001 baseline variants without changing folds, input, grid, calibration, or primary metric. It reports the original all-row evaluation first, then a secondary subset restricted to labels represented in the fold-local train classes.
 
