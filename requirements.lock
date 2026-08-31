@@ -1,0 +1,16 @@
+# Pinned direct and runtime dependencies for the E001 CPU baseline.
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.14.1
+scikit-learn==1.5.2
+joblib==1.4.2
+threadpoolctl==3.5.0
+PyYAML==6.0.2
+pytest==8.3.4
+iniconfig==2.0.0
+packaging==24.2
+pluggy==1.5.0
+python-dateutil==2.9.0.post0
+pytz==2026.3.post1
+six==1.17.0
+tzdata==2026.3

@@ -1,0 +1,26 @@
+experiment_id: E001
+status: planned
+hypothesis: "Question-aware TF-IDF features improve combined-label prediction over class frequency, but grouped performance will be materially lower than random-split performance."
+data: "Official MAP train.csv after access terms are recorded"
+target: "Category:Misconception"
+splits:
+  primary: "Frozen five-fold QuestionId-grouped outer folds; group-disjoint calibration subsets"
+  secondary: "Five-fold Category-stratified random split, explicitly labeled optimistic/reference-only; sparse combined labels preclude full-target stratification"
+  seed: 20260831
+inputs:
+  - "StudentExplanation"
+  - "QuestionText + StudentExplanation (ablation)"
+model:
+  name: "TfidfVectorizer + LogisticRegression(multinomial)"
+  grid:
+    ngram_range: [[1, 1], [1, 2]]
+    min_df: [2, 5]
+    C: [0.5, 1.0, 2.0]
+metrics:
+  - "top-1 accuracy"
+  - "macro-F1 over supported evaluation labels"
+  - "MAP@3"
+  - "ECE (adaptive bins)"
+  - "multiclass Brier score"
+  - "risk-coverage curve"
+decision_rule: "Advance only if the model exceeds frequency baseline on grouped MAP@3 and reveals interpretable uncertainty/coverage tradeoffs."

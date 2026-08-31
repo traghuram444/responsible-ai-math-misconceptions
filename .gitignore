@@ -1,0 +1,36 @@
+# MAP data, student-response derivatives, and all generated artifacts are local-only.
+# Publish aggregate findings through reviewed Markdown documentation instead.
+data/
+artifacts/
+*.csv
+*.tsv
+*.jsonl
+*.parquet
+*.feather
+*.arrow
+*.zip
+*.tar
+*.gz
+*.joblib
+*.pkl
+*.pickle
+*.pt
+*.ckpt
+*.safetensors
+__pycache__/
+.pytest_cache/
+.venv/
+*.egg-info/
+*.pyc
+
+# Docker local state
+.docker/
+
+# Local secrets and environment state
+.env
+.env.*
+credentials.json
+*.pem
+*.key
+*.p12
+*.pfx

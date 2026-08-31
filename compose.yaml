@@ -1,0 +1,19 @@
+services:
+  research:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: map-misconceptions:e001
+    init: true
+    user: "10001:10001"
+    working_dir: /workspace
+    volumes:
+      # Raw competition data is local-only and is never copied into the image.
+      - ./data:/workspace/data
+      # Generated non-textual reports and aggregate experiment results persist locally.
+      - ./artifacts:/workspace/artifacts
+    environment:
+      PYTHONHASHSEED: "20260831"
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
