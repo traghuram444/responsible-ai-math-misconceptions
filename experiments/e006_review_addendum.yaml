@@ -1,0 +1,128 @@
+experiment_id: E006
+addendum_id: E006-review-addendum-v1
+status: proposed_for_user_review_not_approved_not_run
+supersedes_original_files: false
+protocol: docs/E006_REVIEW_ADDENDUM.md
+preserve_experiments: [E001, E002, E003, E004, E005]
+purpose: diagnostic_selective_prediction
+prior_observation: confidence_curves_partly_reported_in_E001_not_independent_confirmation
+framework:
+  reference: E001
+  split: frozen_QuestionId_grouped
+  fold_ids: [0, 1, 2, 3, 4]
+  seed: 20260831
+  variants: [explanation_only, question_plus_explanation]
+  models: [tfidf_logreg, frequency_baseline]
+  training_roles: unchanged
+  inputs_target_inner_tuning_temperature_calibration: unchanged
+  reconstruct_probabilities: in_memory_only
+  random_reference_rerun: false
+  runtime_estimate: unknown_measure_after_approval
+preflight:
+  training_csv_sha256: 0a5e4523ec9b1656b979002a58e7cb743d02c9ac2697cc154008f971d413686c
+  split_manifest_sha256: 93a25f33389b68487c09c5e9b34cfd10ca0d03b9b6438a53e2c385b2e87a7b94
+  assignments_sha256: b0211bafc055aedcd334877782d8db818a7c0a05873f1826ad32f0c17a61c9dd
+  e001_aggregate_reference_sha256: dc06418b3120f3b4e4293b696c66d6f1b5cf00f59eba615640c97770f388df99
+  assignment_hash_recorded_at: pre_E006_review_not_original_E001_preregistration
+  integrity_checks:
+    - row_count_matches
+    - source_row_unique_ordered_matches_input_positions
+    - QuestionId_and_target_match_input
+    - exactly_five_registered_fold_columns
+    - valid_train_calibration_evaluation_roles
+    - QuestionId_disjoint_between_roles
+  reproduction_gate:
+    scope: each_grouped_fold_variant_model_before_its_routing
+    reference: E001_all_row_results
+    metrics: [map_at_3, top1_accuracy, ece_10_equal_width]
+    absolute_tolerance: 1.0e-10
+    relative_tolerance: 0.0
+    mismatch_action: stop_and_report_do_not_adjust_protocol_or_history
+routing:
+  scope: whole_outer_evaluation_fold
+  rules:
+    confidence_only: calibrated_maximum_probability
+    support_aware: calibrated_maximum_probability_times_log1p_predicted_label_train_count_divided_by_maximum_log1p_train_class_count
+    frequency: fold_local_frequency_maximum_probability
+  support_counts_role: train_only
+  true_labels_or_true_support_used: false
+  score_direction: descending
+  ties:
+    applies_to: all_rules
+    algorithm: sha256
+    encoding: utf-8
+    serialization: "fold={fold};source_row={source_row};seed={seed}"
+    integer_format: unsigned_decimal_no_leading_zeros
+    trailing_newline: false
+    order: ascending_hex_digest
+    collision_fallback: ascending_source_row
+  review_fractions: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
+  retained_count: ceil_n_times_one_minus_review_fraction
+  curves: six_registered_points_only_coverage_50_to_100_percent
+  deployment_threshold: none_fixed_capacity_batch_simulation
+  post_hoc_threshold_or_score_selection: prohibited
+support_strata:
+  definition_role: train_only
+  unsupported: exact_label_count_equals_0
+  rare: exact_label_count_1_to_19
+  frequent: exact_label_count_at_least_20
+  well_supported: exact_label_count_at_least_20_and_at_least_2_training_QuestionIds
+  well_supported_nested_in_frequent: true
+  selection: intersect_strata_after_global_fold_retention
+metrics:
+  every_budget_and_stratum:
+    - original_n
+    - retained_n
+    - retention_fraction_of_original_group
+    - fraction_of_all_retained_cases
+    - top1_accuracy
+    - map_at_3
+    - risk_one_minus_accuracy
+    - absolute_risk_reduction_vs_own_zero_review
+  undefined: null_with_counts
+  calibration:
+    scope: retained_fold_stratum_model
+    minimum_n: 200
+    minimum_correct: 20
+    minimum_incorrect: 20
+    ece_probability: original_calibrated_maximum_not_support_weighted_score
+    ece_bins: 10
+    ece_binning: equal_width
+    fields: [ece_10_equal_width, legacy_multiclass_brier, union_label_brier]
+    corrected_brier_function: metrics_v2.union_label_brier_score
+    corrected_brier_formula: legacy_multiclass_brier_plus_unsupported_fraction_of_scored_cases
+    original_metric_implementation: preserved_unchanged
+    primary_brier_comparison: union_label_brier
+    binary_calibration_gate: none_descriptive_only_requires_review
+  confidence_auroc:
+    scope: all_evaluation_cases_per_fold_per_learned_input_arm
+    target: top1_correct_vs_incorrect
+    score: calibrated_maximum_probability
+    eligibility: both_outcomes_present
+aggregation:
+  all_fold_values: true
+  mean: equal_weight_across_folds
+  standard_deviation_ddof: 1
+  paired_fold_comparisons:
+    - learned_minus_frequency_at_same_review_budget
+    - retained_risk_minus_own_zero_review_risk
+    - support_aware_minus_confidence_only_within_input_arm
+  calibration_mean: eligible_folds_only_with_count
+  paired_calibration: intersection_of_eligible_folds_with_count
+  uncertainty: descriptive_only_folds_overlap_in_training
+benefit_criterion:
+  scope: each_learned_input_arm_and_routing_rule_independently
+  review_fraction: 0.5
+  required_all:
+    - mean_risk_reduction_vs_own_zero_review_at_least_0.05
+    - mean_retained_risk_strictly_lower_than_frequency_at_equal_budget
+  failure: either_required_condition_not_met
+  winner_selection: prohibited
+  deployment_readiness_claim: prohibited
+  absolute_acceptable_risk_threshold: none
+analysis_boundary:
+  fixed: registered_rules_budgets_strata_calibration_AUROC_and_paired_descriptive_summaries
+  new_scores_budgets_thresholds_models_subgroups_or_qualitative_samples: exploratory_outside_this_run
+publication:
+  format: aggregate_only_with_provenance_hashes_and_completion_status
+  never_serialize: [student_text, row_identifiers, row_probabilities, row_predictions, rankings, model_caches]

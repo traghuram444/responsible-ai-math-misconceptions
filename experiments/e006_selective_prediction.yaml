@@ -1,0 +1,12 @@
+experiment_id: E006
+status: proposed_awaiting_review
+purpose: "Diagnostic selective prediction; no new classifier or representation."
+frozen_framework: "Reuse E001 QuestionId folds, roles, seed, tuning, and calibration exactly."
+routing_rules:
+  - "calibrated maximum probability"
+  - "maximum probability times normalized log fold-local count of predicted label"
+  - "frequency confidence with deterministic hash tie-break"
+review_budgets: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
+support_reporting: [unsupported, rare, frequent, well_supported]
+failure_rule: "At 50% review, learned routing must reduce risk by >=0.05 absolute and exceed frequency at equal coverage; otherwise it fails as selective prediction."
+publication_policy: "Aggregate-only; never row-level predictions, probabilities, rankings, or student text."
