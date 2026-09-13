@@ -1,0 +1,16 @@
+experiment_id: E005
+status: proposed_awaiting_review
+purpose: "Diagnostic transferability decomposition; not MAP@3 optimization."
+frozen_protocol: "Reuse E001 QuestionId folds, roles, seed, tuning, and calibration unchanged."
+support_strata:
+  unsupported: "0 fold-local train examples"
+  rare: "1-19 fold-local train examples"
+  frequent: ">=20 fold-local train examples"
+  well_supported: ">=20 train examples from >=2 train QuestionId groups"
+confirmatory_analyses:
+  - "Exact target by support stratum"
+  - "Collapsed six-way Category metrics without retraining"
+  - "Random versus grouped collapse overall and well-supported"
+  - "Per-question support/performance association across 15 questions"
+  - "Stratified calibration only when eligibility thresholds are met"
+publication_policy: "Aggregate-only; never student text, row-level predictions, or probabilities."
