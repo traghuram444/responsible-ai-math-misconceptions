@@ -1,3 +1,5 @@
 # Deterministic generated archives must keep LF bytes on every platform.
 docs/E004_RESULTS_ARCHIVE.md text eol=lf
 docs/E005_RESULTS_ARCHIVE.md text eol=lf
+docs/E006_RESULTS.md text eol=lf
+results/E006_aggregates.json text eol=lf
