@@ -14,7 +14,11 @@ The primary evaluation withholds entire `QuestionId` groups, rather than randoml
 
 ## Status
 
-E001 is complete and preserved as a negative result:
+**September 2026 checkpoint:** E001–E005 historical runs are preserved. A source/metric audit and literature review are complete; E006 selective prediction is **proposed, not approved or run**. No experiment is currently active.
+
+Start with the [research review](docs/RESEARCH_REVIEW_2026_09.md), [reproducibility audit](docs/REPRODUCIBILITY_AUDIT_2026_09.md), and [reviewable E006 addendum](docs/E006_REVIEW_ADDENDUM.md).
+
+E001 established the negative baseline:
 
 | Evaluation | MAP@3 |
 |---|---:|
@@ -22,13 +26,24 @@ E001 is complete and preserved as a negative result:
 | Question-held-out split, same model | 0.520 |
 | Question-held-out frequency baseline | 0.539 |
 
-Random validation was substantially optimistic, and the stronger lexical baseline did **not** exceed the frequency baseline under unseen-question evaluation. This negative result motivates stronger, scientifically controlled generalization research—not performance claims. No transformer has been trained. See [the full E001 report](docs/E001_RESULTS.md).
+Random validation was substantially optimistic, and the stronger lexical baseline did **not** exceed the frequency baseline under unseen-question evaluation. See [the original E001 report](docs/E001_RESULTS.md). E004 subsequently evaluated a frozen pretrained encoder; no transformer was fine-tuned.
+
+| Subsequent evidence | Result | Record |
+|---|---|---|
+| E002: true-label support | 21.1% of grouped evaluation rows have an exact label absent from training | [E002](docs/E002_RESULTS.md) |
+| E003: supported-label MAP@3 | TF–IDF question+explanation 0.668 vs frequency 0.689 | [E003](docs/E003_RESULTS.md) |
+| E004: frozen MiniLM MAP@3 | 0.476 explanation-only / 0.464 question+explanation vs frequency 0.539 | [Recovered E004 tables](docs/E004_RESULTS_ARCHIVE.md) |
+| E005: transfer decomposition | 7,755 unsupported, 0 rare, 28,941 frequent; 28,187 well-supported (nested) | [Recovered E005 tables](docs/E005_RESULTS_ARCHIVE.md) |
+
+**Metric erratum:** the legacy Brier implementation understated scores for unsupported true labels. MAP@3, accuracy, and ECE are unaffected. Proper all-outcome-space grouped frequency Brier is **0.795057**, versus the historical **0.581666**. The [append-only correction](docs/METRIC_ERRATUM_2026_09.md) provides fold tables and tested replacement code without overwriting E001–E005. E004/E005 also have incomplete secondary reporting, disclosed in the audit.
+
+E004/E005 files were committed retrospectively during this recovery, not publicly preregistered in Git before execution. Their original protocol status text is preserved as historical evidence; the archives and experiment-log addendum describe their actual status. Negative results remain visible.
 
 ## Quick start after data approval
 
 1. Obtain the MIT-licensed author-published `train.csv` from the source recorded in `docs/DATA_AND_LICENSES.md`, and verify its SHA-256 before use.
 2. Put it at `data/raw/train.csv` (the directory is gitignored).
-3. Create the auditable inspection report and grouped split manifests:
+3. On a **new checkout only**, create the inspection report and grouped split manifests. Existing research checkouts must not regenerate frozen assignments. These are historical reproduction commands, not an instruction to start a new experiment:
 
 ```powershell
 docker compose build
@@ -38,7 +53,9 @@ docker compose run --rm research python -m pytest
 docker compose run --rm research python scripts/run_e001.py --input data/raw/train.csv --splits artifacts/splits --output artifacts/e001_results.json
 ```
 
-The fold manifest captures a SHA-256 fingerprint of the input. Do not publish that manifest or any row-level derivative: it is local-only by policy. Do not use competition test labels or derive question-level answer keys from held-out groups.
+The fold manifest captures a SHA-256 fingerprint of the input. Do not publish that manifest or any row-level derivative: it is local-only by policy. Do not use competition test labels or derive question-level answer keys from held-out groups. The original scorer remains frozen and has a documented Brier defect; historical reproduction is not a recommendation to use it for new work.
+
+For an existing research checkout, `python scripts/verify_frozen_inputs.py` performs read-only data/hash/order/group checks, including the assignment fingerprint recorded during this audit. See [the verification record](docs/VERIFICATION_2026_09.md) for Docker tests and environment limits. Listed dependencies are pinned, but transitive/build dependencies are not fully locked; a successful test in the existing image is **not** a fresh-build reproducibility claim.
 
 ## Layout
 
@@ -51,11 +68,23 @@ The fold manifest captures a SHA-256 fingerprint of the input. Do not publish th
 
 ## Research progression
 
-E001 established that a lexical baseline is not adequate for the primary task. Future experiments will be preregistered in the experiment log, evaluated on the same frozen question-held-out protocol, and committed as distinct research milestones. The non-root Docker image has pinned dependencies and mounts `data/` and `artifacts/`; raw data stays out of the image. Full protocol: [docs/RESEARCH_PLAN.md](docs/RESEARCH_PLAN.md).
+E001 established that the tested lexical baseline did not beat prevalence for the primary task. Future experiments will have their approved protocols committed before execution, use the frozen question-held-out framework, and receive distinct result commits. The non-root Docker environment mounts `data/` and `artifacts/`; raw data stays out of the image. Historical plan: [docs/RESEARCH_PLAN.md](docs/RESEARCH_PLAN.md).
 
-E002 is complete: 21.1% of held-out rows have a label absent from their fold-local training set, while exact cross-question response overlap is only 0.59%. The next analysis will separate these two challenges without changing the primary all-row evaluation. See [the E002 report](docs/E002_RESULTS.md).
+E002 is complete: 21.1% of held-out rows have a label absent from their fold-local training set, while exact cross-question response overlap is only 0.59%. E003 and E005 subsequently decomposed support without replacing the primary all-row evaluation. Cross-question overlap alone does not exclude leakage within random-split questions. See [the E002 report](docs/E002_RESULTS.md).
 
 E003 confirmed that unsupported labels are not the whole explanation: even on the supported-label subset, TF–IDF MAP@3 (0.668) remained below frequency (0.689). See [the E003 report](docs/E003_RESULTS.md).
+
+## Live terminal monitor
+
+During an active experiment, open a second terminal and run:
+
+```powershell
+docker compose run --rm research python scripts/monitor_experiment.py --status-file artifacts/live_status.json
+```
+
+It is read-only: it renders the active experiment ID, status, elapsed time, stage, progress, and latest aggregate metric from an ignored local status file. It never reads student responses or interrupts the run.
+
+The legacy status file is not proof that a process is running; a completed E005 run left a stale `RUNNING` flag. Do not start a monitor when no experiment is active. Future approved runs will use a live terminal view plus at-most-hourly progress updates while active, stopping on completion/failure. No idle recurring monitor is scheduled.
 
 ## Publication and data policy
 
