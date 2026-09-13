@@ -14,7 +14,7 @@ The primary evaluation withholds entire `QuestionId` groups, rather than randoml
 
 ## Status
 
-**September 2026 checkpoint:** E001–E005 historical runs are preserved. A source/metric audit and literature review are complete. The user has **approved the clarified E006 protocol**; implementation and tests precede the full run. No E006 result is claimed yet. See the [approval/execution record](docs/E006_EXECUTION_RECORD.md).
+**September 2026 checkpoint:** E001–E005 historical runs are preserved. **E006 is complete** under the approved protocol: all 60 E001 reproduction checks passed with zero difference, and the full run took about nine minutes. No experiment or monitor is currently active. See the [raw result tables](docs/E006_RESULTS.md), [complete aggregate/fold JSON](results/E006_aggregates.json), and [approval/execution record](docs/E006_EXECUTION_RECORD.md). Interpretation and any subsequent experiment await review.
 
 Start with the [research review](docs/RESEARCH_REVIEW_2026_09.md), [reproducibility audit](docs/REPRODUCIBILITY_AUDIT_2026_09.md), and [reviewable E006 addendum](docs/E006_REVIEW_ADDENDUM.md).
 
@@ -38,6 +38,20 @@ Random validation was substantially optimistic, and the stronger lexical baselin
 **Metric erratum:** the legacy Brier implementation understated scores for unsupported true labels. MAP@3, accuracy, and ECE are unaffected. Proper all-outcome-space grouped frequency Brier is **0.795057**, versus the historical **0.581666**. The [append-only correction](docs/METRIC_ERRATUM_2026_09.md) provides fold tables and tested replacement code without overwriting E001–E005. E004/E005 also have incomplete secondary reporting, disclosed in the audit.
 
 E004/E005 files were committed retrospectively during this recovery, not publicly preregistered in Git before execution. Their original protocol status text is preserved as historical evidence; the archives and experiment-log addendum describe their actual status. Negative results remain visible.
+
+### E006: registered results at 50% human review
+
+Equal-weight five-fold means; Brier is union-label-corrected. These are retained-prediction results at a fixed review budget, not the original all-row classifier scores.
+
+| Input / routing | Retained accuracy | MAP@3 | Risk | ECE | Brier |
+|---|---:|---:|---:|---:|---:|
+| Frequency reference | 0.4017 | 0.5387 | 0.5983 | 0.0569 | 0.7954 |
+| Explanation / confidence | 0.4205 | 0.5430 | 0.5795 | 0.1616 | 0.8140 |
+| Explanation / support-aware | 0.4374 | 0.5541 | 0.5626 | 0.1538 | 0.8035 |
+| Question + explanation / confidence | 0.4469 | 0.5653 | 0.5531 | 0.1470 | 0.7799 |
+| Question + explanation / support-aware | 0.4581 | 0.5710 | 0.5419 | 0.1459 | 0.7757 |
+
+All four learned routing pairs meet the registered **relative** criterion at 50% review: at least 0.05 absolute risk reduction versus their own 0% result and lower retained risk than frequency. Calibration comparisons remain descriptive; no acceptable absolute deployment-risk threshold was defined. [The full report](docs/E006_RESULTS.md) includes every registered review budget, fold variation, calibration comparisons and confidence AUROC; the linked JSON includes the complete support-stratum grid. No deployment-readiness claim is made.
 
 ## Quick start after data approval
 

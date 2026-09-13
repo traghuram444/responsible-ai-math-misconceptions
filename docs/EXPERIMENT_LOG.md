@@ -29,3 +29,22 @@ No experiment is active and no idle monitor is scheduled. During future approved
 ## E006 authorization — 2026-09-13
 
 The user approved the clarified E006 addendum at published proposal revision `9c6962f8a3795342cd362f3201a1744c4fc39f3d`. The earlier proposed-status entries are historical. [The execution record](E006_EXECUTION_RECORD.md) and [approval registry](../experiments/e006_approval.yaml) now govern authorization without changing the scientific protocol. Implementation/tests are to be committed before the full Docker run. No E006 result is claimed by this entry; the final aggregate/fold results will precede interpretation or any next experiment.
+
+## E006 completed — 2026-09-13
+
+| Field | Recorded result |
+|---|---|
+| Pre-run implementation revision | `c5c0a987e409ef8aae99a19e1754b81de1662f7c` (committed and pushed before launch) |
+| Execution | Non-root, network-disabled Docker; 100 fitting calls; ten outer-fold evaluations; approximately nine minutes |
+| Reproduction gate | All 60 checks passed; maximum absolute difference from E001 = 0.0 |
+| 50%-review frequency | Accuracy 0.401701; MAP@3 0.538735; risk 0.598299; ECE 0.056892; corrected Brier 0.795415 |
+| 50%-review explanation/confidence | Accuracy 0.420454; MAP@3 0.543013; risk reduction 0.066751; ECE 0.161556; corrected Brier 0.813986 |
+| 50%-review explanation/support-aware | Accuracy 0.437384; MAP@3 0.554111; risk reduction 0.083682; ECE 0.153821; corrected Brier 0.803498 |
+| 50%-review question+explanation/confidence | Accuracy 0.446937; MAP@3 0.565317; risk reduction 0.070631; ECE 0.146974; corrected Brier 0.779865 |
+| 50%-review question+explanation/support-aware | Accuracy 0.458105; MAP@3 0.571026; risk reduction 0.081800; ECE 0.145861; corrected Brier 0.775702 |
+| Registered decisions | All four pairs pass the relative criterion; calibration descriptive only; no absolute acceptable automation risk was registered |
+| Confidence AUROC | Explanation 0.603604 ± 0.021550; question+explanation 0.608135 ± 0.023960 (five-fold mean ± sample SD) |
+| Output | [Full tables](E006_RESULTS.md), [complete aggregate/fold JSON](../results/E006_aggregates.json); no row-level artifacts |
+| Stop condition | Numerical results presented for review. No interpretation, new analysis, or next experiment run. Monitor terminated on completion. |
+
+All thresholds, folds, inputs, fitting/tuning, calibration and interpretation rules remained locked. E001–E005 artifacts were not overwritten. See [execution and verification details](E006_EXECUTION_RECORD.md).
