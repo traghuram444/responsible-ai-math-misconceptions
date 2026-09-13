@@ -14,3 +14,9 @@ python-dateutil==2.9.0.post0
 pytz==2026.3.post1
 six==1.17.0
 tzdata==2026.3
+sentence-transformers==3.3.1
+transformers==4.46.3
+torch==2.5.1
+huggingface-hub==0.26.2
+tokenizers==0.20.3
+safetensors==0.4.5
