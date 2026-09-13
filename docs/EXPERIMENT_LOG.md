@@ -25,3 +25,7 @@ The original rows above are preserved. The E005 awaiting-review row is stale: th
 | E006 review | Not run. Original draft has ambiguous failure logic and an undefined calibration gate. | [Proposed clarifying addendum](E006_REVIEW_ADDENDUM.md). | Await user review; no thresholds or models selected from new evaluation results. |
 
 No experiment is active and no idle monitor is scheduled. During future approved active runs, use the lightweight terminal monitor and hourly progress reporting. All public output remains sanitized code/documentation and aggregates only.
+
+## E006 authorization — 2026-09-13
+
+The user approved the clarified E006 addendum at published proposal revision `9c6962f8a3795342cd362f3201a1744c4fc39f3d`. The earlier proposed-status entries are historical. [The execution record](E006_EXECUTION_RECORD.md) and [approval registry](../experiments/e006_approval.yaml) now govern authorization without changing the scientific protocol. Implementation/tests are to be committed before the full Docker run. No E006 result is claimed by this entry; the final aggregate/fold results will precede interpretation or any next experiment.

@@ -14,7 +14,7 @@ The primary evaluation withholds entire `QuestionId` groups, rather than randoml
 
 ## Status
 
-**September 2026 checkpoint:** E001–E005 historical runs are preserved. A source/metric audit and literature review are complete; E006 selective prediction is **proposed, not approved or run**. No experiment is currently active.
+**September 2026 checkpoint:** E001–E005 historical runs are preserved. A source/metric audit and literature review are complete. The user has **approved the clarified E006 protocol**; implementation and tests precede the full run. No E006 result is claimed yet. See the [approval/execution record](docs/E006_EXECUTION_RECORD.md).
 
 Start with the [research review](docs/RESEARCH_REVIEW_2026_09.md), [reproducibility audit](docs/REPRODUCIBILITY_AUDIT_2026_09.md), and [reviewable E006 addendum](docs/E006_REVIEW_ADDENDUM.md).
 
