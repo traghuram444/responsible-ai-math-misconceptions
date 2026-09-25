@@ -1,0 +1,24 @@
+experiment_id: E007
+seed: 20260831
+fold_ids: [0, 1, 2, 3, 4]
+variants: [explanation_only, question_plus_explanation]
+rules: [confidence_only, support_aware, frequency]
+target_percent: [10, 20, 30]
+primary_target_percent: 20
+minimum_retained_per_question: 100
+minimum_coverage_numerator: 1
+minimum_coverage_denominator: 10
+temperature_questions: 1
+threshold_questions: 2
+evaluation_questions: 3
+selection: exhaustive_distinct_scores_plus_zero_inclusive_ties
+success: all_15_questions_meet_count_coverage_and_risk
+input_sha256: 0a5e4523ec9b1656b979002a58e7cb743d02c9ac2697cc154008f971d413686c
+manifest_sha256: 93a25f33389b68487c09c5e9b34cfd10ca0d03b9b6438a53e2c385b2e87a7b94
+assignments_sha256: b0211bafc055aedcd334877782d8db818a7c0a05873f1826ad32f0c17a61c9dd
+reference_sha256: dc06418b3120f3b4e4293b696c66d6f1b5cf00f59eba615640c97770f388df99
+docker_image_id: sha256:6731a5b19ee38fc98d58f3e84d47bceb2c8a6d1f69d37729c0c8352946f04f5c
+reproduction_absolute_tolerance: 1.0e-10
+reproduction_relative_tolerance: 0.0
+probabilities: in_memory_only
+publication: aggregate_only

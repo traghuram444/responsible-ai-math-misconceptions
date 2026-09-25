@@ -18,6 +18,10 @@ The primary evaluation withholds entire `QuestionId` groups, rather than randoml
 
 Start with the [research review](docs/RESEARCH_REVIEW_2026_09.md), [reproducibility audit](docs/REPRODUCIBILITY_AUDIT_2026_09.md), and [reviewable E006 addendum](docs/E006_REVIEW_ADDENDUM.md).
 
+**September 25 continuation:** an [E007 threshold-transfer preregistration draft](docs/E007_PROTOCOL.md) is ready for review, **not approved or run**. It proposes selecting an abstention cutoff on development questions and applying it unchanged to unseen questions. The draft preserves outer folds and classifiers but explicitly subdivides the existing calibration role; its new risk/coverage criteria require review. E001–E006 remain unchanged.
+
+**E007 authorization update:** the user subsequently approved that proposal. Its draft text is preserved and the separate [approval/execution record](docs/E007_EXECUTION_RECORD.md) governs the locked implementation and run. No E007 result is claimed by this update.
+
 E001 established the negative baseline:
 
 | Evaluation | MAP@3 |

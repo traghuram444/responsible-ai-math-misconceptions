@@ -48,3 +48,13 @@ The user approved the clarified E006 addendum at published proposal revision `9c
 | Stop condition | Numerical results presented for review. No interpretation, new analysis, or next experiment run. Monitor terminated on completion. |
 
 All thresholds, folds, inputs, fitting/tuning, calibration and interpretation rules remained locked. E001–E005 artifacts were not overwritten. See [execution and verification details](E006_EXECUTION_RECORD.md).
+
+## E007 proposal for review — 2026-09-25
+
+The user resumed the project after discussion of E006's threshold-transfer gap. A [new E007 preregistration draft](E007_PROTOCOL.md) proposes frozen development-selected cutoffs with a primary 20% exact-label error target and secondary 10%/30% targets. It explicitly separates the three existing calibration questions into one temperature-fitting and two threshold-selection questions without changing frozen outer assignments. The proposed utility criterion requires at least 100 retained responses and 10% coverage, with error at or below target, on every evaluation question.
+
+**Status: draft only; not approved, implemented, or run.** No new MAP results were computed. The previous E006 approval does not authorize E007. E001–E006 records remain unchanged; no monitor was started. Implementation, synthetic tests, hash locking, pre-run publication, and Docker execution await protocol review. There is no new result or success claim.
+
+## E007 authorization — 2026-09-25
+
+The user explicitly approved the proposed calibration split and error/coverage criteria. The [approval registry](../experiments/e007_approval.yaml) locks the original proposal and matching configuration by canonical hash; the historical draft status above is preserved. See the [execution record](E007_EXECUTION_RECORD.md). The implementation must pass synthetic tests and be committed before the Docker run. Results are not claimed by this entry.

@@ -1,0 +1,11 @@
+experiment_id: E007
+status: approved_locked_for_execution
+approved_on: '2026-09-25'
+authorization: user_approved_calibration_split_and_risk_coverage_criteria
+protocol: docs/E007_PROTOCOL.md
+protocol_sha256: 699a3e5691a2bf41bd27311e11f94f548aaff5466e497167ed702196ea21676e
+configuration: experiments/e007_threshold_transfer.yaml
+configuration_sha256: 815142c1b25fb6edd0859f971bdda3e955f56b91b9998420606146a165b5d630
+canonical_hash: utf8_with_lf_newlines
+historical_draft_preserved: true
+preserve_experiments: [E001, E002, E003, E004, E005, E006]
