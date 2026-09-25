@@ -30,3 +30,31 @@ The full suite passed **176 tests in 14.11 seconds** in the existing audited Doc
 Checks include an independent exhaustive cutoff-search oracle over tied/nonmonotone synthetic scores; exact rational error boundaries; per-question count/coverage floors; deterministic question-role assignment; separate temperature/selection questions; unsupported-label errors; unchanged decisions under evaluation-label/batch changes; all-deferral null metrics; complete fold/question reporting; historical rank/hyperparameter gates; approved-document hash validation; and rejection of private-field injection or altered aggregate values. A source-order check additionally confirms that the all-fold policy serialization barrier precedes evaluation calls.
 
 Pre-run file-extension, credential-pattern and machine-path scans found no prohibited candidates; `git diff --check` and PowerShell launcher parsing passed. These pattern checks supplement, not replace, the strict aggregate export schema. The protocol and configuration hashes remain exactly those approved above. The existing image identity was verified; no environment installation or configuration changes were made.
+
+## Completed run — 2026-09-25
+
+- Execution revision: `b3a0a59f9c2e2226fd1a454eb438cf50c767b92f`, verified publicly on the personal repository before launch.
+- Start: 18:35:40 UTC. Completion heartbeat: 18:44:51 UTC. Artifact runtime: **550.641 seconds**; final status runtime: **550.914 seconds**.
+- Runtime inspection confirmed UID/GID 10001, no networking, read-only root/project, and only the new E007 output mount writable. The image identity matched the approved configuration. No unrelated containers or host configuration were modified.
+- Exactly 100 classifier fitting calls completed. Every development cutoff was serialized before evaluation scoring. All 40 historical top-1/MAP@3 checks passed, and selected hyperparameters matched. No protocol adjustment or rerun occurred.
+- Frozen policy SHA-256: `4dce8d85cf66330cc5a131788555b51516b414cccb6ece9c6fd4c275da81950a`.
+- Original local and sanitized public result JSON SHA-256: `a0184aba0ac0649569efa56b42d248ebec466a40a6c44c615d2369587c9d3ff7`. They are byte-identical because the original artifact already satisfies the strict aggregate-only schema.
+- Generated report SHA-256: `b8b5080beb2e8e79a88d4e0c35fe199634f06503f96feb6d73949351fe361d08`.
+
+All 90 fold/arm/rule/target policy-selection records (including the frequency baseline duplicated across input arms) have `NO_ADMISSIBLE_THRESHOLD`. Consequently every selected set is empty at every target; risk, accuracy, MAP@3, ECE and Brier are null, never zero-valued performance. The unfiltered references and full question/support grid are retained. These are recorded numerical outcomes, not an interpretation or next-experiment proposal.
+
+An independent read-only verifier, using count identities and standard-library statistics rather than the experiment's aggregation function, checked **2,400 metric groups**, **1,680 aggregate summaries**, calibration eligibility/ranges, support partitions, paired-summary denominators, frozen policy hash, and **42 preserved historical-file hashes**, with zero discrepancies. The strict publication validator additionally checked the full registered grid, question/fold totals, calibration nulls, development policy consistency, reproduction checks and aggregate recomputation.
+
+### Monitor incident and post-run repair
+
+The live terminal viewer exited after a missing-status-file read; its last displayed running snapshot was around 6 minutes 24 seconds. The precise cause of that read failure was not established. The independent experiment heartbeat continued through completion, and fitting was unaffected. It would be inaccurate to claim uninterrupted terminal monitoring for this run.
+
+After completion, an E007-specific viewer was added with three bounded read attempts and 0.2-second delays for transient missing/invalid reads. It still exits on terminal/stale state and does not create idle monitoring or control the experiment. The historical E006 viewer/heartbeat module and all scientific E007 code remain unchanged. Six additional synthetic tests cover transient errors, persistent absence and terminal state. **182 tests passed in 13.95 seconds** in the same isolated Docker environment after this viewer-only change.
+
+During execution, a read-only privacy audit checked 28,587 distinct case-folded, whitespace-normalized response prefixes (40–80 characters) against 89 publication files and found zero matches. This is not a guarantee against short or paraphrased disclosures; strict schema export and manual scope review are the primary safeguards. Final publication checks are recorded below when complete.
+
+## Final publication verification
+
+The final privacy scan included **94 public files**, including the generated E007 JSON/report and post-run viewer repair: **zero response-prefix matches** across the same 28,587 prefixes, and **zero credential-token or machine-path findings**. An inefficient first audit invocation was stopped and replaced with an equivalent read-only scan that normalizes each file once; no experiment was stopped or rerun and no artifact changed.
+
+The publication exporter was rerun with the entire project read-only and reproduced both generated files exactly. `git diff --check` passed. All E007 scientific code, tests, protocol, configuration and approval files are unchanged from execution revision `b3a0a59`; only the separate monitor-viewer repair changed after the run, committed as `94f243d`. The completed monitor snapshot was read once and exited; no E007 container or idle monitor remains. Only sanitized documentation and aggregate results are included in the result commit.

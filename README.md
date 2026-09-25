@@ -14,13 +14,23 @@ The primary evaluation withholds entire `QuestionId` groups, rather than randoml
 
 ## Status
 
-**September 2026 checkpoint:** E001–E005 historical runs are preserved. **E006 is complete** under the approved protocol: all 60 E001 reproduction checks passed with zero difference, and the full run took about nine minutes. No experiment or monitor is currently active. See the [raw result tables](docs/E006_RESULTS.md), [complete aggregate/fold JSON](results/E006_aggregates.json), and [approval/execution record](docs/E006_EXECUTION_RECORD.md). Interpretation and any subsequent experiment await review.
+**September 25, 2026 checkpoint:** E001–E006 are preserved unchanged. **E007 is complete** under its approved fixed-cutoff protocol; all 40 prediction-rank reproduction checks passed, and execution took about nine minutes. No experiment or monitor is active. See the [E007 aggregate/fold/question tables](docs/E007_RESULTS.md), [complete aggregate JSON](results/E007_aggregates.json), and [approval/execution record](docs/E007_EXECUTION_RECORD.md). Numerical results are presented before interpretation or any subsequent experiment proposal.
 
-Start with the [research review](docs/RESEARCH_REVIEW_2026_09.md), [reproducibility audit](docs/REPRODUCIBILITY_AUDIT_2026_09.md), and [reviewable E006 addendum](docs/E006_REVIEW_ADDENDUM.md).
+Start with the [research review](docs/RESEARCH_REVIEW_2026_09.md), [reproducibility audit](docs/REPRODUCIBILITY_AUDIT_2026_09.md), and [E006 results](docs/E006_RESULTS.md).
 
-**September 25 continuation:** an [E007 threshold-transfer preregistration draft](docs/E007_PROTOCOL.md) is ready for review, **not approved or run**. It proposes selecting an abstention cutoff on development questions and applying it unchanged to unseen questions. The draft preserves outer folds and classifiers but explicitly subdivides the existing calibration role; its new risk/coverage criteria require review. E001–E006 remain unchanged.
+The [E007 preregistration](docs/E007_PROTOCOL.md) retains its original proposal text. Subsequent explicit approval and execution are recorded separately, not retroactively inserted into the proposal. E007 preserves outer folds/classifiers but uses **one calibration question for temperature fitting and two separate questions for cutoff selection**, unlike E006's three-question temperature fit.
 
-**E007 authorization update:** the user subsequently approved that proposal. Its draft text is preserved and the separate [approval/execution record](docs/E007_EXECUTION_RECORD.md) governs the locked implementation and run. No E007 result is claimed by this update.
+### E007: registered fixed-cutoff results
+
+For both input arms, confidence-only, support-aware, and frequency rules all produced the following results at each registered target:
+
+| Error target | Admissible development folds per arm/rule | Evaluation coverage | Retained accuracy / MAP@3 / risk / calibration |
+|---|---:|---:|---|
+| 10% (secondary) | 0 / 5 | 0% | Undefined: no retained predictions |
+| 20% (primary) | 0 / 5 | 0% | Undefined: no retained predictions |
+| 30% (secondary) | 0 / 5 | 0% | Undefined: no retained predictions |
+
+Every policy selection returned `NO_ADMISSIBLE_THRESHOLD` under the fixed per-development-question count, coverage, and error requirements. All evaluation responses were deferred; null risk is **not zero risk**. The registered useful-transfer criterion was unmet for every pair/target, and no nonempty selected-policy transfer performance was observed. Unfiltered references, all five folds, all 15 questions, support strata and calibration eligibility are preserved in the complete report/JSON. No thresholds were relaxed and no experiment was rerun.
 
 E001 established the negative baseline:
 

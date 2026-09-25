@@ -58,3 +58,22 @@ The user resumed the project after discussion of E006's threshold-transfer gap. 
 ## E007 authorization — 2026-09-25
 
 The user explicitly approved the proposed calibration split and error/coverage criteria. The [approval registry](../experiments/e007_approval.yaml) locks the original proposal and matching configuration by canonical hash; the historical draft status above is preserved. See the [execution record](E007_EXECUTION_RECORD.md). The implementation must pass synthetic tests and be committed before the Docker run. Results are not claimed by this entry.
+
+## E007 completed — 2026-09-25
+
+| Field | Recorded outcome |
+|---|---|
+| Pre-run revision | `b3a0a59f9c2e2226fd1a454eb438cf50c767b92f`, committed and pushed before launch |
+| Runtime | 550.641 seconds through result construction; 550.914 seconds including final serialization/status |
+| Execution | Existing audited non-root Docker image; network disabled; only new E007 artifact mount writable; 100 fitting calls |
+| Reproduction | All 40 top-1/MAP@3 checks passed; inner-selected hyperparameters matched the historical reference |
+| Primary 20% target | 0/5 admissible development folds for every arm/rule; all evaluation coverage 0%; retained metrics null |
+| Secondary 10% and 30% targets | Same all-deferral outcome; no thresholds selected |
+| Registered criterion | Unmet for all four learned pairs at all three targets; frequency also has no admissible cutoff |
+| Fold/question reporting | All 5 folds and 15 questions retained in the tables/JSON, including unfiltered references and empty selected sets |
+| Verification | Zero discrepancies in independent checks of 2,400 metric groups and 1,680 aggregate summaries; 42 preserved-file hashes verified |
+| Outputs | [Numerical tables](E007_RESULTS.md), [full aggregate-only JSON](../results/E007_aggregates.json) |
+| Monitor incident | Terminal viewer exited early after a missing-status-file read. Experiment and heartbeat continued. Viewer-only retries added/tested after completion, without rerunning or changing scientific code. |
+| Stop condition | Present raw aggregate/fold/question results for user review; no interpretation or next experiment |
+
+E001–E006 and E007's approved thresholds, folds, calibration subdivision and evaluation rules remain unchanged. No raw data, row-level predictions or fitted models were serialized or published. No active experiment or monitor remains.
