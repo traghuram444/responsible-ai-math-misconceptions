@@ -11,8 +11,8 @@ $argsList = @('run','--rm','--pull','never','--network','none','--read-only',
     '-e','PYTHONDONTWRITEBYTECODE=1','-e','PYTHONUNBUFFERED=1','-e','PYTHONPATH=/workspace/src',
     '--mount',"type=bind,source=$projectRoot,target=/workspace,readonly",'--workdir','/workspace')
 if (-not $Once -and -not [Console]::IsOutputRedirected) { $argsList += '--tty' }
-# The existing renderer reads the experiment ID from the selected status file.
-$argsList += @($image,'python','scripts/monitor_e006.py','--status-file','artifacts/e007/live_status.json')
+# E007-specific read retries; existing E006 monitor remains unchanged.
+$argsList += @($image,'python','scripts/monitor_e007.py','--status-file','artifacts/e007/live_status.json')
 if ($Once) { $argsList += '--once' }
 & docker @argsList
 exit $LASTEXITCODE
