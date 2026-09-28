@@ -119,3 +119,24 @@ Draft publication checks: the unchanged offline/non-root Docker regression suite
 ## E009 detailed protocol approved — 2026-09-28
 
 The user explicitly approved the complete E009 protocol. Approval is recorded in `experiments/e009_approval.yaml`; the historical draft text remains unchanged. E009-only implementation and synthetic tests cover independently nested classifier tuning, fixed reliability features/weights, label-blind scoring, a global policy-freezing barrier, historical E007 reproduction, strict aggregate export and an active-run terminal viewer. Code/configuration will be committed and pushed before the single MAP run. No protocol change, E001–E008 modification or further experiment is authorized. See the [execution record](E009_EXECUTION_RECORD.md).
+
+## E009 completed — 2026-09-28
+
+| Field | Recorded outcome |
+|---|---|
+| Pre-run revision | `c2dd478d3a857287ba8fcc6563fc2b64ad1cb496`, committed/pushed and public revision verified before launch |
+| Runtime | 1,547.299 seconds through result construction; 1,547.745 seconds through final heartbeat |
+| Execution | One attempt; audited non-root/offline Docker image; only E009 artifacts writable |
+| Fitting | 400/400 classifier fits successful, zero warnings/failures; 10 reliability fits, zero constant fallbacks |
+| Reproduction | 90/90 E007 development policies and 120/120 evaluation records matched; all policies frozen before evaluation correctness |
+| Primary 20% target | Every arm/rule: 0/5 admissible cutoffs, 0/15 nonempty evaluation questions, 0% coverage, retained metrics null, criterion unmet |
+| Secondary 10% / 30% | Same all-deferral outcome for every arm/rule; no requirements relaxed |
+| Learned correctness AUROC | Explanation-only: 0.694529 ± 0.057753; question-plus-explanation: 0.633822 ± 0.036207; five defined folds each |
+| Complete outputs | 200 fold/arm/rule/target records, 600 evaluation-question records, 50 fold-level ranking records with 150 question-level counterparts; all support/calibration strata retained |
+| Independent verification | 4,000 classifier groups, 800 reliability groups and 3,104 numerical fold summaries checked; zero discrepancies; 114 preserved-file hashes verified |
+| Regression tests | 256 passed in 23.07 seconds in the fixed offline/non-root image |
+| Monitor | Active viewer reached COMPLETED and exited normally; no observed read interruption and no idle monitor |
+| Outputs | [Full numerical tables](E009_RESULTS.md), [aggregate-only JSON](../results/E009_aggregates.json) |
+| Stop condition | Await user review of complete numerical results before interpretation or another experiment |
+
+E001–E008 scientific records and E009's approved models, thresholds, folds, features and evaluation rules are unchanged. Frequency's duplicated arms are one reference, not independent evidence. No raw responses, row-level artifacts, fitted models, router coefficients or scaler statistics were serialized or published. Uncertainty is descriptive; no new inferential analyses were added.

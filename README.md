@@ -14,11 +14,23 @@ The primary evaluation withholds entire `QuestionId` groups, rather than randoml
 
 ## Status
 
-**September 28, 2026 checkpoint:** E001–E007 are preserved unchanged. **E008 is complete** under its approved development-only feasibility protocol. All 90 E007 policy records reproduced; the run took 535.172 seconds. See the [complete E008 aggregate/fold/development-question tables](docs/E008_RESULTS.md), [aggregate-only JSON](results/E008_aggregates.json), and [approval/execution record](docs/E008_EXECUTION_RECORD.md). No experiment or monitor is active. Interpretation and any subsequent experiment await user review.
+**September 28, 2026 checkpoint:** E001–E008 are preserved unchanged. **E009 is complete** under its approved learned-reliability protocol. All 90 historical development policies and 120 evaluation records reproduced; the run took 1,547.299 seconds. See the [complete E009 aggregate/fold/question tables](docs/E009_RESULTS.md), [aggregate-only JSON](results/E009_aggregates.json), and [approval/execution record](docs/E009_EXECUTION_RECORD.md). No experiment or monitor is active. Interpretation and any subsequent experiment await user review.
 
 Start with the [research review](docs/RESEARCH_REVIEW_2026_09.md), [reproducibility audit](docs/REPRODUCIBILITY_AUDIT_2026_09.md), and [E006 results](docs/E006_RESULTS.md).
 
-**E009 approved — implementation verification:** the [learned-reliability protocol](docs/E009_PROTOCOL.md) is now approved and hash-locked; see the [approval/execution record](docs/E009_EXECUTION_RECORD.md). It specifies nested question-held-out error generation, five fixed prediction-time features and a small reliability estimator while preserving the final classifier and E007 risk/coverage requirements. Synthetic tests and a pre-run commit precede execution; no E009 results are claimed yet.
+**E009 numerical checkpoint:** both input arms and all five routing rules returned 0/5 admissible development cutoffs at each target (10%, **20% primary**, 30%). Evaluation coverage is 0%; retained accuracy, MAP@3, risk and calibration are undefined, not zero. The registered all-question criterion is unmet. The final classifier and E007 requirements were not changed. The [hash-locked protocol](docs/E009_PROTOCOL.md) retains its historical draft text; approval and execution are recorded separately.
+
+Unfiltered correctness AUROC, equal-fold mean ± sample SD (five defined folds):
+
+| Routing score | Explanation only | Question + explanation |
+|---|---:|---:|
+| Learned reliability | 0.6945 ± 0.0578 | 0.6338 ± 0.0362 |
+| Calibrated confidence | 0.6058 ± 0.0203 | 0.6099 ± 0.0210 |
+| Raw confidence | 0.6058 ± 0.0212 | 0.6093 ± 0.0233 |
+| Support-aware | 0.6397 ± 0.0159 | 0.6276 ± 0.0292 |
+| Frequency (different correctness target) | 0.5000 ± 0.0000 | 0.5000 ± 0.0000 |
+
+The full report includes all five values, paired differences, 200 policy records, 600 evaluation-question records, support strata, and separate classifier/reliability calibration. These are descriptive results on a repeatedly examined 15-question benchmark. Secondary AUROC does not replace the primary criterion. No interpretation or subsequent experiment is included in this checkpoint.
 
 **E008 numerical checkpoint:** at the focal 20% target, every arm/rule has 0/5 `FIXED_PREDICTION_LIMIT`, 5/5 `SCORE_SELECTION_LIMIT`, and 0/5 `COMMON_CUTOFF_INCOMPATIBILITY` records. The 10% target has the same counts. At 30%, both learned question-plus-explanation rules have counts 0/4/1 respectively (the common-cutoff record is fold 2); the other arm/rule combinations remain 0/5/0. The full report retains all 90 records, 180 anonymous development-role records, 30 deduplicated oracles, and five-value numerical summaries. These are prespecified exploratory diagnostics, not independent confirmation or deployment performance. No outer-evaluation predictions were made, and no diagnostic witness was deployed. The [locked protocol](docs/E008_PROTOCOL.md) retains its historical proposal text; approval is recorded separately.
 
