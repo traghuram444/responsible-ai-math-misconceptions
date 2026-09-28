@@ -1,0 +1,42 @@
+experiment_id: E009
+seed: 20260831
+fold_ids: [0, 1, 2, 3, 4]
+variants: [explanation_only, question_plus_explanation]
+rules: [learned_reliability, confidence_only, support_aware, raw_confidence, frequency]
+targets_percent: [10, 20, 30]
+primary_target_percent: 20
+roles: [9, 1, 2, 3]
+crossfit_question_blocks: [3, 3, 3]
+crossfit_order: sha256_E009_fold_QuestionId_seed
+classifier_tuning: unchanged_E001_GroupKFold3_independently_inside_each_fit_role
+features: [raw_confidence, raw_margin, normalized_entropy, predicted_label_support, maximum_training_cosine]
+similarity_chunk_size: 128
+scaler: weighted_StandardScaler
+router:
+  penalty: l2
+  C: 1.0
+  solver: lbfgs
+  fit_intercept: true
+  tol: 1.0e-4
+  max_iter: 2000
+  class_weight: null
+  random_state: 20260831
+  n_jobs: 1
+question_weight: N_divided_by_9_Nq
+router_tuning: none
+router_calibration: none
+constant_fallback: observed_single_correctness_class
+minimum_retained_per_question: 100
+coverage_numerator: 1
+coverage_denominator: 10
+selection: E007_exhaustive_distinct_scores_plus_zero_inclusive_ties
+success: all_15_evaluation_questions_meet_count_coverage_risk
+calibration_minimum_n: 200
+calibration_minimum_correct: 20
+calibration_minimum_incorrect: 20
+calibration_bins: 10
+reproduction_absolute_tolerance: 1.0e-10
+reproduction_relative_tolerance: 0.0
+e008_result_sha256: 966e775a74f5d15fa0f2c253ee7a06f1bec9ab34cbf4812ae4d6a5f2180973ea
+docker_image_id: sha256:6731a5b19ee38fc98d58f3e84d47bceb2c8a6d1f69d37729c0c8352946f04f5c
+publication: strict_aggregate_only

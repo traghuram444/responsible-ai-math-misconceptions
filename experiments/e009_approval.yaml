@@ -1,0 +1,11 @@
+experiment_id: E009
+status: approved_locked_for_execution
+approved_on: '2026-09-28'
+authorization: user_approved_complete_E009_protocol
+protocol: docs/E009_PROTOCOL.md
+protocol_sha256: 8dfa8d5036a9cc0ce23153633bbc7a63f6f42b637985f02db36c4901d6e006ef
+configuration: experiments/e009_reliability.yaml
+configuration_sha256: 1988c4e76b32116e4db7b913742ad262629c79443accc38922ca5e48209336e4
+canonical_hash: utf8_with_lf_newlines
+historical_draft_preserved: true
+preserve_experiments: [E001, E002, E003, E004, E005, E006, E007, E008]

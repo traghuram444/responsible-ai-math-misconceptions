@@ -115,3 +115,7 @@ After reviewing the E008 interpretation, the user agreed to proceed with the lea
 **Status: detailed specification awaiting review; not implemented, not run.** No E009 MAP feature extraction, prediction, model fit, timing pilot or monitor was started. E001–E008 scientific artifacts remain unchanged. A separately approved, hash-locked and tested implementation must precede execution.
 
 Draft publication checks: the unchanged offline/non-root Docker regression suite passed 219 tests in 17.58 seconds. The three changed documentation files were checked against 28,587 normalized student-response prefixes, with zero response matches and zero secret/local-path matches. E007/E008 result fingerprints remained unchanged; no E009 artifact directory exists. This verifies documentation hygiene, not an E009 implementation or result.
+
+## E009 detailed protocol approved — 2026-09-28
+
+The user explicitly approved the complete E009 protocol. Approval is recorded in `experiments/e009_approval.yaml`; the historical draft text remains unchanged. E009-only implementation and synthetic tests cover independently nested classifier tuning, fixed reliability features/weights, label-blind scoring, a global policy-freezing barrier, historical E007 reproduction, strict aggregate export and an active-run terminal viewer. Code/configuration will be committed and pushed before the single MAP run. No protocol change, E001–E008 modification or further experiment is authorized. See the [execution record](E009_EXECUTION_RECORD.md).
