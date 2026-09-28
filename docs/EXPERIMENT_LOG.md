@@ -107,3 +107,11 @@ The user approved the complete E008 preregistration. The historical proposal abo
 | Stop condition | Await user review of numerical results before interpretation or any new experiment |
 
 The registered targets, floors, score functions, candidate grids, folds, question roles, calibration and classification rules were not changed. Frequency input-arm duplication is the same reference, not additional evidence. This is exploratory diagnosis of an observed E007 result; no inferential intervals or new classifier-performance claim are added. E001–E007 remain unchanged.
+
+## E009 learned-reliability proposal — 2026-09-28
+
+After reviewing the E008 interpretation, the user agreed to proceed with the learned-reliability direction. The [E009 protocol proposal](E009_PROTOCOL.md) fixes the proposed inner question cross-fitting, independent nested classifier tuning, five prediction-time features, weighted binary logistic estimator, raw-confidence control, metrics and failure criteria for review. The final classifier, outer folds, temperature/threshold roles and original risk/count/coverage criteria remain unchanged. Prior work on correctness calibrators and selective prediction is cited; no algorithmic novelty or independent-confirmation claim is made.
+
+**Status: detailed specification awaiting review; not implemented, not run.** No E009 MAP feature extraction, prediction, model fit, timing pilot or monitor was started. E001–E008 scientific artifacts remain unchanged. A separately approved, hash-locked and tested implementation must precede execution.
+
+Draft publication checks: the unchanged offline/non-root Docker regression suite passed 219 tests in 17.58 seconds. The three changed documentation files were checked against 28,587 normalized student-response prefixes, with zero response matches and zero secret/local-path matches. E007/E008 result fingerprints remained unchanged; no E009 artifact directory exists. This verifies documentation hygiene, not an E009 implementation or result.
