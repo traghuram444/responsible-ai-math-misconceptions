@@ -1,0 +1,11 @@
+experiment_id: E008
+status: approved_locked_for_execution
+approved_on: '2026-09-28'
+authorization: user_approved_E008_development_only_feasibility_protocol
+protocol: docs/E008_PROTOCOL.md
+protocol_sha256: 2e3eb90239d0d9cba1e324208329f0d50455cf2dc2959a0accef29a435b14b6b
+configuration: experiments/e008_feasibility.yaml
+configuration_sha256: b0e0b7a43324eaf62db968e8c4533ed30a91dff31e0e516afcb9d4b1cf9c5375
+canonical_hash: utf8_with_lf_newlines
+historical_draft_preserved: true
+preserve_experiments: [E001, E002, E003, E004, E005, E006, E007]

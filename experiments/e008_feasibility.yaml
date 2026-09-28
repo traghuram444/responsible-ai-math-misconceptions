@@ -1,0 +1,23 @@
+experiment_id: E008
+seed: 20260831
+fold_ids: [0, 1, 2, 3, 4]
+variants: [explanation_only, question_plus_explanation]
+rules: [confidence_only, support_aware, frequency]
+target_percent: [10, 20, 30]
+focal_target_percent: 20
+minimum_retained_per_question: 100
+coverage_numerator: 1
+coverage_denominator: 10
+roles: [9, 1, 2, 3]
+analysis_roles: threshold_selection_only
+outer_evaluation_predictions: prohibited
+classification_order: [FIXED_PREDICTION_LIMIT, SCORE_SELECTION_LIMIT, COMMON_CUTOFF_INCOMPATIBILITY]
+risk_ordering: exact_rational
+candidate_grid: E007_distinct_scores_plus_zero_inclusive_ties
+oracle: fixed_prediction_correctness_counts_only
+reproduction_absolute_tolerance: 1.0e-10
+reproduction_relative_tolerance: 0.0
+e007_result_sha256: a0184aba0ac0649569efa56b42d248ebec466a40a6c44c615d2369587c9d3ff7
+e007_frozen_policies_sha256: 4dce8d85cf66330cc5a131788555b51516b414cccb6ece9c6fd4c275da81950a
+docker_image_id: sha256:6731a5b19ee38fc98d58f3e84d47bceb2c8a6d1f69d37729c0c8352946f04f5c
+publication: aggregate_only_no_candidate_arrays

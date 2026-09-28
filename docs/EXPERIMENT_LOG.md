@@ -77,3 +77,13 @@ The user explicitly approved the proposed calibration split and error/coverage c
 | Stop condition | Present raw aggregate/fold/question results for user review; no interpretation or next experiment |
 
 E001–E006 and E007's approved thresholds, folds, calibration subdivision and evaluation rules remain unchanged. No raw data, row-level predictions or fitted models were serialized or published. No active experiment or monitor remains.
+
+## E008 diagnostic proposal — 2026-09-25
+
+After reviewing E007, the user agreed to proceed with an infeasibility-diagnostic direction. The [E008 preregistration proposal](E008_PROTOCOL.md) specifies a development-only constraint decomposition, individual-versus-common cutoff feasibility, and correctness-informed oracle bounds for existing predictions. It preserves E007's targets, count/coverage floors, scores and question roles. This is prespecified exploratory analysis motivated by observed E007 outcomes, not independent confirmation or a classifier improvement.
+
+**Status: detailed protocol awaiting review; not implemented or run.** No E008 MAP analysis or outer evaluation scoring was performed. E001–E007 remain unchanged. No experiment or monitor was started, and no learned error predictor is authorized by this proposal.
+
+## E008 detailed protocol approved — 2026-09-28
+
+The user approved the complete E008 preregistration. The historical proposal above is preserved. Approval/configuration hashes are locked in `experiments/e008_approval.yaml`; [execution record](E008_EXECUTION_RECORD.md). E008-only code implements development reconstruction with E007 reproduction gates, exact rational feasibility diagnostics, deduplicated oracle bounds, strict aggregate publication and an active-run terminal viewer. Synthetic testing and a pre-run commit/push precede any MAP diagnostics. No outer-evaluation prediction or further experiment is authorized. Full numerical results will be presented before interpretation.

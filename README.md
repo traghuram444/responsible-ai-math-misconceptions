@@ -18,6 +18,8 @@ The primary evaluation withholds entire `QuestionId` groups, rather than randoml
 
 Start with the [research review](docs/RESEARCH_REVIEW_2026_09.md), [reproducibility audit](docs/REPRODUCIBILITY_AUDIT_2026_09.md), and [E006 results](docs/E006_RESULTS.md).
 
+**September 28 E008 update:** the [development-feasibility protocol](docs/E008_PROTOCOL.md) is explicitly approved and locked. See the [approval/execution record](docs/E008_EXECUTION_RECORD.md). Implementation is being verified before the development-only run. It separates constraint failures, individual-versus-shared cutoff feasibility, and correctness-informed selection bounds without changing E007 or analyzing outer evaluation outcomes.
+
 The [E007 preregistration](docs/E007_PROTOCOL.md) retains its original proposal text. Subsequent explicit approval and execution are recorded separately, not retroactively inserted into the proposal. E007 preserves outer folds/classifiers but uses **one calibration question for temperature fitting and two separate questions for cutoff selection**, unlike E006's three-question temperature fit.
 
 ### E007: registered fixed-cutoff results
