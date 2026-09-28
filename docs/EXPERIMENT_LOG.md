@@ -87,3 +87,23 @@ After reviewing E007, the user agreed to proceed with an infeasibility-diagnosti
 ## E008 detailed protocol approved — 2026-09-28
 
 The user approved the complete E008 preregistration. The historical proposal above is preserved. Approval/configuration hashes are locked in `experiments/e008_approval.yaml`; [execution record](E008_EXECUTION_RECORD.md). E008-only code implements development reconstruction with E007 reproduction gates, exact rational feasibility diagnostics, deduplicated oracle bounds, strict aggregate publication and an active-run terminal viewer. Synthetic testing and a pre-run commit/push precede any MAP diagnostics. No outer-evaluation prediction or further experiment is authorized. Full numerical results will be presented before interpretation.
+
+## E008 completed — 2026-09-28
+
+| Field | Recorded outcome |
+|---|---|
+| Pre-run revision | `ec4ed262bb8d63a0ad8bd38e6142ca8b28cbcf33`, committed/pushed and public revision verified before launch |
+| Runtime | 535.172 seconds through result construction; 535.364 seconds through final heartbeat |
+| Execution | One attempt; audited non-root/offline Docker image; only E008 artifacts writable; 100 model fitting calls |
+| Reproduction | All 10 development records and 90 rule/target policy records matched E007 under the locked gate |
+| Focal 20% target | Each arm/rule: fixed-prediction / score-selection / common-cutoff counts = 0 / 5 / 0 |
+| Secondary 10% target | Each arm/rule: 0 / 5 / 0 |
+| Secondary 30% target | Both learned question-plus-explanation rules: 0 / 4 / 1, with common-cutoff record at fold 2; other arm/rule combinations: 0 / 5 / 0 |
+| Complete outputs | 90 fold/arm/rule/target records, 180 anonymous development-role records, 30 deduplicated model oracles; all five numeric fold values, means, sample SDs and defined counts |
+| Independent verification | 270 count partitions and 1,782 numerical fold summaries checked with zero discrepancies; all 95 preserved-file hashes verified |
+| Outer evaluation | Zero prediction calls; no witness cutoff applied to evaluation rows |
+| Monitor | Active terminal viewer reached COMPLETED and exited normally; no observed read interruption and no idle monitor |
+| Outputs | [Full numerical tables](E008_RESULTS.md), [aggregate-only JSON](../results/E008_aggregates.json) |
+| Stop condition | Await user review of numerical results before interpretation or any new experiment |
+
+The registered targets, floors, score functions, candidate grids, folds, question roles, calibration and classification rules were not changed. Frequency input-arm duplication is the same reference, not additional evidence. This is exploratory diagnosis of an observed E007 result; no inferential intervals or new classifier-performance claim are added. E001–E007 remain unchanged.
