@@ -1,6 +1,6 @@
 # Responsible AI for Mathematical Misconceptions
 
-**Active research · E001–E010 checkpoint preserved · E011 preregistered · Not deployment-ready**
+**Active research · E011 complete · E012 condition met · Not deployment-ready**
 
 **Research question:** Can mathematical-misconception detection generalize to unseen K–12 math questions, with uncertainty-aware human review?
 
@@ -42,7 +42,9 @@ Start with the [experiment index](docs/EXPERIMENT_INDEX.md), then follow each pr
 
 Only 15 questions underpin this repeatedly examined benchmark. Calibration-question roles differ between E006 and E007 onward. E004/E005 were archived retrospectively, not publicly preregistered in Git before execution, and have incomplete secondary reporting. A [Brier-score erratum](docs/METRIC_ERRATUM_2026_09.md) corrects a legacy unseen-label bug without rewriting the old results. These limits are part of the findings, not hidden exceptions.
 
-The next registered experiment is [E011: selected-answer-context ablation](docs/E011_PROTOCOL.md), with an unchanged word TF–IDF/logistic classifier and the original frozen E001 question roles. It tests whether selected-answer context helps beyond question + explanation and frequency. If its fixed meaningful-improvement criterion is unmet, [E012](docs/E012_PROTOCOL.md) tests character TF–IDF + Complement Naive Bayes on full context. This conditional follow-up is registered before E011 outcomes; the sequence stops after E012. Neither result is known at preregistration. These are follow-up studies on the repeatedly examined benchmark, not independent confirmation.
+[E011: selected-answer-context ablation](docs/E011_PROTOCOL.md) is complete under the original frozen E001 question roles. Full-context word TF–IDF/logistic MAP@3 is **0.511887**, versus **0.519971** for question + explanation and **0.539215** for frequency. Its mean delta versus frequency is **−0.027328 ± 0.056586**, positive in 2/5 folds; its fixed primary criterion is unmet. Mean ECE is **0.149626**, versus **0.108524** and **0.056271** respectively (lower is better). [Complete E011 results](docs/E011_RESULTS.md).
+
+This valid negative triggers the previously registered [E012](docs/E012_PROTOCOL.md): character TF–IDF + Complement Naive Bayes on full context, without changing folds or calibration. The sequence stops after E012 regardless of outcome. These are follow-up studies on the repeatedly examined benchmark, not independent confirmation; E001–E010 and the research checkpoint remain unchanged.
 
 Terminal monitoring is used only during active runs, with at-most-hourly progress updates; no idle monitor is scheduled. Run `python scripts/monitor_e011_context.py --experiment E011` (or `E012`) in the project environment to view status, elapsed time, completed fits and the latest available aggregate metric. Held-out metrics remain unavailable until all models and routing orders are frozen.
 

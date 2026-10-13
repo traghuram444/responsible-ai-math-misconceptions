@@ -191,3 +191,20 @@ The user authorized the next experiment and a different model if it fails. Befor
 All models, calibration temperatures and label-blind evaluation rankings are prepared before evaluation metrics. No folds, training/calibration roles, original support thresholds or historical files change. Reports retain all questions, support strata, calibration eligibility, exact-label and six-way Category metrics, fixed exploratory review budgets and input-token diagnostics. These follow-up results on 15 repeatedly examined questions are descriptive, not independent confirmation. No student responses, answer strings, row predictions or fitted models are serialized for publication.
 
 A new CPU modeling image is built from the existing complete wheel/hash lock and digest-pinned Dockerfile, without changing the historical images. Synthetic tests cover leakage isolation, coupled grids/tie selection, support/calibration rules, both publication paths, baseline gates and strict aggregate schemas. The execution lock preserves all 163 checkpoint files except the README and append-only experiment log, and pins the new protocols/code/environment. Tested code and protocols are committed and pushed before the single E011 attempt. The read-only terminal viewer operates only during active experiments.
+
+## E011 completed — 2026-10-13
+
+Pre-run revision `97afd8414e33f8dec08f984577d139e5bb618081` was pushed and its public identity verified before fitting. Its public GitHub workflow passed. The fresh hash-locked modeling image is `sha256:464fc81faf49a6355e4bd0f55956243cc0fee586f657937f495975c2268e6fe0`. Pre-run Docker verification passed 354 tests with two expected not-yet-published-result skips, historical aggregate checks and deterministic figure checks. All 176 proposed public files passed path/secret/local-path scans; the response-prefix audit checked 28,587 unique prefixes with zero matches, including the newly completed hash lock separately.
+
+E011 completed one offline/non-root attempt: 150 classifier fits, zero fit warnings, all 30 historical reference checks passed, and all 163 preserved-file hashes and frozen data/split identities verified. The monitor reached COMPLETED at 659.061 seconds and exited normally. No idle monitor remains. All 15 development records were frozen before evaluation metrics; no row-level predictions or models were serialized.
+
+| Arm | MAP@3 | Accuracy | ECE | Corrected Brier |
+|---|---:|---:|---:|---:|
+| Frequency | 0.539215 | 0.402009 | 0.056271 | 0.795057 |
+| Question + explanation | 0.519971 | 0.376306 | 0.108524 | 0.805728 |
+| Full context | 0.511887 | 0.368558 | 0.149626 | 0.838084 |
+| Question + answer | 0.433872 | 0.247739 | 0.122322 | 0.882256 |
+
+The primary full-context MAP@3 delta is −0.027328 ± 0.056586 versus frequency (2/5 positive folds), and −0.008084 ± 0.055319 versus question + explanation (3/5 positive). Both fixed criteria fail. This valid negative is preserved and triggers only the already-preregistered E012 after publication checks. Full numerical results were presented before that decision; no threshold or comparison changed. [All fold/question/support/calibration/review-budget tables](E011_RESULTS.md) and [aggregate-only artifact](../results/E011_aggregates.json) retain every arm. Mean/SD are descriptive, not inferential.
+
+Post-run offline Docker verification passed **355 tests, one expected E012-result skip**, E006–E010 historical aggregate checks and all deterministic figures. A separate arithmetic check verified 180 weighted question-to-fold MAP@3, confidence and Category-accuracy identities with zero discrepancies. Repository-wide path/secret/local-path checks passed for 178 public files; all four changed/new publication files were checked against 28,587 private response prefixes with zero matches. Existing unchanged public files remain covered by the pre-run audit and preservation checks. The aggregate-only E011 publication receives its own descriptive commit before E012 begins.
