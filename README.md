@@ -1,6 +1,6 @@
 # Responsible AI for Mathematical Misconceptions
 
-**Active research · E001–E010 research checkpoint · Not deployment-ready**
+**Active research · E001–E010 checkpoint preserved · E011 preregistered · Not deployment-ready**
 
 **Research question:** Can mathematical-misconception detection generalize to unseen K–12 math questions, with uncertainty-aware human review?
 
@@ -42,7 +42,9 @@ Start with the [experiment index](docs/EXPERIMENT_INDEX.md), then follow each pr
 
 Only 15 questions underpin this repeatedly examined benchmark. Calibration-question roles differ between E006 and E007 onward. E004/E005 were archived retrospectively, not publicly preregistered in Git before execution, and have incomplete secondary reporting. A [Brier-score erratum](docs/METRIC_ERRATUM_2026_09.md) corrects a legacy unseen-label bug without rewriting the old results. These limits are part of the findings, not hidden exceptions.
 
-No new experiment is running. Future modeling needs a separately registered question and protocol. Terminal monitoring is used only during active runs, with at-most-hourly progress updates; no idle monitor is scheduled.
+The next registered experiment is [E011: selected-answer-context ablation](docs/E011_PROTOCOL.md), with an unchanged word TF–IDF/logistic classifier and the original frozen E001 question roles. It tests whether selected-answer context helps beyond question + explanation and frequency. If its fixed meaningful-improvement criterion is unmet, [E012](docs/E012_PROTOCOL.md) tests character TF–IDF + Complement Naive Bayes on full context. This conditional follow-up is registered before E011 outcomes; the sequence stops after E012. Neither result is known at preregistration. These are follow-up studies on the repeatedly examined benchmark, not independent confirmation.
+
+Terminal monitoring is used only during active runs, with at-most-hourly progress updates; no idle monitor is scheduled. Run `python scripts/monitor_e011_context.py --experiment E011` (or `E012`) in the project environment to view status, elapsed time, completed fits and the latest available aggregate metric. Held-out metrics remain unavailable until all models and routing orders are frozen.
 
 ## Data, privacy and citation
 
