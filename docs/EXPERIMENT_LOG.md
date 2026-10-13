@@ -140,3 +140,11 @@ The user explicitly approved the complete E009 protocol. Approval is recorded in
 | Stop condition | Await user review of complete numerical results before interpretation or another experiment |
 
 E001–E008 scientific records and E009's approved models, thresholds, folds, features and evaluation rules are unchanged. Frequency's duplicated arms are one reference, not independent evidence. No raw responses, row-level artifacts, fitted models, router coefficients or scaler statistics were serialized or published. Uncertainty is descriptive; no new inferential analyses were added.
+
+## E010 authorized and preregistered — 2026-10-13
+
+The user authorized proceeding and starting the proposed fixed-budget review-prioritization experiment. The [E010 protocol](E010_PROTOCOL.md) records the exact operational choices before execution; these choices were agent-specified under that authorization, not separately user-reviewed. E010 reconstructs E009 unchanged, freezes all label-blind batch decisions, requires historical reproduction, and evaluates fixed 0–50% review budgets with all controls and both arms.
+
+The primary comparison is learned versus support-aware routing at 20% review: at least two fewer remaining classifier errors per 100 original responses on an equal-fold mean, with positive benefit in at least four of five folds, separately per arm. This is simulated queue prioritization, not an automation-risk or human-benefit claim. The 15-question benchmark is repeatedly examined; all uncertainty is descriptive. E009's primary negative result is preserved.
+
+Synthetic verification, privacy scans and a public clean pre-run commit precede the single Docker run. No new representation, rubric, model tuning, threshold relaxation, data acquisition or further experiment is included. [Execution record](E010_EXECUTION_RECORD.md).

@@ -1,0 +1,23 @@
+experiment_id: E010
+seed: 20260831
+fold_ids: [0, 1, 2, 3, 4]
+variants: [explanation_only, question_plus_explanation]
+rules: [learned_reliability, confidence_only, support_aware, raw_confidence, hash_only, frequency]
+review_percentages: [0, 10, 20, 30, 40, 50]
+primary_review_percent: 20
+primary_control: support_aware
+primary_minimum_error_reduction_per_100: 2.0
+primary_minimum_positive_folds: 4
+budget_scope: pooled_three_evaluation_questions_per_fold
+review_count: integer_floor_N_times_percentage_divided_by_100
+tie_break: unchanged_E006_sha256_fold_source_row_seed
+reconstruction: unchanged_E009_prepare_fold
+calibration_roles: unchanged_E007_9_1_2_3
+support_strata: unchanged_E007
+calibration_minimum_n: 200
+calibration_minimum_correct: 20
+calibration_minimum_incorrect: 20
+reproduction_absolute_tolerance: 1.0e-10
+e009_result_sha256: f0aecdff883f9a26facb8a9678a1079a54814c793353e9b52d8c00b38fb75a5b
+docker_image_id: sha256:6731a5b19ee38fc98d58f3e84d47bceb2c8a6d1f69d37729c0c8352946f04f5c
+publication: strict_aggregate_only

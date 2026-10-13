@@ -14,6 +14,8 @@ The primary evaluation withholds entire `QuestionId` groups, rather than randoml
 
 ## Status
 
+**October 13, 2026 checkpoint:** E010 is authorized for execution after preregistration, synthetic tests and a clean pre-run commit. It tests fixed-budget review prioritization using E009's unchanged models and frozen evaluation roles. The primary comparison is learned versus support-aware routing at 20% review, with a predeclared practical margin of two fewer remaining errors per 100 responses and improvement in at least four of five folds, separately for both arms. See the [locked protocol](docs/E010_PROTOCOL.md) and [execution record](docs/E010_EXECUTION_RECORD.md). No E010 result is claimed yet; E001–E009 remain unchanged.
+
 **September 28, 2026 checkpoint:** E001–E008 are preserved unchanged. **E009 is complete** under its approved learned-reliability protocol. All 90 historical development policies and 120 evaluation records reproduced; the run took 1,547.299 seconds. See the [complete E009 aggregate/fold/question tables](docs/E009_RESULTS.md), [aggregate-only JSON](results/E009_aggregates.json), and [approval/execution record](docs/E009_EXECUTION_RECORD.md). No experiment or monitor is active. Interpretation and any subsequent experiment await user review.
 
 Start with the [research review](docs/RESEARCH_REVIEW_2026_09.md), [reproducibility audit](docs/REPRODUCIBILITY_AUDIT_2026_09.md), and [E006 results](docs/E006_RESULTS.md).
