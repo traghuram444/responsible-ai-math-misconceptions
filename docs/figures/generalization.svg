@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="385" viewBox="0 0 1100 385" role="img">
+<title>Random validation overstates unseen-question performance</title><desc>E001: question + explanation; five-fold mean MAP@3; published values rounded to three decimals.</desc>
+<rect width="1100" height="385" fill="#ffffff"/>
+<text x="32.00" y="38.00" fill="#243746" font-family="Arial, sans-serif" font-size="24" text-anchor="start" font-weight="bold">Random validation overstates unseen-question performance</text>
+<text x="32.00" y="66.00" fill="#243746" font-family="Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal">E001: question + explanation; five-fold mean MAP@3; published values rounded to three decimals.</text>
+<text x="32.00" y="133.00" fill="#243746" font-family="Arial, sans-serif" font-size="16" text-anchor="start" font-weight="normal">Random response split / TF-IDF</text>
+<line x1="385.00" y1="128.00" x2="871.70" y2="128.00" stroke="#007c91" stroke-width="25" stroke-dasharray=""/>
+<text x="886.70" y="133.00" fill="#243746" font-family="Arial, sans-serif" font-size="17" text-anchor="start" font-weight="bold">0.785</text>
+<text x="32.00" y="198.00" fill="#243746" font-family="Arial, sans-serif" font-size="16" text-anchor="start" font-weight="normal">Held-out question / TF-IDF</text>
+<line x1="385.00" y1="193.00" x2="707.40" y2="193.00" stroke="#7956a5" stroke-width="25" stroke-dasharray=""/>
+<text x="722.40" y="198.00" fill="#243746" font-family="Arial, sans-serif" font-size="17" text-anchor="start" font-weight="bold">0.520</text>
+<text x="32.00" y="263.00" fill="#243746" font-family="Arial, sans-serif" font-size="16" text-anchor="start" font-weight="normal">Held-out question / frequency</text>
+<line x1="385.00" y1="258.00" x2="719.18" y2="258.00" stroke="#627d24" stroke-width="25" stroke-dasharray=""/>
+<text x="734.18" y="263.00" fill="#243746" font-family="Arial, sans-serif" font-size="17" text-anchor="start" font-weight="bold">0.539</text>
+<line x1="385.00" y1="290.00" x2="385.00" y2="298.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="385.00" y="318.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0.0</text>
+<line x1="447.00" y1="290.00" x2="447.00" y2="298.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="447.00" y="318.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0.1</text>
+<line x1="509.00" y1="290.00" x2="509.00" y2="298.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="509.00" y="318.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0.2</text>
+<line x1="571.00" y1="290.00" x2="571.00" y2="298.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="571.00" y="318.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0.3</text>
+<line x1="633.00" y1="290.00" x2="633.00" y2="298.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="633.00" y="318.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0.4</text>
+<line x1="695.00" y1="290.00" x2="695.00" y2="298.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="695.00" y="318.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0.5</text>
+<line x1="757.00" y1="290.00" x2="757.00" y2="298.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="757.00" y="318.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0.6</text>
+<line x1="819.00" y1="290.00" x2="819.00" y2="298.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="819.00" y="318.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0.7</text>
+<line x1="881.00" y1="290.00" x2="881.00" y2="298.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="881.00" y="318.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0.8</text>
+<line x1="943.00" y1="290.00" x2="943.00" y2="298.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="943.00" y="318.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0.9</text>
+<line x1="1005.00" y1="290.00" x2="1005.00" y2="298.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="1005.00" y="318.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">1.0</text>
+<text x="695.00" y="350.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">MAP@3 (higher is better)</text>
+</svg>

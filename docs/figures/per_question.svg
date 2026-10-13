@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="780" viewBox="0 0 1100 780" role="img">
+<title>Review-prioritization benefit varies across questions</title><desc>E010: all 15 evaluation questions in numeric order; 20% pooled-fold budget; positive favors learned over support-aware.</desc>
+<rect width="1100" height="780" fill="#ffffff"/>
+<text x="32.00" y="38.00" fill="#243746" font-family="Arial, sans-serif" font-size="24" text-anchor="start" font-weight="bold">Review-prioritization benefit varies across questions</text>
+<text x="32.00" y="66.00" fill="#243746" font-family="Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal">E010: all 15 evaluation questions in numeric order; 20% pooled-fold budget; positive favors learned over support-aware.</text>
+<text x="110.00" y="108.00" fill="#243746" font-family="Arial, sans-serif" font-size="18" text-anchor="start" font-weight="bold">Explanation only</text>
+<line x1="110.00" y1="124.00" x2="110.00" y2="685.00" stroke="#e4e9ed" stroke-width="1" stroke-dasharray=""/>
+<text x="110.00" y="713.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">-24</text>
+<line x1="305.00" y1="124.00" x2="305.00" y2="685.00" stroke="#aab5bd" stroke-width="1" stroke-dasharray=""/>
+<text x="305.00" y="713.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0</text>
+<line x1="500.00" y1="124.00" x2="500.00" y2="685.00" stroke="#e4e9ed" stroke-width="1" stroke-dasharray=""/>
+<text x="500.00" y="713.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">24</text>
+<text x="98.00" y="149.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">31772</text>
+<line x1="305.00" y1="145.00" x2="271.71" y2="145.00" stroke="#c15d16" stroke-width="3" stroke-dasharray=""/>
+<circle cx="271.71" cy="145.00" r="4" fill="#c15d16"/>
+<text x="98.00" y="186.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">31774</text>
+<line x1="305.00" y1="182.00" x2="320.39" y2="182.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="320.39" cy="182.00" r="4" fill="#007c91"/>
+<text x="98.00" y="223.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">31777</text>
+<line x1="305.00" y1="219.00" x2="307.31" y2="219.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="307.31" cy="219.00" r="4" fill="#007c91"/>
+<text x="98.00" y="260.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">31778</text>
+<line x1="305.00" y1="256.00" x2="297.19" y2="256.00" stroke="#c15d16" stroke-width="3" stroke-dasharray=""/>
+<circle cx="297.19" cy="256.00" r="4" fill="#c15d16"/>
+<text x="98.00" y="297.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">32829</text>
+<line x1="305.00" y1="293.00" x2="404.49" y2="293.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="404.49" cy="293.00" r="4" fill="#007c91"/>
+<text x="98.00" y="334.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">32833</text>
+<line x1="305.00" y1="330.00" x2="326.46" y2="330.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="326.46" cy="330.00" r="4" fill="#007c91"/>
+<text x="98.00" y="371.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">32835</text>
+<line x1="305.00" y1="367.00" x2="322.77" y2="367.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="322.77" cy="367.00" r="4" fill="#007c91"/>
+<text x="98.00" y="408.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">33471</text>
+<line x1="305.00" y1="404.00" x2="321.86" y2="404.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="321.86" cy="404.00" r="4" fill="#007c91"/>
+<text x="98.00" y="445.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">33472</text>
+<line x1="305.00" y1="441.00" x2="298.91" y2="441.00" stroke="#c15d16" stroke-width="3" stroke-dasharray=""/>
+<circle cx="298.91" cy="441.00" r="4" fill="#c15d16"/>
+<text x="98.00" y="482.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">33474</text>
+<line x1="305.00" y1="478.00" x2="351.93" y2="478.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="351.93" cy="478.00" r="4" fill="#007c91"/>
+<text x="98.00" y="519.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">76870</text>
+<line x1="305.00" y1="515.00" x2="324.18" y2="515.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="324.18" cy="515.00" r="4" fill="#007c91"/>
+<text x="98.00" y="556.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">89443</text>
+<line x1="305.00" y1="552.00" x2="324.95" y2="552.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="324.95" cy="552.00" r="4" fill="#007c91"/>
+<text x="98.00" y="593.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">91695</text>
+<line x1="305.00" y1="589.00" x2="276.67" y2="589.00" stroke="#c15d16" stroke-width="3" stroke-dasharray=""/>
+<circle cx="276.67" cy="589.00" r="4" fill="#c15d16"/>
+<text x="98.00" y="630.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">104665</text>
+<line x1="305.00" y1="626.00" x2="476.43" y2="626.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="476.43" cy="626.00" r="4" fill="#007c91"/>
+<text x="98.00" y="667.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">109465</text>
+<line x1="305.00" y1="663.00" x2="319.69" y2="663.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="319.69" cy="663.00" r="4" fill="#007c91"/>
+<text x="645.00" y="108.00" fill="#243746" font-family="Arial, sans-serif" font-size="18" text-anchor="start" font-weight="bold">Question + explanation</text>
+<line x1="645.00" y1="124.00" x2="645.00" y2="685.00" stroke="#e4e9ed" stroke-width="1" stroke-dasharray=""/>
+<text x="645.00" y="713.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">-24</text>
+<line x1="840.00" y1="124.00" x2="840.00" y2="685.00" stroke="#aab5bd" stroke-width="1" stroke-dasharray=""/>
+<text x="840.00" y="713.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0</text>
+<line x1="1035.00" y1="124.00" x2="1035.00" y2="685.00" stroke="#e4e9ed" stroke-width="1" stroke-dasharray=""/>
+<text x="1035.00" y="713.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">24</text>
+<text x="633.00" y="149.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">31772</text>
+<line x1="840.00" y1="145.00" x2="830.80" y2="145.00" stroke="#c15d16" stroke-width="3" stroke-dasharray=""/>
+<circle cx="830.80" cy="145.00" r="4" fill="#c15d16"/>
+<text x="633.00" y="186.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">31774</text>
+<line x1="840.00" y1="182.00" x2="891.12" y2="182.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="891.12" cy="182.00" r="4" fill="#007c91"/>
+<text x="633.00" y="223.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">31777</text>
+<line x1="840.00" y1="219.00" x2="839.71" y2="219.00" stroke="#c15d16" stroke-width="3" stroke-dasharray=""/>
+<circle cx="839.71" cy="219.00" r="4" fill="#c15d16"/>
+<text x="633.00" y="260.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">31778</text>
+<line x1="840.00" y1="256.00" x2="933.30" y2="256.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="933.30" cy="256.00" r="4" fill="#007c91"/>
+<text x="633.00" y="297.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">32829</text>
+<line x1="840.00" y1="293.00" x2="863.74" y2="293.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="863.74" cy="293.00" r="4" fill="#007c91"/>
+<text x="633.00" y="334.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">32833</text>
+<line x1="840.00" y1="330.00" x2="854.92" y2="330.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="854.92" cy="330.00" r="4" fill="#007c91"/>
+<text x="633.00" y="371.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">32835</text>
+<line x1="840.00" y1="367.00" x2="733.04" y2="367.00" stroke="#c15d16" stroke-width="3" stroke-dasharray=""/>
+<circle cx="733.04" cy="367.00" r="4" fill="#c15d16"/>
+<text x="633.00" y="408.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">33471</text>
+<line x1="840.00" y1="404.00" x2="835.78" y2="404.00" stroke="#c15d16" stroke-width="3" stroke-dasharray=""/>
+<circle cx="835.78" cy="404.00" r="4" fill="#c15d16"/>
+<text x="633.00" y="445.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">33472</text>
+<line x1="840.00" y1="441.00" x2="817.95" y2="441.00" stroke="#c15d16" stroke-width="3" stroke-dasharray=""/>
+<circle cx="817.95" cy="441.00" r="4" fill="#c15d16"/>
+<text x="633.00" y="482.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">33474</text>
+<line x1="840.00" y1="478.00" x2="775.13" y2="478.00" stroke="#c15d16" stroke-width="3" stroke-dasharray=""/>
+<circle cx="775.13" cy="478.00" r="4" fill="#c15d16"/>
+<text x="633.00" y="519.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">76870</text>
+<line x1="840.00" y1="515.00" x2="820.82" y2="515.00" stroke="#c15d16" stroke-width="3" stroke-dasharray=""/>
+<circle cx="820.82" cy="515.00" r="4" fill="#c15d16"/>
+<text x="633.00" y="556.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">89443</text>
+<line x1="840.00" y1="552.00" x2="840.27" y2="552.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="840.27" cy="552.00" r="4" fill="#007c91"/>
+<text x="633.00" y="593.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">91695</text>
+<line x1="840.00" y1="589.00" x2="825.99" y2="589.00" stroke="#c15d16" stroke-width="3" stroke-dasharray=""/>
+<circle cx="825.99" cy="589.00" r="4" fill="#c15d16"/>
+<text x="633.00" y="630.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">104665</text>
+<line x1="840.00" y1="626.00" x2="1031.96" y2="626.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="1031.96" cy="626.00" r="4" fill="#007c91"/>
+<text x="633.00" y="667.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">109465</text>
+<line x1="840.00" y1="663.00" x2="746.46" y2="663.00" stroke="#c15d16" stroke-width="3" stroke-dasharray=""/>
+<circle cx="746.46" cy="663.00" r="4" fill="#c15d16"/>
+<text x="32.00" y="756.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal">Difference per 100 responses within each question; review shares may differ between rules. No question was selected out.</text>
+</svg>

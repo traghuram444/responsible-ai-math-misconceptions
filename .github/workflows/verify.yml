@@ -1,0 +1,22 @@
+name: Research verification
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  public-checkout:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Publication and historical-preservation checks
+        run: python3 repro/audit_release.py
+      - name: Fresh hash-locked verification environment
+        run: docker build --platform linux/amd64 --pull --no-cache -t map-research-verify:ci -f repro/Dockerfile repro
+      - name: Offline non-root synthetic tests and aggregate checks
+        run: >-
+          docker run --rm --network none --read-only --tmpfs /tmp:rw,nosuid,nodev
+          --user 10001:10001 --cap-drop ALL --security-opt no-new-privileges
+          --mount type=bind,source="$GITHUB_WORKSPACE",target=/workspace,readonly
+          map-research-verify:ci

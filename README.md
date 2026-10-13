@@ -1,150 +1,51 @@
 # Responsible AI for Mathematical Misconceptions
 
-> **Active research — not a finished system or deployment recommendation.**
+**Active research · E001–E010 research checkpoint · Not deployment-ready**
 
-Reproducible research code and documentation for the question: **can mathematical-misconception detection generalize to unseen K–12 math questions, with uncertainty-aware human review?**
+**Research question:** Can mathematical-misconception detection generalize to unseen K–12 math questions, with uncertainty-aware human review?
 
-The current evidence is limited to a 15-question middle-school benchmark; it is not a claim of K–12-wide validity.
+This independent project tests that question on **36,696 responses to 15 middle-school math questions** from the author-published MAP release. It is a reproducible generalization and selective-prediction study, not a leaderboard solution or evidence of K–12-wide validity.
 
-## Research scope
+[Research report](docs/RESEARCH_REPORT.md) · [Experiment index](docs/EXPERIMENT_INDEX.md) · [Reproduce the checks](docs/REPRODUCTION.md) · [Release audit](docs/RELEASE_AUDIT_2026_10.md)
 
-This project uses the author-published MIT-licensed MAP (Misconception Annotation Project) training release recorded in `docs/DATA_AND_LICENSES.md`. It is not a Kaggle leaderboard replication: the primary evaluation holds out entire `QuestionId` groups. The available MAP corpus is a middle-school benchmark, not evidence for K–12-wide performance.
+## Main findings
 
-The primary evaluation withholds entire `QuestionId` groups, rather than randomly splitting individual responses. This asks whether a model transfers to a never-before-seen math problem, while measuring calibration and a simulated option to defer uncertain predictions for human review.
+![E001 MAP@3: random response split 0.785, held-question TF-IDF 0.520, held-question frequency 0.539.](docs/figures/generalization.svg)
 
-## Status
+- **Random validation is optimistic.** TF–IDF + logistic regression reaches MAP@3 **0.785** on random response splits but **0.520** on held-out questions, below the **0.539** frequency baseline. Frozen MiniLM embeddings also fail to beat frequency.
+- **Unavailable labels explain only part of the difficulty.** 21.1% of held-question responses have an exact label absent from training. Even among supported labels, TF–IDF MAP@3 is **0.668**, versus **0.689** for frequency.
+- **Better ranking does not establish reliable automation.** E009's learned reliability score improves explanation-only correctness AUROC to **0.695**, but no admissible development cutoff meets the registered per-question requirements. All cases are deferred.
+- **Review prioritization remains a negative primary result.** At E010's 20% review budget, learned routing improves on support-aware routing by **1.387 ± 0.828** fewer remaining errors per 100 responses for explanation-only and **0.279 ± 1.098** for question + explanation. Neither meets the preregistered criterion. Retained error rates remain **59.3%** and **58.8%**.
 
-**October 13, 2026 checkpoint:** **E010 is complete.** E001–E009 remain unchanged. The single offline/non-root Docker run took 1,668.158 seconds through result construction and reproduced all 10 E009 development records, 200 evaluation records and 50 ranking records. No experiment or monitor is active. See the [full aggregate/fold/question tables](docs/E010_RESULTS.md), [aggregate-only JSON](results/E010_aggregates.json), [locked protocol](docs/E010_PROTOCOL.md), and [execution record](docs/E010_EXECUTION_RECORD.md).
+Means and sample SDs describe five folds, not independent inferential evidence. Deferred errors are **not** assumed corrected by a human. Both input arms, all registered budgets, all questions and negative results remain published.
 
-At the primary 20% review budget, benefit is **support-aware minus learned remaining errors per 100 original responses**, not errors corrected by a human. The preregistered criterion requires mean benefit >=2.0 and positive benefit in at least four of five folds, separately per arm.
+## What this repository contributes
 
-| Input | Mean benefit ± sample SD | Positive folds | Criterion met |
-|---|---:|---:|---|
-| Explanation only | 1.3868 ± 0.8285 | 5/5 | No |
-| Question + explanation | 0.2786 ± 1.0979 | 2/5 | No |
+Frozen question-held-out evaluation; nested model selection; group-disjoint calibration; exact-label support diagnostics; comparison of confidence, support-aware and cross-fitted reliability routing; simulated fixed-budget review; and an auditable history of negative results. It does **not** introduce a new classifier architecture or claim priority for unseen-question diagnosis or selective prediction. See the [literature and interpretation review](docs/RESEARCH_REVIEW_2026_09.md).
 
-Learned routing's retained error rates at that budget are 0.5932 and 0.5884 respectively. The full report includes every registered 0–50% budget, all six rules, 360 fold records, 1,080 question records, support strata and calibration. These are descriptive batch-routing results, not safe automation or measured reviewer benefit. Interpretation and any subsequent work await user review.
+## Verify without student data
 
-**September 28, 2026 checkpoint:** E001–E008 are preserved unchanged. **E009 is complete** under its approved learned-reliability protocol. All 90 historical development policies and 120 evaluation records reproduced; the run took 1,547.299 seconds. See the [complete E009 aggregate/fold/question tables](docs/E009_RESULTS.md), [aggregate-only JSON](results/E009_aggregates.json), and [approval/execution record](docs/E009_EXECUTION_RECORD.md). No experiment or monitor is active. Interpretation and any subsequent experiment await user review.
-
-Start with the [research review](docs/RESEARCH_REVIEW_2026_09.md), [reproducibility audit](docs/REPRODUCIBILITY_AUDIT_2026_09.md), and [E006 results](docs/E006_RESULTS.md).
-
-**E009 numerical checkpoint:** both input arms and all five routing rules returned 0/5 admissible development cutoffs at each target (10%, **20% primary**, 30%). Evaluation coverage is 0%; retained accuracy, MAP@3, risk and calibration are undefined, not zero. The registered all-question criterion is unmet. The final classifier and E007 requirements were not changed. The [hash-locked protocol](docs/E009_PROTOCOL.md) retains its historical draft text; approval and execution are recorded separately.
-
-Unfiltered correctness AUROC, equal-fold mean ± sample SD (five defined folds):
-
-| Routing score | Explanation only | Question + explanation |
-|---|---:|---:|
-| Learned reliability | 0.6945 ± 0.0578 | 0.6338 ± 0.0362 |
-| Calibrated confidence | 0.6058 ± 0.0203 | 0.6099 ± 0.0210 |
-| Raw confidence | 0.6058 ± 0.0212 | 0.6093 ± 0.0233 |
-| Support-aware | 0.6397 ± 0.0159 | 0.6276 ± 0.0292 |
-| Frequency (different correctness target) | 0.5000 ± 0.0000 | 0.5000 ± 0.0000 |
-
-The full report includes all five values, paired differences, 200 policy records, 600 evaluation-question records, support strata, and separate classifier/reliability calibration. These are descriptive results on a repeatedly examined 15-question benchmark. Secondary AUROC does not replace the primary criterion. No interpretation or subsequent experiment is included in this checkpoint.
-
-**E008 numerical checkpoint:** at the focal 20% target, every arm/rule has 0/5 `FIXED_PREDICTION_LIMIT`, 5/5 `SCORE_SELECTION_LIMIT`, and 0/5 `COMMON_CUTOFF_INCOMPATIBILITY` records. The 10% target has the same counts. At 30%, both learned question-plus-explanation rules have counts 0/4/1 respectively (the common-cutoff record is fold 2); the other arm/rule combinations remain 0/5/0. The full report retains all 90 records, 180 anonymous development-role records, 30 deduplicated oracles, and five-value numerical summaries. These are prespecified exploratory diagnostics, not independent confirmation or deployment performance. No outer-evaluation predictions were made, and no diagnostic witness was deployed. The [locked protocol](docs/E008_PROTOCOL.md) retains its historical proposal text; approval is recorded separately.
-
-The [E007 preregistration](docs/E007_PROTOCOL.md) retains its original proposal text. Subsequent explicit approval and execution are recorded separately, not retroactively inserted into the proposal. E007 preserves outer folds/classifiers but uses **one calibration question for temperature fitting and two separate questions for cutoff selection**, unlike E006's three-question temperature fit.
-
-### E007: registered fixed-cutoff results
-
-For both input arms, confidence-only, support-aware, and frequency rules all produced the following results at each registered target:
-
-| Error target | Admissible development folds per arm/rule | Evaluation coverage | Retained accuracy / MAP@3 / risk / calibration |
-|---|---:|---:|---|
-| 10% (secondary) | 0 / 5 | 0% | Undefined: no retained predictions |
-| 20% (primary) | 0 / 5 | 0% | Undefined: no retained predictions |
-| 30% (secondary) | 0 / 5 | 0% | Undefined: no retained predictions |
-
-Every policy selection returned `NO_ADMISSIBLE_THRESHOLD` under the fixed per-development-question count, coverage, and error requirements. All evaluation responses were deferred; null risk is **not zero risk**. The registered useful-transfer criterion was unmet for every pair/target, and no nonempty selected-policy transfer performance was observed. Unfiltered references, all five folds, all 15 questions, support strata and calibration eligibility are preserved in the complete report/JSON. No thresholds were relaxed and no experiment was rerun.
-
-E001 established the negative baseline:
-
-| Evaluation | MAP@3 |
-|---|---:|
-| Random row split, TF–IDF + logistic regression | 0.785 |
-| Question-held-out split, same model | 0.520 |
-| Question-held-out frequency baseline | 0.539 |
-
-Random validation was substantially optimistic, and the stronger lexical baseline did **not** exceed the frequency baseline under unseen-question evaluation. See [the original E001 report](docs/E001_RESULTS.md). E004 subsequently evaluated a frozen pretrained encoder; no transformer was fine-tuned.
-
-| Subsequent evidence | Result | Record |
-|---|---|---|
-| E002: true-label support | 21.1% of grouped evaluation rows have an exact label absent from training | [E002](docs/E002_RESULTS.md) |
-| E003: supported-label MAP@3 | TF–IDF question+explanation 0.668 vs frequency 0.689 | [E003](docs/E003_RESULTS.md) |
-| E004: frozen MiniLM MAP@3 | 0.476 explanation-only / 0.464 question+explanation vs frequency 0.539 | [Recovered E004 tables](docs/E004_RESULTS_ARCHIVE.md) |
-| E005: transfer decomposition | 7,755 unsupported, 0 rare, 28,941 frequent; 28,187 well-supported (nested) | [Recovered E005 tables](docs/E005_RESULTS_ARCHIVE.md) |
-
-**Metric erratum:** the legacy Brier implementation understated scores for unsupported true labels. MAP@3, accuracy, and ECE are unaffected. Proper all-outcome-space grouped frequency Brier is **0.795057**, versus the historical **0.581666**. The [append-only correction](docs/METRIC_ERRATUM_2026_09.md) provides fold tables and tested replacement code without overwriting E001–E005. E004/E005 also have incomplete secondary reporting, disclosed in the audit.
-
-E004/E005 files were committed retrospectively during this recovery, not publicly preregistered in Git before execution. Their original protocol status text is preserved as historical evidence; the archives and experiment-log addendum describe their actual status. Negative results remain visible.
-
-### E006: registered results at 50% human review
-
-Equal-weight five-fold means; Brier is union-label-corrected. These are retained-prediction results at a fixed review budget, not the original all-row classifier scores.
-
-| Input / routing | Retained accuracy | MAP@3 | Risk | ECE | Brier |
-|---|---:|---:|---:|---:|---:|
-| Frequency reference | 0.4017 | 0.5387 | 0.5983 | 0.0569 | 0.7954 |
-| Explanation / confidence | 0.4205 | 0.5430 | 0.5795 | 0.1616 | 0.8140 |
-| Explanation / support-aware | 0.4374 | 0.5541 | 0.5626 | 0.1538 | 0.8035 |
-| Question + explanation / confidence | 0.4469 | 0.5653 | 0.5531 | 0.1470 | 0.7799 |
-| Question + explanation / support-aware | 0.4581 | 0.5710 | 0.5419 | 0.1459 | 0.7757 |
-
-All four learned routing pairs meet the registered **relative** criterion at 50% review: at least 0.05 absolute risk reduction versus their own 0% result and lower retained risk than frequency. Calibration comparisons remain descriptive; no acceptable absolute deployment-risk threshold was defined. [The full report](docs/E006_RESULTS.md) includes every registered review budget, fold variation, calibration comparisons and confidence AUROC; the linked JSON includes the complete support-stratum grid. No deployment-readiness claim is made.
-
-## Quick start after data approval
-
-1. Obtain the MIT-licensed author-published `train.csv` from the source recorded in `docs/DATA_AND_LICENSES.md`, and verify its SHA-256 before use.
-2. Put it at `data/raw/train.csv` (the directory is gitignored).
-3. On a **new checkout only**, create the inspection report and grouped split manifests. Existing research checkouts must not regenerate frozen assignments. These are historical reproduction commands, not an instruction to start a new experiment:
+Requires Git and Docker with Linux containers. The verification environment is CPU-only, Linux amd64, non-root and hash-locked. Run from a checkout root:
 
 ```powershell
-docker compose build
-docker compose run --rm research python scripts/inspect_dataset.py --input data/raw/train.csv
-docker compose run --rm research python scripts/make_grouped_folds.py --input data/raw/train.csv --output artifacts/splits --n-splits 5 --seed 20260831
-docker compose run --rm research python -m pytest
-docker compose run --rm research python scripts/run_e001.py --input data/raw/train.csv --splits artifacts/splits --output artifacts/e001_results.json
+docker build --platform linux/amd64 --pull --no-cache -t map-research-verify:2026-10 -f repro/Dockerfile repro
+docker run --rm --network none --read-only --tmpfs /tmp:rw,nosuid,nodev --user 10001:10001 --cap-drop ALL --security-opt no-new-privileges --mount "type=bind,source=$($PWD.Path),target=/workspace,readonly" map-research-verify:2026-10
 ```
 
-The fold manifest captures a SHA-256 fingerprint of the input. Do not publish that manifest or any row-level derivative: it is local-only by policy. Do not use competition test labels or derive question-level answer keys from held-out groups. The original scorer remains frozen and has a documented Brier defect; historical reproduction is not a recommendation to use it for new work.
+This runs synthetic regression tests, historical-preservation checks, public aggregate validators and deterministic figure checks. It does **not** download MAP, fit research models or reproduce their predictions. [Detailed commands and modeling-reproduction limits](docs/REPRODUCTION.md).
 
-For an existing research checkout, `python scripts/verify_frozen_inputs.py` performs read-only data/hash/order/group checks, including the assignment fingerprint recorded during this audit. See [the verification record](docs/VERIFICATION_2026_09.md) for Docker tests and environment limits. Listed dependencies are pinned, but transitive/build dependencies are not fully locked; a successful test in the existing image is **not** a fresh-build reproducibility claim.
+CI applies publication checks to the public checkout and runs the same offline verification. The original modeling Dockerfile, dependencies and experiment launchers remain unchanged; they are not a fully hash-locked fresh reproduction of every historical model.
 
-## Layout
+## Research history and limitations
 
-- `docs/` — provenance, related work, protocol, limitations, and experiment log.
-- `src/map_misconceptions/` — data-contract and split-generation utilities.
-- `scripts/` — explicit, reproducible data inspection and split creation entry points.
-- `experiments/` — experiment configurations (not result claims).
-- `artifacts/` — generated local-only artifacts (never versioned).
-- `tests/` — leakage and schema-contract tests.
+Start with the [experiment index](docs/EXPERIMENT_INDEX.md), then follow each protocol, execution record and complete result table. The [experiment log](docs/EXPERIMENT_LOG.md) is append-only. E001–E010 scientific records are preserved by a [checksum inventory](repro/history.json).
 
-## Research progression
+Only 15 questions underpin this repeatedly examined benchmark. Calibration-question roles differ between E006 and E007 onward. E004/E005 were archived retrospectively, not publicly preregistered in Git before execution, and have incomplete secondary reporting. A [Brier-score erratum](docs/METRIC_ERRATUM_2026_09.md) corrects a legacy unseen-label bug without rewriting the old results. These limits are part of the findings, not hidden exceptions.
 
-E001 established that the tested lexical baseline did not beat prevalence for the primary task. Future experiments will have their approved protocols committed before execution, use the frozen question-held-out framework, and receive distinct result commits. The non-root Docker environment mounts `data/` and `artifacts/`; raw data stays out of the image. Historical plan: [docs/RESEARCH_PLAN.md](docs/RESEARCH_PLAN.md).
+No new experiment is running. Future modeling needs a separately registered question and protocol. Terminal monitoring is used only during active runs, with at-most-hourly progress updates; no idle monitor is scheduled.
 
-E002 is complete: 21.1% of held-out rows have a label absent from their fold-local training set, while exact cross-question response overlap is only 0.59%. E003 and E005 subsequently decomposed support without replacing the primary all-row evaluation. Cross-question overlap alone does not exclude leakage within random-split questions. See [the E002 report](docs/E002_RESULTS.md).
+## Data, privacy and citation
 
-E003 confirmed that unsupported labels are not the whole explanation: even on the supported-label subset, TF–IDF MAP@3 (0.668) remained below frequency (0.689). See [the E003 report](docs/E003_RESULTS.md).
+Data provenance and the author-release license are recorded in [DATA_AND_LICENSES.md](docs/DATA_AND_LICENSES.md). Obtain data only from that author-published source; the closed competition and unrelated reuploads are not substitutes. The repository includes **no raw student responses, dataset archives, row-level predictions, fitted models or credentials**. Raw data and local artifacts stay ignored. The repository's MIT code license does not relicense third-party data.
 
-## Live terminal monitor
-
-During an active experiment, open a second terminal and run:
-
-```powershell
-docker compose run --rm research python scripts/monitor_experiment.py --status-file artifacts/live_status.json
-```
-
-It is read-only: it renders the active experiment ID, status, elapsed time, stage, progress, and latest aggregate metric from an ignored local status file. It never reads student responses or interrupts the run.
-
-The legacy status file is not proof that a process is running; a completed E005 run left a stale `RUNNING` flag. Do not start a monitor when no experiment is active. Future approved runs will use a live terminal view plus at-most-hourly progress updates while active, stopping on completion/failure. No idle recurring monitor is scheduled.
-
-## Publication and data policy
-
-This repository contains original code, Docker configuration, protocols, aggregate results, and documentation only. It does **not** contain MAP data, raw student responses, row-level predictions, trained weights, credentials, or competition/private artifacts. The repository's code is MIT-licensed; that license does not relicense MAP data. See [the data register](docs/DATA_AND_LICENSES.md) and [publication audit](docs/PUBLICATION_AUDIT.md).
-
-## Citation
-
-Please cite the MAP benchmark paper and competition source recorded in [docs/DATA_AND_LICENSES.md](docs/DATA_AND_LICENSES.md). This repository is not affiliated with Eedi, Vanderbilt University, The Learning Agency, or Kaggle.
+Repository citation metadata is in [CITATION.cff](CITATION.cff). Also cite [Rittle-Johnson et al., *Detecting Math Misconceptions: An AI Benchmark Dataset* (2025)](https://aclanthology.org/2025.aimecon-wip.3/) and the author-published release when using MAP. This project is not affiliated with Eedi, Vanderbilt University, The Learning Agency or Kaggle.

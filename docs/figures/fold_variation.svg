@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="540" viewBox="0 0 1100 540" role="img">
+<title>Neither arm meets the E010 primary improvement criterion</title><desc>20% review: support-aware minus learned remaining errors per 100 original responses; positive favors learned.</desc>
+<rect width="1100" height="540" fill="#ffffff"/>
+<text x="32.00" y="38.00" fill="#243746" font-family="Arial, sans-serif" font-size="24" text-anchor="start" font-weight="bold">Neither arm meets the E010 primary improvement criterion</text>
+<text x="32.00" y="66.00" fill="#243746" font-family="Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal">20% review: support-aware minus learned remaining errors per 100 original responses; positive favors learned.</text>
+<text x="100.00" y="108.00" fill="#243746" font-family="Arial, sans-serif" font-size="18" text-anchor="start" font-weight="bold">Explanation only</text>
+<line x1="100.00" y1="130.00" x2="100.00" y2="400.00" stroke="#e4e9ed" stroke-width="1" stroke-dasharray=""/>
+<text x="100.00" y="424.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">-1</text>
+<line x1="178.00" y1="130.00" x2="178.00" y2="400.00" stroke="#aab5bd" stroke-width="1" stroke-dasharray=""/>
+<text x="178.00" y="424.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0</text>
+<line x1="256.00" y1="130.00" x2="256.00" y2="400.00" stroke="#e4e9ed" stroke-width="1" stroke-dasharray=""/>
+<text x="256.00" y="424.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">1</text>
+<line x1="334.00" y1="130.00" x2="334.00" y2="400.00" stroke="#e4e9ed" stroke-width="1" stroke-dasharray=""/>
+<text x="334.00" y="424.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">2</text>
+<line x1="412.00" y1="130.00" x2="412.00" y2="400.00" stroke="#e4e9ed" stroke-width="1" stroke-dasharray=""/>
+<text x="412.00" y="424.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">3</text>
+<line x1="490.00" y1="130.00" x2="490.00" y2="400.00" stroke="#e4e9ed" stroke-width="1" stroke-dasharray=""/>
+<text x="490.00" y="424.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">4</text>
+<line x1="334.00" y1="130.00" x2="334.00" y2="400.00" stroke="#c15d16" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="85.00" y="158.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">Fold 0</text>
+<circle cx="388.07" cy="154.00" r="5" fill="#007c91"/>
+<text x="85.00" y="196.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">Fold 1</text>
+<circle cx="216.87" cy="192.00" r="5" fill="#007c91"/>
+<text x="85.00" y="234.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">Fold 2</text>
+<circle cx="250.89" cy="230.00" r="5" fill="#007c91"/>
+<text x="85.00" y="272.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">Fold 3</text>
+<circle cx="275.90" cy="268.00" r="5" fill="#007c91"/>
+<text x="85.00" y="310.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">Fold 4</text>
+<circle cx="299.13" cy="306.00" r="5" fill="#007c91"/>
+<line x1="221.55" y1="365.00" x2="350.80" y2="365.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="286.17" cy="365.00" r="7" fill="#243746"/>
+<text x="85.00" y="369.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">Mean / SD</text>
+<text x="100.00" y="465.00" fill="#243746" font-family="Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal">Mean 1.387; positive folds 5/5; criterion unmet</text>
+<text x="635.00" y="108.00" fill="#243746" font-family="Arial, sans-serif" font-size="18" text-anchor="start" font-weight="bold">Question + explanation</text>
+<line x1="635.00" y1="130.00" x2="635.00" y2="400.00" stroke="#e4e9ed" stroke-width="1" stroke-dasharray=""/>
+<text x="635.00" y="424.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">-1</text>
+<line x1="713.00" y1="130.00" x2="713.00" y2="400.00" stroke="#aab5bd" stroke-width="1" stroke-dasharray=""/>
+<text x="713.00" y="424.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0</text>
+<line x1="791.00" y1="130.00" x2="791.00" y2="400.00" stroke="#e4e9ed" stroke-width="1" stroke-dasharray=""/>
+<text x="791.00" y="424.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">1</text>
+<line x1="869.00" y1="130.00" x2="869.00" y2="400.00" stroke="#e4e9ed" stroke-width="1" stroke-dasharray=""/>
+<text x="869.00" y="424.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">2</text>
+<line x1="947.00" y1="130.00" x2="947.00" y2="400.00" stroke="#e4e9ed" stroke-width="1" stroke-dasharray=""/>
+<text x="947.00" y="424.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">3</text>
+<line x1="1025.00" y1="130.00" x2="1025.00" y2="400.00" stroke="#e4e9ed" stroke-width="1" stroke-dasharray=""/>
+<text x="1025.00" y="424.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">4</text>
+<line x1="869.00" y1="130.00" x2="869.00" y2="400.00" stroke="#c15d16" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="620.00" y="158.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">Fold 0</text>
+<circle cx="882.48" cy="154.00" r="5" fill="#007c91"/>
+<text x="620.00" y="196.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">Fold 1</text>
+<circle cx="701.89" cy="192.00" r="5" fill="#007c91"/>
+<text x="620.00" y="234.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">Fold 2</text>
+<circle cx="723.41" cy="230.00" r="5" fill="#007c91"/>
+<text x="620.00" y="272.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">Fold 3</text>
+<circle cx="661.30" cy="268.00" r="5" fill="#007c91"/>
+<text x="620.00" y="310.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">Fold 4</text>
+<circle cx="704.57" cy="306.00" r="5" fill="#007c91"/>
+<line x1="649.09" y1="365.00" x2="820.37" y2="365.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<circle cx="734.73" cy="365.00" r="7" fill="#243746"/>
+<text x="620.00" y="369.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">Mean / SD</text>
+<text x="635.00" y="465.00" fill="#243746" font-family="Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal">Mean 0.279; positive folds 2/5; criterion unmet</text>
+<text x="32.00" y="515.00" fill="#243746" font-family="Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal">Criterion: mean benefit &gt;= 2.0 AND positive in &gt;= 4/5 folds. SD is descriptive, not a confidence interval.</text>
+</svg>

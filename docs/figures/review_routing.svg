@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650" role="img">
+<title>Fixed review budgets reduce remaining errors, but leave substantial risk</title><desc>E010: errors remaining outside the queue per 100 original responses; equal-fold means, all registered budgets.</desc>
+<rect width="1100" height="650" fill="#ffffff"/>
+<text x="32.00" y="38.00" fill="#243746" font-family="Arial, sans-serif" font-size="24" text-anchor="start" font-weight="bold">Fixed review budgets reduce remaining errors, but leave substantial risk</text>
+<text x="32.00" y="66.00" fill="#243746" font-family="Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal">E010: errors remaining outside the queue per 100 original responses; equal-fold means, all registered budgets.</text>
+<text x="85.00" y="104.00" fill="#243746" font-family="Arial, sans-serif" font-size="18" text-anchor="start" font-weight="bold">Explanation only</text>
+<line x1="85.00" y1="450.00" x2="500.00" y2="450.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="75.00" y="454.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">0</text>
+<line x1="85.00" y1="367.50" x2="500.00" y2="367.50" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="75.00" y="371.50" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">20</text>
+<line x1="85.00" y1="285.00" x2="500.00" y2="285.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="75.00" y="289.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">40</text>
+<line x1="85.00" y1="202.50" x2="500.00" y2="202.50" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="75.00" y="206.50" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">60</text>
+<line x1="85.00" y1="120.00" x2="500.00" y2="120.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="75.00" y="124.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">80</text>
+<line x1="85.00" y1="183.40" x2="168.00" y2="220.99" stroke="#007c91" stroke-width="2" stroke-dasharray=""/>
+<line x1="168.00" y1="220.99" x2="251.00" y2="254.25" stroke="#007c91" stroke-width="2" stroke-dasharray=""/>
+<line x1="251.00" y1="254.25" x2="334.00" y2="286.01" stroke="#007c91" stroke-width="2" stroke-dasharray=""/>
+<line x1="334.00" y1="286.01" x2="417.00" y2="315.63" stroke="#007c91" stroke-width="2" stroke-dasharray=""/>
+<line x1="417.00" y1="315.63" x2="500.00" y2="344.16" stroke="#007c91" stroke-width="2" stroke-dasharray=""/>
+<circle cx="85.00" cy="183.40" r="3" fill="#007c91"/>
+<circle cx="168.00" cy="220.99" r="3" fill="#007c91"/>
+<circle cx="251.00" cy="254.25" r="3" fill="#007c91"/>
+<circle cx="334.00" cy="286.01" r="3" fill="#007c91"/>
+<circle cx="417.00" cy="315.63" r="3" fill="#007c91"/>
+<circle cx="500.00" cy="344.16" r="3" fill="#007c91"/>
+<line x1="85.00" y1="183.40" x2="168.00" y2="214.95" stroke="#c15d16" stroke-width="2" stroke-dasharray=""/>
+<line x1="168.00" y1="214.95" x2="251.00" y2="245.25" stroke="#c15d16" stroke-width="2" stroke-dasharray=""/>
+<line x1="251.00" y1="245.25" x2="334.00" y2="274.89" stroke="#c15d16" stroke-width="2" stroke-dasharray=""/>
+<line x1="334.00" y1="274.89" x2="417.00" y2="302.98" stroke="#c15d16" stroke-width="2" stroke-dasharray=""/>
+<line x1="417.00" y1="302.98" x2="500.00" y2="330.76" stroke="#c15d16" stroke-width="2" stroke-dasharray=""/>
+<circle cx="85.00" cy="183.40" r="3" fill="#c15d16"/>
+<circle cx="168.00" cy="214.95" r="3" fill="#c15d16"/>
+<circle cx="251.00" cy="245.25" r="3" fill="#c15d16"/>
+<circle cx="334.00" cy="274.89" r="3" fill="#c15d16"/>
+<circle cx="417.00" cy="302.98" r="3" fill="#c15d16"/>
+<circle cx="500.00" cy="330.76" r="3" fill="#c15d16"/>
+<line x1="85.00" y1="183.40" x2="168.00" y2="217.68" stroke="#7956a5" stroke-width="2" stroke-dasharray=""/>
+<line x1="168.00" y1="217.68" x2="251.00" y2="248.53" stroke="#7956a5" stroke-width="2" stroke-dasharray=""/>
+<line x1="251.00" y1="248.53" x2="334.00" y2="278.72" stroke="#7956a5" stroke-width="2" stroke-dasharray=""/>
+<line x1="334.00" y1="278.72" x2="417.00" y2="307.03" stroke="#7956a5" stroke-width="2" stroke-dasharray=""/>
+<line x1="417.00" y1="307.03" x2="500.00" y2="334.39" stroke="#7956a5" stroke-width="2" stroke-dasharray=""/>
+<circle cx="85.00" cy="183.40" r="3" fill="#7956a5"/>
+<circle cx="168.00" cy="217.68" r="3" fill="#7956a5"/>
+<circle cx="251.00" cy="248.53" r="3" fill="#7956a5"/>
+<circle cx="334.00" cy="278.72" r="3" fill="#7956a5"/>
+<circle cx="417.00" cy="307.03" r="3" fill="#7956a5"/>
+<circle cx="500.00" cy="334.39" r="3" fill="#7956a5"/>
+<line x1="85.00" y1="183.40" x2="168.00" y2="215.23" stroke="#627d24" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="168.00" y1="215.23" x2="251.00" y2="245.58" stroke="#627d24" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="251.00" y1="245.58" x2="334.00" y2="274.93" stroke="#627d24" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="334.00" y1="274.93" x2="417.00" y2="302.85" stroke="#627d24" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="417.00" y1="302.85" x2="500.00" y2="330.68" stroke="#627d24" stroke-width="2" stroke-dasharray="6 4"/>
+<circle cx="85.00" cy="183.40" r="3" fill="#627d24"/>
+<circle cx="168.00" cy="215.23" r="3" fill="#627d24"/>
+<circle cx="251.00" cy="245.58" r="3" fill="#627d24"/>
+<circle cx="334.00" cy="274.93" r="3" fill="#627d24"/>
+<circle cx="417.00" cy="302.85" r="3" fill="#627d24"/>
+<circle cx="500.00" cy="330.68" r="3" fill="#627d24"/>
+<line x1="85.00" y1="183.40" x2="168.00" y2="210.50" stroke="#777777" stroke-width="2" stroke-dasharray=""/>
+<line x1="168.00" y1="210.50" x2="251.00" y2="237.25" stroke="#777777" stroke-width="2" stroke-dasharray=""/>
+<line x1="251.00" y1="237.25" x2="334.00" y2="263.47" stroke="#777777" stroke-width="2" stroke-dasharray=""/>
+<line x1="334.00" y1="263.47" x2="417.00" y2="289.95" stroke="#777777" stroke-width="2" stroke-dasharray=""/>
+<line x1="417.00" y1="289.95" x2="500.00" y2="316.58" stroke="#777777" stroke-width="2" stroke-dasharray=""/>
+<circle cx="85.00" cy="183.40" r="3" fill="#777777"/>
+<circle cx="168.00" cy="210.50" r="3" fill="#777777"/>
+<circle cx="251.00" cy="237.25" r="3" fill="#777777"/>
+<circle cx="334.00" cy="263.47" r="3" fill="#777777"/>
+<circle cx="417.00" cy="289.95" r="3" fill="#777777"/>
+<circle cx="500.00" cy="316.58" r="3" fill="#777777"/>
+<line x1="85.00" y1="203.33" x2="168.00" y2="228.01" stroke="#243746" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="168.00" y1="228.01" x2="251.00" y2="252.83" stroke="#243746" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="251.00" y1="252.83" x2="334.00" y2="277.64" stroke="#243746" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="334.00" y1="277.64" x2="417.00" y2="302.30" stroke="#243746" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="417.00" y1="302.30" x2="500.00" y2="326.59" stroke="#243746" stroke-width="2" stroke-dasharray="6 4"/>
+<circle cx="85.00" cy="203.33" r="3" fill="#243746"/>
+<circle cx="168.00" cy="228.01" r="3" fill="#243746"/>
+<circle cx="251.00" cy="252.83" r="3" fill="#243746"/>
+<circle cx="334.00" cy="277.64" r="3" fill="#243746"/>
+<circle cx="417.00" cy="302.30" r="3" fill="#243746"/>
+<circle cx="500.00" cy="326.59" r="3" fill="#243746"/>
+<text x="85.00" y="475.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0</text>
+<text x="168.00" y="475.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">10</text>
+<text x="251.00" y="475.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">20</text>
+<text x="334.00" y="475.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">30</text>
+<text x="417.00" y="475.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">40</text>
+<text x="500.00" y="475.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">50</text>
+<text x="292.50" y="502.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">Review budget (%)</text>
+<text x="620.00" y="104.00" fill="#243746" font-family="Arial, sans-serif" font-size="18" text-anchor="start" font-weight="bold">Question + explanation</text>
+<line x1="620.00" y1="450.00" x2="1035.00" y2="450.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="610.00" y="454.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">0</text>
+<line x1="620.00" y1="367.50" x2="1035.00" y2="367.50" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="610.00" y="371.50" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">20</text>
+<line x1="620.00" y1="285.00" x2="1035.00" y2="285.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="610.00" y="289.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">40</text>
+<line x1="620.00" y1="202.50" x2="1035.00" y2="202.50" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="610.00" y="206.50" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">60</text>
+<line x1="620.00" y1="120.00" x2="1035.00" y2="120.00" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="610.00" y="124.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="end" font-weight="normal">80</text>
+<line x1="620.00" y1="192.73" x2="703.00" y2="225.51" stroke="#007c91" stroke-width="2" stroke-dasharray=""/>
+<line x1="703.00" y1="225.51" x2="786.00" y2="255.84" stroke="#007c91" stroke-width="2" stroke-dasharray=""/>
+<line x1="786.00" y1="255.84" x2="869.00" y2="282.99" stroke="#007c91" stroke-width="2" stroke-dasharray=""/>
+<line x1="869.00" y1="282.99" x2="952.00" y2="311.21" stroke="#007c91" stroke-width="2" stroke-dasharray=""/>
+<line x1="952.00" y1="311.21" x2="1035.00" y2="339.58" stroke="#007c91" stroke-width="2" stroke-dasharray=""/>
+<circle cx="620.00" cy="192.73" r="3" fill="#007c91"/>
+<circle cx="703.00" cy="225.51" r="3" fill="#007c91"/>
+<circle cx="786.00" cy="255.84" r="3" fill="#007c91"/>
+<circle cx="869.00" cy="282.99" r="3" fill="#007c91"/>
+<circle cx="952.00" cy="311.21" r="3" fill="#007c91"/>
+<circle cx="1035.00" cy="339.58" r="3" fill="#007c91"/>
+<line x1="620.00" y1="192.73" x2="703.00" y2="224.02" stroke="#c15d16" stroke-width="2" stroke-dasharray=""/>
+<line x1="703.00" y1="224.02" x2="786.00" y2="252.54" stroke="#c15d16" stroke-width="2" stroke-dasharray=""/>
+<line x1="786.00" y1="252.54" x2="869.00" y2="281.17" stroke="#c15d16" stroke-width="2" stroke-dasharray=""/>
+<line x1="869.00" y1="281.17" x2="952.00" y2="308.96" stroke="#c15d16" stroke-width="2" stroke-dasharray=""/>
+<line x1="952.00" y1="308.96" x2="1035.00" y2="336.16" stroke="#c15d16" stroke-width="2" stroke-dasharray=""/>
+<circle cx="620.00" cy="192.73" r="3" fill="#c15d16"/>
+<circle cx="703.00" cy="224.02" r="3" fill="#c15d16"/>
+<circle cx="786.00" cy="252.54" r="3" fill="#c15d16"/>
+<circle cx="869.00" cy="281.17" r="3" fill="#c15d16"/>
+<circle cx="952.00" cy="308.96" r="3" fill="#c15d16"/>
+<circle cx="1035.00" cy="336.16" r="3" fill="#c15d16"/>
+<line x1="620.00" y1="192.73" x2="703.00" y2="225.33" stroke="#7956a5" stroke-width="2" stroke-dasharray=""/>
+<line x1="703.00" y1="225.33" x2="786.00" y2="254.69" stroke="#7956a5" stroke-width="2" stroke-dasharray=""/>
+<line x1="786.00" y1="254.69" x2="869.00" y2="283.25" stroke="#7956a5" stroke-width="2" stroke-dasharray=""/>
+<line x1="869.00" y1="283.25" x2="952.00" y2="311.38" stroke="#7956a5" stroke-width="2" stroke-dasharray=""/>
+<line x1="952.00" y1="311.38" x2="1035.00" y2="338.40" stroke="#7956a5" stroke-width="2" stroke-dasharray=""/>
+<circle cx="620.00" cy="192.73" r="3" fill="#7956a5"/>
+<circle cx="703.00" cy="225.33" r="3" fill="#7956a5"/>
+<circle cx="786.00" cy="254.69" r="3" fill="#7956a5"/>
+<circle cx="869.00" cy="283.25" r="3" fill="#7956a5"/>
+<circle cx="952.00" cy="311.38" r="3" fill="#7956a5"/>
+<circle cx="1035.00" cy="338.40" r="3" fill="#7956a5"/>
+<line x1="620.00" y1="192.73" x2="703.00" y2="224.18" stroke="#627d24" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="703.00" y1="224.18" x2="786.00" y2="252.50" stroke="#627d24" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="786.00" y1="252.50" x2="869.00" y2="281.12" stroke="#627d24" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="869.00" y1="281.12" x2="952.00" y2="309.33" stroke="#627d24" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="952.00" y1="309.33" x2="1035.00" y2="336.04" stroke="#627d24" stroke-width="2" stroke-dasharray="6 4"/>
+<circle cx="620.00" cy="192.73" r="3" fill="#627d24"/>
+<circle cx="703.00" cy="224.18" r="3" fill="#627d24"/>
+<circle cx="786.00" cy="252.50" r="3" fill="#627d24"/>
+<circle cx="869.00" cy="281.12" r="3" fill="#627d24"/>
+<circle cx="952.00" cy="309.33" r="3" fill="#627d24"/>
+<circle cx="1035.00" cy="336.04" r="3" fill="#627d24"/>
+<line x1="620.00" y1="192.73" x2="703.00" y2="218.87" stroke="#777777" stroke-width="2" stroke-dasharray=""/>
+<line x1="703.00" y1="218.87" x2="786.00" y2="244.50" stroke="#777777" stroke-width="2" stroke-dasharray=""/>
+<line x1="786.00" y1="244.50" x2="869.00" y2="270.21" stroke="#777777" stroke-width="2" stroke-dasharray=""/>
+<line x1="869.00" y1="270.21" x2="952.00" y2="295.89" stroke="#777777" stroke-width="2" stroke-dasharray=""/>
+<line x1="952.00" y1="295.89" x2="1035.00" y2="321.79" stroke="#777777" stroke-width="2" stroke-dasharray=""/>
+<circle cx="620.00" cy="192.73" r="3" fill="#777777"/>
+<circle cx="703.00" cy="218.87" r="3" fill="#777777"/>
+<circle cx="786.00" cy="244.50" r="3" fill="#777777"/>
+<circle cx="869.00" cy="270.21" r="3" fill="#777777"/>
+<circle cx="952.00" cy="295.89" r="3" fill="#777777"/>
+<circle cx="1035.00" cy="321.79" r="3" fill="#777777"/>
+<line x1="620.00" y1="203.33" x2="703.00" y2="228.01" stroke="#243746" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="703.00" y1="228.01" x2="786.00" y2="252.83" stroke="#243746" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="786.00" y1="252.83" x2="869.00" y2="277.64" stroke="#243746" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="869.00" y1="277.64" x2="952.00" y2="302.30" stroke="#243746" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="952.00" y1="302.30" x2="1035.00" y2="326.59" stroke="#243746" stroke-width="2" stroke-dasharray="6 4"/>
+<circle cx="620.00" cy="203.33" r="3" fill="#243746"/>
+<circle cx="703.00" cy="228.01" r="3" fill="#243746"/>
+<circle cx="786.00" cy="252.83" r="3" fill="#243746"/>
+<circle cx="869.00" cy="277.64" r="3" fill="#243746"/>
+<circle cx="952.00" cy="302.30" r="3" fill="#243746"/>
+<circle cx="1035.00" cy="326.59" r="3" fill="#243746"/>
+<text x="620.00" y="475.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">0</text>
+<text x="703.00" y="475.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">10</text>
+<text x="786.00" y="475.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">20</text>
+<text x="869.00" y="475.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">30</text>
+<text x="952.00" y="475.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">40</text>
+<text x="1035.00" y="475.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">50</text>
+<text x="827.50" y="502.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="normal">Review budget (%)</text>
+<line x1="40.00" y1="551.00" x2="65.00" y2="551.00" stroke="#007c91" stroke-width="3" stroke-dasharray=""/>
+<text x="74.00" y="555.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal">Learned reliability</text>
+<line x1="390.00" y1="551.00" x2="415.00" y2="551.00" stroke="#c15d16" stroke-width="3" stroke-dasharray=""/>
+<text x="424.00" y="555.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal">Calibrated confidence</text>
+<line x1="740.00" y1="551.00" x2="765.00" y2="551.00" stroke="#7956a5" stroke-width="3" stroke-dasharray=""/>
+<text x="774.00" y="555.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal">Support-aware</text>
+<line x1="40.00" y1="578.00" x2="65.00" y2="578.00" stroke="#627d24" stroke-width="3" stroke-dasharray=""/>
+<text x="74.00" y="582.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal">Raw confidence</text>
+<line x1="390.00" y1="578.00" x2="415.00" y2="578.00" stroke="#777777" stroke-width="3" stroke-dasharray=""/>
+<text x="424.00" y="582.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal">Hash-only</text>
+<line x1="740.00" y1="578.00" x2="765.00" y2="578.00" stroke="#243746" stroke-width="3" stroke-dasharray=""/>
+<text x="774.00" y="582.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal">Frequency classifier</text>
+<text x="32.00" y="625.00" fill="#243746" font-family="Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal">Deferred errors are not assumed corrected. Frequency is a different classifier; other rules share predictions.</text>
+</svg>

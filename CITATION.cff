@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Cite this research checkpoint and also cite the MAP paper and author-published dataset when using MAP."
+title: "Responsible AI for Mathematical Misconceptions: E001–E010 Research Checkpoint"
+type: software
+authors:
+  - family-names: Thota
+    given-names: Raghu Ram
+repository-code: "https://github.com/traghuram444/responsible-ai-math-misconceptions"
+url: "https://github.com/traghuram444/responsible-ai-math-misconceptions"
+version: "0.1.0-research"
+date-released: 2026-10-13
+license: MIT
+abstract: "Active independent research on held-question generalization, label support, calibration, and simulated human-review routing using MAP. This checkpoint preserves negative results and is not deployment-ready."
+keywords:
+  - mathematical misconceptions
+  - question-held-out evaluation
+  - selective prediction
+  - responsible AI
+  - reproducibility

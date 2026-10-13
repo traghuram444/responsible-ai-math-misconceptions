@@ -167,3 +167,13 @@ Synthetic verification, privacy scans and a public clean pre-run commit precede 
 | Stop condition | Present complete numerical results before interpretation or any subsequent experiment |
 
 Both arms remain reported; no secondary budget or control replaces the preregistered primary comparison. Mean/SD uncertainty is descriptive on the reused benchmark. No human corrections are assumed. E001–E009 and E010's locked choices remain unchanged. No row-level output, fitted parameter, raw response or private artifact is published.
+
+## E001–E010 research checkpoint consolidation — 2026-10-13
+
+The user authorized a research report and reproducible public checkpoint after reviewing E010, not a new experiment. Added an evidence-linked synthesis, experiment index, concise README, citation metadata, four static aggregate-only figures and their source fingerprints, a separate hash-locked verification Docker environment, and public-checkout CI. Writing guidance shaped the report's evidence-linked structure and explicit interpretation boundaries; repository documentation remains the authoritative home.
+
+The release preserves 144 public files from revision `7bd41443e8a88024f05144d49902c69f9da76a08` and the existing log prefix. E001–E010 protocols, scientific code, original tests, results, configuration and historical Docker setup remain unchanged. No MAP modeling, threshold search, split regeneration, bootstrap/permutation draw, new subgroup analysis or E011 was run. No experiment monitor is active.
+
+Fresh verification used a separately tagged Linux amd64 image built with `--pull --no-cache`, a digest-pinned interpreter, and a complete 15-package core wheel/hash lock. The final local offline/non-root check passed **317 tests in 53.19 seconds**, revalidated E006 through its original sanitizer/reaggregation and E007–E010 through strict public validators, and reproduced all five figure artifacts exactly. All four figures were also rendered and visually reviewed. The original modeling image identity is unchanged. This verifies tests and reporting, not a fresh reproduction of historical research predictions or the full encoder dependency closure.
+
+Both E010 primary outcomes remain negative. The report separates improved correctness ranking, fixed-cutoff automation feasibility and fixed-budget review prioritization. Historical metric/reporting/provenance limitations remain prominent. See [research report](RESEARCH_REPORT.md), [release audit](RELEASE_AUDIT_2026_10.md), [reproduction guide](REPRODUCTION.md) and [release notes](RELEASE_NOTES.md). Publication and clean-public-checkout outcomes are recorded in the follow-up release entry.
