@@ -14,7 +14,16 @@ The primary evaluation withholds entire `QuestionId` groups, rather than randoml
 
 ## Status
 
-**October 13, 2026 checkpoint:** E010 is authorized for execution after preregistration, synthetic tests and a clean pre-run commit. It tests fixed-budget review prioritization using E009's unchanged models and frozen evaluation roles. The primary comparison is learned versus support-aware routing at 20% review, with a predeclared practical margin of two fewer remaining errors per 100 responses and improvement in at least four of five folds, separately for both arms. See the [locked protocol](docs/E010_PROTOCOL.md) and [execution record](docs/E010_EXECUTION_RECORD.md). No E010 result is claimed yet; E001–E009 remain unchanged.
+**October 13, 2026 checkpoint:** **E010 is complete.** E001–E009 remain unchanged. The single offline/non-root Docker run took 1,668.158 seconds through result construction and reproduced all 10 E009 development records, 200 evaluation records and 50 ranking records. No experiment or monitor is active. See the [full aggregate/fold/question tables](docs/E010_RESULTS.md), [aggregate-only JSON](results/E010_aggregates.json), [locked protocol](docs/E010_PROTOCOL.md), and [execution record](docs/E010_EXECUTION_RECORD.md).
+
+At the primary 20% review budget, benefit is **support-aware minus learned remaining errors per 100 original responses**, not errors corrected by a human. The preregistered criterion requires mean benefit >=2.0 and positive benefit in at least four of five folds, separately per arm.
+
+| Input | Mean benefit ± sample SD | Positive folds | Criterion met |
+|---|---:|---:|---|
+| Explanation only | 1.3868 ± 0.8285 | 5/5 | No |
+| Question + explanation | 0.2786 ± 1.0979 | 2/5 | No |
+
+Learned routing's retained error rates at that budget are 0.5932 and 0.5884 respectively. The full report includes every registered 0–50% budget, all six rules, 360 fold records, 1,080 question records, support strata and calibration. These are descriptive batch-routing results, not safe automation or measured reviewer benefit. Interpretation and any subsequent work await user review.
 
 **September 28, 2026 checkpoint:** E001–E008 are preserved unchanged. **E009 is complete** under its approved learned-reliability protocol. All 90 historical development policies and 120 evaluation records reproduced; the run took 1,547.299 seconds. See the [complete E009 aggregate/fold/question tables](docs/E009_RESULTS.md), [aggregate-only JSON](results/E009_aggregates.json), and [approval/execution record](docs/E009_EXECUTION_RECORD.md). No experiment or monitor is active. Interpretation and any subsequent experiment await user review.
 

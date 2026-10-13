@@ -148,3 +148,22 @@ The user authorized proceeding and starting the proposed fixed-budget review-pri
 The primary comparison is learned versus support-aware routing at 20% review: at least two fewer remaining classifier errors per 100 original responses on an equal-fold mean, with positive benefit in at least four of five folds, separately per arm. This is simulated queue prioritization, not an automation-risk or human-benefit claim. The 15-question benchmark is repeatedly examined; all uncertainty is descriptive. E009's primary negative result is preserved.
 
 Synthetic verification, privacy scans and a public clean pre-run commit precede the single Docker run. No new representation, rubric, model tuning, threshold relaxation, data acquisition or further experiment is included. [Execution record](E010_EXECUTION_RECORD.md).
+
+## E010 completed — 2026-10-13
+
+| Field | Recorded outcome |
+|---|---|
+| Pre-run revision | `af2efb703fd93cebd77ea17da45bea6147a30be4`, committed/pushed and public revision verified before launch |
+| Runtime | 1,668.158 seconds through result construction; 1,669.264 seconds through final heartbeat |
+| Execution | One attempt; audited offline/non-root Docker image; only E010 artifacts writable |
+| Fitting | 400/400 classifier fits successful with zero warnings/failures; 10 reliability fits, zero constant fallbacks |
+| Reproduction | All 10 E009 development records, 200 evaluation records and 50 ranking records matched under unchanged gates |
+| Primary explanation-only benefit | 1.386828 ± 0.828494 fewer remaining errors per 100 responses versus support-aware at 20% review; positive in 5/5 folds; criterion unmet because mean <2.0 |
+| Primary question-plus-explanation benefit | 0.278608 ± 1.097948; positive in 2/5 folds; both primary requirements unmet |
+| Full reporting | 360 fold/arm/rule/budget records and 1,080 evaluation-question records, all support strata, classifier/reliability calibration and paired differences |
+| Independent verification | 7,200 classifier groups, 1,200 reliability groups and 8,482 fold summaries checked; 60 unfiltered reference records verified; zero discrepancies; 135 preserved-file hashes matched |
+| Monitor | Reached COMPLETED and exited normally with code 0; no observed read interruption; no idle monitor |
+| Outputs | [Numerical tables](E010_RESULTS.md), [aggregate-only JSON](../results/E010_aggregates.json) |
+| Stop condition | Present complete numerical results before interpretation or any subsequent experiment |
+
+Both arms remain reported; no secondary budget or control replaces the preregistered primary comparison. Mean/SD uncertainty is descriptive on the reused benchmark. No human corrections are assumed. E001–E009 and E010's locked choices remain unchanged. No row-level output, fitted parameter, raw response or private artifact is published.
