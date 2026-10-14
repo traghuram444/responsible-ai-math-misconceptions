@@ -1,6 +1,6 @@
 # Responsible AI for Mathematical Misconceptions
 
-**Active research · E011 complete · E012 infrastructure-only retry approved · Not deployment-ready**
+**Active research · E012 complete · Failed first attempt preserved · Not deployment-ready**
 
 **Research question:** Can mathematical-misconception detection generalize to unseen K–12 math questions, with uncertainty-aware human review?
 
@@ -44,7 +44,11 @@ Only 15 questions underpin this repeatedly examined benchmark. Calibration-quest
 
 [E011: selected-answer-context ablation](docs/E011_PROTOCOL.md) is complete under the original frozen E001 question roles. Full-context word TF–IDF/logistic MAP@3 is **0.511887**, versus **0.519971** for question + explanation and **0.539215** for frequency. Its mean delta versus frequency is **−0.027328 ± 0.056586**, positive in 2/5 folds; its fixed primary criterion is unmet. Mean ECE is **0.149626**, versus **0.108524** and **0.056271** respectively (lower is better). [Complete E011 results](docs/E011_RESULTS.md).
 
-This valid negative triggered the previously registered [E012](docs/E012_PROTOCOL.md): character TF–IDF + Complement Naive Bayes on full context, without changing folds or calibration. **The first E012 attempt stopped with a PermissionError after 49/95 fits, before evaluation.** Its [failure record and diagnosis](docs/E012_EXECUTION_FAILURE.md) remain unchanged. The user approved an [infrastructure-only second attempt](docs/E012_ATTEMPT02_AMENDMENT.md): isolate monitor I/O failures, retain the original scientific runner byte-for-byte, and write only to a new attempt directory. No completed E012 scientific result is available at amendment publication. These are follow-up studies on the repeatedly examined benchmark, not independent confirmation; E001–E011 and the research checkpoint remain unchanged.
+This valid negative triggered the previously registered [E012](docs/E012_PROTOCOL.md): character TF–IDF + Complement Naive Bayes on full context, without changing folds or calibration. **The first E012 attempt stopped with a PermissionError after 49/95 fits, before evaluation.** Its [failure record and diagnosis](docs/E012_EXECUTION_FAILURE.md) remain unchanged. The approved [infrastructure-only second attempt](docs/E012_ATTEMPT02_AMENDMENT.md) completed with the original scientific runner byte-for-byte unchanged and a separate output directory.
+
+E012 MAP@3 is **0.537228**, versus frequency **0.539215**: delta **−0.001987 ± 0.003825**, positive in **2/5 folds**. Versus E011 full context, the delta is **+0.025341 ± 0.057834**, positive in **3/5 folds**. The fixed primary criterion is unmet. Mean ECE is **0.377470** (frequency **0.056271**), and corrected Brier is **0.985662** (frequency **0.795057**); both are worse. [Full E012 results](docs/E012_RESULTS.md) · [Second-attempt execution and preservation record](docs/E012_ATTEMPT02_EXECUTION.md).
+
+No experiment or monitor remains active; no further model has been started. These are descriptive follow-up studies on repeatedly examined questions, not independent confirmation. E001–E011 and the research checkpoint remain unchanged.
 
 Terminal monitoring is used only during active runs, with at-most-hourly progress updates; no idle monitor is scheduled. For E012's approved second attempt, run `python scripts/monitor_e012_attempt02.py` in the project environment to view status, elapsed time, completed fits and the latest available aggregate metric. The legacy E012 viewer points to the preserved failed attempt, not the retry. Held-out metrics remain unavailable until all models and routing orders are frozen.
 
