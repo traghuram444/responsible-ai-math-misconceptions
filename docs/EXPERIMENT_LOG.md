@@ -284,3 +284,19 @@ The protocol awaits review; no E014 implementation, selection, fitting, scoring,
 The user approved the displayed E014 specification. Approval is recorded separately with the reviewed protocol's SHA-256; the protocol text is unchanged. New E014 code reuses historical fitting, calibration, ranking, support, and routing functions without editing those modules. It preserves the exact frequency/logistic endpoints, uses inner-training-only frequency for weight selection, and runs only the explanation-shuffle diagnostic. All development choices are frozen globally before new evaluation scores; historical full-record and E013 diagnostic reproduction gates precede selected-mixture scoring.
 
 Synthetic tests cover nested selection, endpoint identity, calibration order, label-free evaluation inputs, deterministic donor mappings, recipient support, null eligibility, primary decision boundaries, aggregate-only schemas, and monitor-I/O isolation. Verification and the hashed execution lock precede the run. No E015 or automatic operational retry is authorized.
+
+## E014 completed numerical results — 2026-10-15
+
+The approved single attempt used pre-run revision `2ba6d2907f3586dde9a6dcf34b6b88881b5a968c` and the unchanged pinned offline/non-root Docker image. Preflight verification passed 420 tests with one expected unpublished-result skip; all 218 public blob hashes matched and public CI passed. The privacy scan found zero matches against 28,587 response prefixes. The execution lock preserved 205 prior public files and 18 private evidence files.
+
+E014 completed 50 fits with zero warnings. All development choices and mappings were frozen before evaluation; all historical E011/frequency full-record and E013 diagnostic gates passed before selected-mixture scoring. Result construction took 325.963 seconds; the monitor completed at 326.673 seconds with zero I/O failures and exited normally. There was no retry or scientific modification.
+
+| Arm | Mean MAP@3 | Fold SD | Accuracy | Final ECE | Final Brier |
+|---|---:|---:|---:|---:|---:|
+| Selected mixture | 0.537231 | 0.054967 | 0.393572 | 0.144342 | 0.812655 |
+| E011 | 0.511887 | 0.070731 | 0.368558 | 0.149626 | 0.838084 |
+| Frequency | 0.539215 | 0.039204 | 0.402009 | 0.056271 | 0.795057 |
+
+The mixture-minus-frequency paired mean is -0.001984, sample SD 0.033505, positive in 3/5 folds; the fixed primary criterion is unmet. The mixture-minus-E011 paired mean is +0.025343, sample SD 0.028171, positive in 4/5 folds. Weights for folds 0–4 were 0.25, 0.50, 0.25, 0.75, and 0.00. The mixture's explanation-shuffle decrement is 0.007261. These are numerical summaries, not a new interpretation or experiment proposal.
+
+The [complete tables](E014_RESULTS.md), [aggregate artifact](../results/E014_aggregates.json), and [execution record](E014_EXECUTION.md) retain all fixed fold/question/support, contribution, calibration, review-budget, and permutation summaries. E001–E013 and frozen assignments remain unchanged. No E015 or idle monitoring is active.
