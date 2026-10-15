@@ -272,3 +272,15 @@ E013 completed 145 fits with zero warnings, froze all ten model-fold preparation
 | Frequency | 0.539215 | 0.539215 | 0.539215 | 0.000000 | 0.000000 | 0/5 | Not applicable |
 
 Aggregate and fold-level numerical results were shown before interpretation. The [complete tables](E013_RESULTS.md), [aggregate-only artifact](../results/E013_aggregates.json) and [execution record](E013_EXECUTION.md) retain all registered question/support, frequency agreement/win-loss, calibration and opportunity summaries. Uncertainty remains descriptive. E001–E012, both E012 attempts, all scientific settings and frozen assignments remain unchanged. Interpretation is deferred for user review; no E014 or idle monitoring is active.
+
+## E014 protocol prepared for review — 2026-10-15
+
+Following discussion of E013, the user authorized proceeding with protocol preparation. The [E014 proposed preregistration](E014_PROTOCOL.md) tests a single fold-specific mixture of unchanged E011 raw probabilities and training-label frequency. Its six-weight grid is selected only inside the existing outer training questions, followed by the registered calibration stage. Proposed primary success requires at least +0.020 equal-fold mean MAP@3 over frequency and positive gains in at least four folds. Explanation-shuffle, gain/loss, support, calibration, and review diagnostics have fixed reporting rules.
+
+The protocol awaits review; no E014 implementation, selection, fitting, scoring, or monitor has started. E001–E013 and frozen splits remain unchanged. This entry is an append-only status update, not an alteration of E013's recorded results or interpretation rules.
+
+## E014 approved and implementation prepared — 2026-10-15
+
+The user approved the displayed E014 specification. Approval is recorded separately with the reviewed protocol's SHA-256; the protocol text is unchanged. New E014 code reuses historical fitting, calibration, ranking, support, and routing functions without editing those modules. It preserves the exact frequency/logistic endpoints, uses inner-training-only frequency for weight selection, and runs only the explanation-shuffle diagnostic. All development choices are frozen globally before new evaluation scores; historical full-record and E013 diagnostic reproduction gates precede selected-mixture scoring.
+
+Synthetic tests cover nested selection, endpoint identity, calibration order, label-free evaluation inputs, deterministic donor mappings, recipient support, null eligibility, primary decision boundaries, aggregate-only schemas, and monitor-I/O isolation. Verification and the hashed execution lock precede the run. No E015 or automatic operational retry is authorized.

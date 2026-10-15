@@ -1,0 +1,10 @@
+{
+  "experiment_id": "E014",
+  "approved_date_local": "2026-10-15",
+  "timezone": "America/New_York",
+  "authorization": "User approved the displayed E014 specification for implementation and execution, with earlier experiments and folds unchanged, an active run monitor, and numerical results before interpretation.",
+  "protocol_sha256_lf": "4d375aab9f21c0d7d77dd4ffcaf3d49acea74b6c807215ccdfa9440044e08094",
+  "attempt_id": "e014_attempt01",
+  "automatic_retry_authorized": false,
+  "next_experiment_authorized": false
+}
