@@ -258,3 +258,17 @@ The user approved E013 exactly as preregistered, preserving E001–E012 and the 
 New implementation files reuse the original scientific preparation functions, retain raw/scaled predictions and shared label-blind permutations only in memory, and gate new summaries on complete reproduction of both historical full-context arms and frequency. A strict aggregate-only publisher checks reporting grids, counts, recipient support, permutation summaries, frequency invariance, gain/loss identities, question-to-fold arithmetic, calibration eligibility and both primary criteria. The monitor reuses the tested resilient adapter. Execution is limited to one new attempt, with all prior public scientific files and private E011/E012 attempt evidence pinned read-only. No automatic retry or E014 is authorized.
 
 The E013 synthetic suite passed 19 tests with one expected not-yet-published-result skip before locking; this includes full five-fold synthetic reconstruction/scoring/reporting and deliberate aggregate corruption/private-field rejection. Writing review keeps approval history, numerical reporting and interpretation separate. The approved plan and tested implementation are committed before MAP reconstruction; results receive a separate commit after verification and aggregate-only publication checks.
+
+## E013 completed numerical results — 2026-10-15
+
+The approved run used public pre-run revision `a0874e9220d4d8e289d81fb70a59f475921280e2` and the unchanged pinned offline/non-root Docker image. Pre-run verification passed 392 tests with one expected unpublished-result skip; public CI and all 204 public blob hashes matched. The privacy audit found zero matches against 28,587 response prefixes. The execution lock preserves 191 previous public scientific files and 13 private E011/E012 attempt-evidence files.
+
+E013 completed 145 fits with zero warnings, froze all ten model-fold preparations and shared label-blind mappings before new held-out metrics, and passed all historical full-record reproduction gates. Runtime was 751.993 seconds through result construction and 753.062 seconds through monitor finalization. One transient snapshot replacement PermissionError was caught by the pre-existing resilient monitor; computation continued unchanged, the final monitor state was COMPLETED and the viewer exited. No scientific or operational retry occurred.
+
+| Model | Original MAP@3 | Explanation shuffled MAP@3 | Pair shuffled MAP@3 | Explanation delta mean | Fold SD | Positive folds | Registered explanation criterion |
+|---|---:|---:|---:|---:|---:|---:|---|
+| E011 | 0.511887 | 0.485204 | 0.465728 | 0.026683 | 0.006820 | 5/5 | Met |
+| E012 | 0.537228 | 0.536613 | 0.536338 | 0.000616 | 0.000797 | 4/5 | Unmet |
+| Frequency | 0.539215 | 0.539215 | 0.539215 | 0.000000 | 0.000000 | 0/5 | Not applicable |
+
+Aggregate and fold-level numerical results were shown before interpretation. The [complete tables](E013_RESULTS.md), [aggregate-only artifact](../results/E013_aggregates.json) and [execution record](E013_EXECUTION.md) retain all registered question/support, frequency agreement/win-loss, calibration and opportunity summaries. Uncertainty remains descriptive. E001–E012, both E012 attempts, all scientific settings and frozen assignments remain unchanged. Interpretation is deferred for user review; no E014 or idle monitoring is active.

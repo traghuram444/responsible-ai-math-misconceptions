@@ -1,6 +1,6 @@
 # Responsible AI for Mathematical Misconceptions
 
-**Active research · E012 complete · Failed first attempt preserved · Not deployment-ready**
+**Active research · E013 complete · Prior experiments preserved · Not deployment-ready**
 
 **Research question:** Can mathematical-misconception detection generalize to unseen K–12 math questions, with uncertainty-aware human review?
 
@@ -48,9 +48,11 @@ This valid negative triggered the previously registered [E012](docs/E012_PROTOCO
 
 E012 MAP@3 is **0.537228**, versus frequency **0.539215**: delta **−0.001987 ± 0.003825**, positive in **2/5 folds**. Versus E011 full context, the delta is **+0.025341 ± 0.057834**, positive in **3/5 folds**. The fixed primary criterion is unmet. Mean ECE is **0.377470** (frequency **0.056271**), and corrected Brier is **0.985662** (frequency **0.795057**); both are worse. [Full E012 results](docs/E012_RESULTS.md) · [Second-attempt execution and preservation record](docs/E012_ATTEMPT02_EXECUTION.md).
 
-No experiment or monitor remains active; no further model has been started. These are descriptive follow-up studies on repeatedly examined questions, not independent confirmation. E001–E011 and the research checkpoint remain unchanged.
+[E013: response-evidence diagnostic](docs/E013_PROTOCOL.md) reconstructed the unchanged E011/E012 full-context models with the frozen folds and 100 label-blind shuffles per intervention. Original / explanation-shuffled / answer–explanation-pair-shuffled MAP@3 is **0.511887 / 0.485204 / 0.465728** for E011, **0.537228 / 0.536613 / 0.536338** for E012, and **0.539215 / 0.539215 / 0.539215** for frequency. The registered explanation delta is **0.026683 ± 0.006820** for E011 (5/5 positive; criterion met) and **0.000616 ± 0.000797** for E012 (4/5 positive; criterion unmet). These are original-minus-shuffled differences, not improvements over frequency. [Complete numerical tables](docs/E013_RESULTS.md) · [Aggregate-only artifact](results/E013_aggregates.json) · [Execution record](docs/E013_EXECUTION.md). Interpretation is deferred for review.
 
-Terminal monitoring is used only during active runs, with at-most-hourly progress updates; no idle monitor is scheduled. For E012's approved second attempt, run `python scripts/monitor_e012_attempt02.py` in the project environment to view status, elapsed time, completed fits and the latest available aggregate metric. The legacy E012 viewer points to the preserved failed attempt, not the retry. Held-out metrics remain unavailable until all models and routing orders are frozen.
+No experiment or monitor remains active. These are descriptive follow-up studies on repeatedly examined questions, not independent confirmation. E001–E012, their failed/completed attempts, and the frozen folds remain unchanged. No E014 has been started.
+
+Terminal monitoring is used only during active runs, with at-most-hourly scheduled progress updates; no idle monitor is scheduled. E013 uses `python scripts/monitor_e013.py` in the project environment to view status, elapsed time, completed work and the latest available aggregate metric. Its viewer exits on completion/failure or stale status. E012's retry viewer remains `scripts/monitor_e012_attempt02.py`; the legacy E012 viewer points to the preserved failed attempt. E013 held-out scoring starts only after all models and shuffle mappings are frozen and historical reproduction passes.
 
 ## Data, privacy and citation
 
