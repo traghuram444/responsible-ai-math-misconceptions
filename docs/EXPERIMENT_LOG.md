@@ -300,3 +300,13 @@ E014 completed 50 fits with zero warnings. All development choices and mappings 
 The mixture-minus-frequency paired mean is -0.001984, sample SD 0.033505, positive in 3/5 folds; the fixed primary criterion is unmet. The mixture-minus-E011 paired mean is +0.025343, sample SD 0.028171, positive in 4/5 folds. Weights for folds 0–4 were 0.25, 0.50, 0.25, 0.75, and 0.00. The mixture's explanation-shuffle decrement is 0.007261. These are numerical summaries, not a new interpretation or experiment proposal.
 
 The [complete tables](E014_RESULTS.md), [aggregate artifact](../results/E014_aggregates.json), and [execution record](E014_EXECUTION.md) retain all fixed fold/question/support, contribution, calibration, review-budget, and permutation summaries. E001–E013 and frozen assignments remain unchanged. No E015 or idle monitoring is active.
+
+## E015 protocol prepared — 2026-10-16
+
+Prepared [E015: controlled mathematical-token retention ablation](E015_PROTOCOL.md) for review against reference revision `16f55596de8b871d89820e31e75ddf28e4c2f150`. Three fixed full-context TF–IDF/logistic pipelines compare the original E011 tokenizer, single-character word/digit retention, and a precisely bounded notation tokenizer, with unchanged nested selection, calibration, frozen QuestionId roles, and frequency reference. The sole primary outcome is notation-retaining C versus frequency: mean MAP@3 gain >=0.020 and a strictly positive gain in at least four of five folds. Fixed secondary comparisons and explanation reliance distinguish tokenization effects from baseline utility; coverage, Category, calibration and review diagnostics remain exploratory.
+
+**Awaiting approval of the exact protocol.** No E015 implementation, MAP token audit, fitting, evaluation, monitor, or execution attempt has started. E001–E014 and all existing folds/attempts remain unchanged. This entry records preparation, not a result or authorization to execute.
+
+## E015 approved and prepared for execution — 2026-10-16
+
+The user explicitly approved the exact E015 protocol, unchanged folds and E001–E014, an active run monitor, and numerical aggregate/fold results before interpretation. The separate approval record pins the unchanged protocol. New E015 code reuses the historical scoring, calibration, permutation, and monitoring routines without editing them. The execution lock protects 219 previous public files and 23 private evidence files. Three arms require 150 fits; no E014 mixture, new model family, or automatic retry is authorized. Synthetic tests and publication checks precede the committed, offline/non-root Docker attempt. No MAP fitting has occurred at the time of this entry.

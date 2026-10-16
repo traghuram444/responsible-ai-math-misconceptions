@@ -1,0 +1,10 @@
+{
+  "experiment_id": "E015",
+  "approved_date_local": "2026-10-16",
+  "timezone": "America/New_York",
+  "authorization": "User approved E015 exactly as preregistered for implementation and execution; preserve E001–E014 and folds, keep the run monitor active, and show aggregate and fold-level results before interpretation.",
+  "protocol_sha256_lf": "8760a8449228b50320c4fff8184b02d5e909f9457d3c6f4562ff87731153fe25",
+  "attempt_id": "e015_attempt01",
+  "automatic_retry_authorized": false,
+  "next_experiment_authorized": false
+}

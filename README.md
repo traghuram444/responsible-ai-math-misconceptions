@@ -1,12 +1,14 @@
 # Responsible AI for Mathematical Misconceptions
 
-**Active research · E013 complete · Prior experiments preserved · Not deployment-ready**
+**Active research · E014 complete · E015 approved · Prior experiments preserved · Not deployment-ready**
 
 **Research question:** Can mathematical-misconception detection generalize to unseen K–12 math questions, with uncertainty-aware human review?
 
 This independent project tests that question on **36,696 responses to 15 middle-school math questions** from the author-published MAP release. It is a reproducible generalization and selective-prediction study, not a leaderboard solution or evidence of K–12-wide validity.
 
 [Research report](docs/RESEARCH_REPORT.md) · [Experiment index](docs/EXPERIMENT_INDEX.md) · [Reproduce the checks](docs/REPRODUCTION.md) · [Release audit](docs/RELEASE_AUDIT_2026_10.md)
+
+[E015: controlled mathematical-token retention](docs/E015_PROTOCOL.md) is approved for execution. It compares the original E011 tokenizer, single-character retention, and a fixed notation-retaining tokenizer under unchanged nested selection, calibration, and held-question folds. Its primary arm must improve mean MAP@3 over frequency by at least 0.020 and improve at least four of five folds. Results will be published regardless of outcome; no E015 result is available yet.
 
 ## Main findings
 
