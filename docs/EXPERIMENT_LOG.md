@@ -310,3 +310,18 @@ Prepared [E015: controlled mathematical-token retention ablation](E015_PROTOCOL.
 ## E015 approved and prepared for execution — 2026-10-16
 
 The user explicitly approved the exact E015 protocol, unchanged folds and E001–E014, an active run monitor, and numerical aggregate/fold results before interpretation. The separate approval record pins the unchanged protocol. New E015 code reuses the historical scoring, calibration, permutation, and monitoring routines without editing them. The execution lock protects 219 previous public files and 23 private evidence files. Three arms require 150 fits; no E014 mixture, new model family, or automatic retry is authorized. Synthetic tests and publication checks precede the committed, offline/non-root Docker attempt. No MAP fitting has occurred at the time of this entry.
+
+## E015 completed numerical record — 2026-10-16
+
+The single approved attempt ran at pre-run commit `1f8d759e095112a1c60392432c766ef842b9d440` with the protocol, scientific settings, and frozen folds unchanged. All 150 fits completed with zero warnings. Global freezing and all historical reproduction gates passed before new B/C scoring. Result construction took 1011.218 seconds; the monitor completed at 1012.276 seconds and exited normally with zero I/O failures. No retry occurred.
+
+| Arm | Mean MAP@3 | Fold SD | Accuracy | Final ECE | Final Brier |
+|---|---:|---:|---:|---:|---:|
+| A: original E011 | 0.511887 | 0.070731 | 0.368558 | 0.149626 | 0.838084 |
+| B: single-character retention | 0.509537 | 0.066174 | 0.357535 | 0.168244 | 0.866803 |
+| C: notation retention | 0.491902 | 0.057333 | 0.315591 | 0.208000 | 0.901172 |
+| Frequency | 0.539215 | 0.039204 | 0.402009 | 0.056271 | 0.795057 |
+
+The primary C-minus-frequency mean is −0.047313, fold sample SD 0.031903, positive in 0/5 folds; the fixed criterion is unmet. B-minus-A is −0.002350 (SD 0.053273); C-minus-B is −0.017635 (SD 0.013791). These are descriptive numerical records, without interpretation or a next-experiment proposal.
+
+The [complete tables](E015_RESULTS.md), [aggregate artifact](../results/E015_aggregates.json), and [execution record](E015_EXECUTION.md) preserve all registered results, including null/ineligible strata. E001–E014 and all frozen assignments remain unchanged. No experiment or monitor remains active.

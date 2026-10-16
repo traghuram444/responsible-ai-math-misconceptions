@@ -1,6 +1,6 @@
 # Responsible AI for Mathematical Misconceptions
 
-**Active research · E014 complete · E015 approved · Prior experiments preserved · Not deployment-ready**
+**Active research · E015 complete · Prior experiments preserved · Not deployment-ready**
 
 **Research question:** Can mathematical-misconception detection generalize to unseen K–12 math questions, with uncertainty-aware human review?
 
@@ -8,7 +8,7 @@ This independent project tests that question on **36,696 responses to 15 middle-
 
 [Research report](docs/RESEARCH_REPORT.md) · [Experiment index](docs/EXPERIMENT_INDEX.md) · [Reproduce the checks](docs/REPRODUCTION.md) · [Release audit](docs/RELEASE_AUDIT_2026_10.md)
 
-[E015: controlled mathematical-token retention](docs/E015_PROTOCOL.md) is approved for execution. It compares the original E011 tokenizer, single-character retention, and a fixed notation-retaining tokenizer under unchanged nested selection, calibration, and held-question folds. Its primary arm must improve mean MAP@3 over frequency by at least 0.020 and improve at least four of five folds. Results will be published regardless of outcome; no E015 result is available yet.
+[E015: controlled mathematical-token retention](docs/E015_PROTOCOL.md) is complete. Mean held-question MAP@3 is **0.511887** for the original E011 tokenizer (A), **0.509537** for single-character retention (B), **0.491902** for notation retention (C), and **0.539215** for frequency. The primary C-minus-frequency difference is **−0.047313 ± 0.031903** across five folds, positive in **0/5**; the fixed +0.020 and 4/5-fold criterion is unmet. The evaluation, tuning and calibration protocols were unchanged. [Complete numerical results](docs/E015_RESULTS.md) and the [execution record](docs/E015_EXECUTION.md) are published before interpretation.
 
 ## Main findings
 
@@ -54,11 +54,13 @@ E012 MAP@3 is **0.537228**, versus frequency **0.539215**: delta **−0.001987 �
 
 [E014: controlled shrinkage toward training frequency](docs/E014_PROTOCOL.md) is complete. Its fixed six-weight mixture was selected only within each outer training fold, then calibrated using the existing calibration questions. Selected weights were **0.25, 0.50, 0.25, 0.75, 0.00**. MAP@3 is **0.537231**, versus frequency **0.539215** and E011 **0.511887**. The paired delta versus frequency is **-0.001984 ± 0.033505**, positive in **3/5** folds; the registered **+0.020 and 4/5-positive** primary criterion is unmet. Versus E011, the delta is **+0.025343 ± 0.028171**, positive in **4/5** folds. Mean final ECE is **0.144342** (frequency **0.056271**), corrected Brier **0.812655** (frequency **0.795057**), and the explanation-shuffle decrement **0.007261**. [Complete numerical tables](docs/E014_RESULTS.md) · [Aggregate artifact](results/E014_aggregates.json) · [Execution record](docs/E014_EXECUTION.md). Interpretation is deferred for review.
 
-These are descriptive follow-up studies on repeatedly examined questions, not independent confirmation. E001–E013, their failed/completed attempts, and the frozen folds remain unchanged. E014 ran once under the approved, tested, hash-locked implementation. No experiment or monitor remains active; E015 has not been started.
+These are descriptive follow-up studies on repeatedly examined questions, not independent confirmation. E001–E014, their failed/completed attempts, and the frozen folds remain unchanged. E015 ran once under the approved, tested, hash-locked implementation. No experiment or monitor remains active; no E016 is authorized.
 
 Terminal monitoring is used only during active runs, with at-most-hourly scheduled progress updates; no idle monitor is scheduled. E013 uses `python scripts/monitor_e013.py` in the project environment to view status, elapsed time, completed work and the latest available aggregate metric. Its viewer exits on completion/failure or stale status. E012's retry viewer remains `scripts/monitor_e012_attempt02.py`; the legacy E012 viewer points to the preserved failed attempt. E013 held-out scoring starts only after all models and shuffle mappings are frozen and historical reproduction passes.
 
 For E014, use `python scripts/monitor_e014.py` in the project environment during the active run. Its separate read-only viewer never controls fitting. All five folds' model/weight choices, temperatures, probabilities, and shuffle mappings are frozen before scoring; historical E011 and E013 reproduction gates precede new mixture results.
+
+E015's read-only viewer is `python scripts/monitor_e015.py`. It was active during the completed run and exited normally, with zero monitor I/O failures. Held-out metrics became available only after all 150 fits and development choices were frozen and historical reproduction gates passed.
 
 ## Data, privacy and citation
 
