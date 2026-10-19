@@ -1,12 +1,14 @@
 # Responsible AI for Mathematical Misconceptions
 
-**Active research · E016 complete · Prior experiments preserved · Not deployment-ready**
+**Active research · E017 diagnostic complete · Prior experiments preserved · Not deployment-ready**
 
 **Research question:** Can mathematical-misconception detection generalize to unseen K–12 math questions, with uncertainty-aware human review?
 
 This independent project tests that question on **36,696 responses to 15 middle-school math questions** from the author-published MAP release. It is a reproducible generalization and selective-prediction study, not a leaderboard solution or evidence of K–12-wide validity.
 
 [Research report](docs/RESEARCH_REPORT.md) · [Experiment index](docs/EXPERIMENT_INDEX.md) · [Reproduce the checks](docs/REPRODUCTION.md) · [Release audit](docs/RELEASE_AUDIT_2026_10.md)
+
+[E017: component information and fixed frequency ranking limits](docs/E017_PROTOCOL.md) is complete. **Real predictions remain unchanged:** frequency MAP@3 **0.539215**, E011 **0.511887**, E016 **0.481557**. In a separate **oracle diagnostic using evaluation truth**, supplying true answer correctness gives **0.653644**, true explanation status **0.658031**, and true full Category **0.733311**. The full-Category oracle-minus-frequency delta is **+0.194096 ± 0.029165**, positive in **5/5** folds; the registered diagnostic headroom criterion is met. **These oracle values are not predictive baseline wins, deployable results or universal performance ceilings.** [Complete real and oracle numerical tables](docs/E017_RESULTS.md) · [Aggregate-only artifact](results/E017_aggregates.json) · [Execution record](docs/E017_EXECUTION.md). Interpretation awaits user review; no subsequent experiment has started.
 
 [E015: controlled mathematical-token retention](docs/E015_PROTOCOL.md) is complete. Mean held-question MAP@3 is **0.511887** for the original E011 tokenizer (A), **0.509537** for single-character retention (B), **0.491902** for notation retention (C), and **0.539215** for frequency. The primary C-minus-frequency difference is **−0.047313 ± 0.031903** across five folds, positive in **0/5**; the fixed +0.020 and 4/5-fold criterion is unmet. The evaluation, tuning and calibration protocols were unchanged. [Complete numerical results](docs/E015_RESULTS.md) and the [execution record](docs/E015_EXECUTION.md) are published before interpretation.
 
@@ -56,9 +58,11 @@ E012 MAP@3 is **0.537228**, versus frequency **0.539215**: delta **−0.001987 �
 
 These are descriptive follow-up studies on repeatedly examined questions, not independent confirmation. E001–E015, their failed/completed attempts, and the frozen folds remain unchanged. E015 ran once under the approved, tested, hash-locked implementation.
 
-[E016: direct Category learning with frequency-based misconception ranking](docs/E016_PROTOCOL.md) completed its single approved run. Mean MAP@3 is **0.481557**, versus E011 **0.511887** and frequency **0.539215**. The paired delta versus frequency is **−0.057658 ± 0.074549**, positive in **1/5** folds; the registered **+0.020 and 4/5-positive** criterion is unmet. Raw six-way Category accuracy is **0.356099**, versus **0.368513** for E011 and **0.402009** for frequency; raw macro-F1 is **0.189978 / 0.168469 / 0.095344**, respectively. Final exact-label ECE is **0.133588** and corrected Brier **0.839697**. [Complete numerical tables](docs/E016_RESULTS.md) · [Aggregate artifact](results/E016_aggregates.json) · [Execution and preservation record](docs/E016_EXECUTION.md). Interpretation awaits user review. E001–E015 and folds remain unchanged; no E017 is authorized.
+[E016: direct Category learning with frequency-based misconception ranking](docs/E016_PROTOCOL.md) completed its single approved run. Mean MAP@3 is **0.481557**, versus E011 **0.511887** and frequency **0.539215**. The paired delta versus frequency is **−0.057658 ± 0.074549**, positive in **1/5** folds; the registered **+0.020 and 4/5-positive** criterion is unmet. Raw six-way Category accuracy is **0.356099**, versus **0.368513** for E011 and **0.402009** for frequency; raw macro-F1 is **0.189978 / 0.168469 / 0.095344**, respectively. Final exact-label ECE is **0.133588** and corrected Brier **0.839697**. [Complete numerical tables](docs/E016_RESULTS.md) · [Aggregate artifact](results/E016_aggregates.json) · [Execution and preservation record](docs/E016_EXECUTION.md). E016's recorded results and the frozen folds remain unchanged; E017's later approval and execution are logged separately.
 
 E016's terminal viewer is `python scripts/monitor_e016.py`. The monitor completed and viewer exited normally. One transient snapshot-write error was isolated and recovered without interrupting the experiment; no idle monitoring remains active.
+
+E017's read-only viewer is `python scripts/monitor_e017.py`. Its monitor completed at 146/146 work units and the viewer exited normally, with zero monitor I/O failures. REAL and ORACLE metric labels remained distinct. No experiment or idle monitor remains active.
 
 Terminal monitoring is used only during active runs, with at-most-hourly scheduled progress updates; no idle monitor is scheduled. E013 uses `python scripts/monitor_e013.py` in the project environment to view status, elapsed time, completed work and the latest available aggregate metric. Its viewer exits on completion/failure or stale status. E012's retry viewer remains `scripts/monitor_e012_attempt02.py`; the legacy E012 viewer points to the preserved failed attempt. E013 held-out scoring starts only after all models and shuffle mappings are frozen and historical reproduction passes.
 

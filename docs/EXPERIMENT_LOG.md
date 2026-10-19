@@ -365,3 +365,31 @@ The sole primary diagnostic criterion is full-Category oracle minus frequency al
 The user approved E017 exactly as preregistered, preserving E001–E016 and frozen folds, with an active execution monitor and aggregate/fold-level numerical results before interpretation. The separate approval record pins the unchanged reviewed protocol. New E017 orchestration reconstructs unchanged E011/E016 pipelines, freezes training-only compatible candidate lists before evaluation truth is accessed, and runs historical reproduction gates before new component/oracle scoring. Oracle diagnostics are isolated from real predictions in code, publication schemas, reports and monitor labels.
 
 Synthetic tests cover frequency endpoints and tied-subsequence behavior, absent Categories, short/empty candidate lists, unsupported exact truths, monotonicity, component marginalization, confusion/F1 arithmetic, null groups, residual identities, headroom decision boundaries, truth isolation, publication corruption rejection and monitor-I/O isolation. The single approved attempt requires 100 historical classifier reconstruction fits. Full verification, privacy scanning and the committed execution lock precede fitting. No new model specification, calibration procedure, fold, support stratum or scientific fallback is authorized. No E017 MAP fitting or new scoring has occurred at the time of this entry.
+
+## E017 completed numerical record — 2026-10-19
+
+The approved single attempt ran at public pre-run revision `2dd8ae24d25ea311852de5a8f4fb75c4c089aad2` with the protocol and scientific settings unchanged. Preflight verification passed 527 tests with one expected unpublished-result skip; public CI passed and all 260 public blobs matched the committed tree. The privacy scan found zero matches against 28,587 private response prefixes. The execution lock protected 247 prior public files and 57 private evidence files.
+
+All 100 historical reconstruction fits completed with zero warnings. All real predictions and training-only oracle candidate lists were frozen before evaluation truth access; all 15 model/fold reproduction gates passed before new diagnostic scoring. Preservation checks passed before and after execution. Result construction took 434.180 seconds; the monitor completed at 434.752 seconds and exited normally with zero I/O failures. No retry or scientific amendment occurred.
+
+### Real prediction controls
+
+| Arm | Mean MAP@3 | Fold SD | Exact accuracy |
+|---|---:|---:|---:|
+| Frequency | 0.539215 | 0.039204 | 0.402009 |
+| E011 | 0.511887 | 0.070731 | 0.368558 |
+| E016 | 0.481557 | 0.084770 | 0.347878 |
+
+### Oracle diagnostics using evaluation truth
+
+These are information diagnostics, not real predictions or new predictive baseline wins.
+
+| Supplied true component | Mean MAP@3 | Fold SD | Exact accuracy | MAP@3 delta versus frequency | Paired fold SD | Positive folds |
+|---|---:|---:|---:|---:|---:|---:|
+| Answer correctness | 0.653644 | 0.043628 | 0.580184 | 0.114429 | 0.021381 | 5/5 |
+| Explanation status | 0.658031 | 0.045635 | 0.582750 | 0.118816 | 0.024065 | 5/5 |
+| Full Category | 0.733311 | 0.034067 | 0.733311 | 0.194096 | 0.029165 | 5/5 |
+
+The registered primary full-Category oracle headroom flag is true; both prespecified secondary component-headroom flags are true. These flags use the unchanged +0.020 mean and four-positive-fold rule and do not describe predictive success. Full-Category oracle all-row residual MAP@3 loss is 0.266689: 0.213391 unsupported-label loss plus 0.053298 supported-ranking loss, using equal-fold means and full-group denominators.
+
+The [complete numerical tables](E017_RESULTS.md), [aggregate artifact](../results/E017_aggregates.json), and [execution record](E017_EXECUTION.md) retain every registered real/oracle fold/question/support result, raw/final component metric and confusion matrix, joint component count, contrast and residual decomposition. Empty rare strata remain null. E001–E016 and frozen folds remain unchanged. No interpretation or next-experiment proposal is included; no experiment or monitor remains active.
