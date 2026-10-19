@@ -1,0 +1,10 @@
+{
+  "experiment_id": "E017",
+  "approved_date_local": "2026-10-19",
+  "timezone": "America/New_York",
+  "authorization": "User approved E017 exactly as preregistered; preserve E001–E016 and frozen folds, keep the run monitor active, and show aggregate and fold-level results before interpretation with oracle diagnostics separate from real predictions.",
+  "protocol_sha256_lf": "c364628187c24e060986ae25439f667104af4435d81b14a40c195ebaaf3df8f2",
+  "attempt_id": "e017_attempt01",
+  "automatic_retry_authorized": false,
+  "next_experiment_authorized": false
+}
