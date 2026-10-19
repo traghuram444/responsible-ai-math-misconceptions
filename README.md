@@ -1,6 +1,6 @@
 # Responsible AI for Mathematical Misconceptions
 
-**Active research · E016 approved · Prior experiments preserved · Not deployment-ready**
+**Active research · E016 complete · Prior experiments preserved · Not deployment-ready**
 
 **Research question:** Can mathematical-misconception detection generalize to unseen K–12 math questions, with uncertainty-aware human review?
 
@@ -56,7 +56,9 @@ E012 MAP@3 is **0.537228**, versus frequency **0.539215**: delta **−0.001987 �
 
 These are descriptive follow-up studies on repeatedly examined questions, not independent confirmation. E001–E015, their failed/completed attempts, and the frozen folds remain unchanged. E015 ran once under the approved, tested, hash-locked implementation.
 
-[E016: direct Category learning with frequency-based misconception ranking](docs/E016_PROTOCOL.md) is approved for a single run. It learns the existing six Categories directly, then reconstructs exact-label probabilities using training-only conditional frequencies. E011 and frequency are unchanged controls. The sole primary criterion remains mean MAP@3 gain >=0.020 over frequency, positive in at least four of five folds. Its [approval](experiments/e016_approval.json) pins the protocol; the terminal viewer is `python scripts/monitor_e016.py`. Numerical results will precede interpretation. No subsequent experiment or automatic retry is authorized.
+[E016: direct Category learning with frequency-based misconception ranking](docs/E016_PROTOCOL.md) completed its single approved run. Mean MAP@3 is **0.481557**, versus E011 **0.511887** and frequency **0.539215**. The paired delta versus frequency is **−0.057658 ± 0.074549**, positive in **1/5** folds; the registered **+0.020 and 4/5-positive** criterion is unmet. Raw six-way Category accuracy is **0.356099**, versus **0.368513** for E011 and **0.402009** for frequency; raw macro-F1 is **0.189978 / 0.168469 / 0.095344**, respectively. Final exact-label ECE is **0.133588** and corrected Brier **0.839697**. [Complete numerical tables](docs/E016_RESULTS.md) · [Aggregate artifact](results/E016_aggregates.json) · [Execution and preservation record](docs/E016_EXECUTION.md). Interpretation awaits user review. E001–E015 and folds remain unchanged; no E017 is authorized.
+
+E016's terminal viewer is `python scripts/monitor_e016.py`. The monitor completed and viewer exited normally. One transient snapshot-write error was isolated and recovered without interrupting the experiment; no idle monitoring remains active.
 
 Terminal monitoring is used only during active runs, with at-most-hourly scheduled progress updates; no idle monitor is scheduled. E013 uses `python scripts/monitor_e013.py` in the project environment to view status, elapsed time, completed work and the latest available aggregate metric. Its viewer exits on completion/failure or stale status. E012's retry viewer remains `scripts/monitor_e012_attempt02.py`; the legacy E012 viewer points to the preserved failed attempt. E013 held-out scoring starts only after all models and shuffle mappings are frozen and historical reproduction passes.
 

@@ -337,3 +337,17 @@ Prepared [E016: direct Category learning with frequency-based misconception rank
 The user explicitly approved E016 exactly as preregistered, preserving E001–E015 and frozen folds, with a live monitor during the run and numerical results before interpretation. The separate approval record pins the unchanged protocol. New E016 code implements direct six-way Category learning and training-only within-Category exact-label frequencies; historical fitting, selection, calibration, scoring, support and routing routines remain unchanged. E011 and frequency reproduction gates precede new model scoring.
 
 Synthetic verification covers nested count isolation, factorization and frequency identities, absent Categories and unsupported exact truths, raw/direct versus final/marginalized Category semantics, frozen evaluation predictions, calibration isolation, historical reproduction, strict aggregate schemas, arithmetic and monitor-I/O isolation. The approved single attempt requires 100 classifier fits. The tested implementation and historical public/private preservation inventory are hash-locked and committed before fitting. No MAP fitting has occurred at the time of this entry. No retry, scientific amendment or subsequent experiment is authorized.
+
+## E016 completed numerical record — 2026-10-19
+
+The single approved attempt ran at pre-run revision `ababb48100e969ba8b1fa18b17e5fbc8f3aec6b2` with all scientific settings and frozen folds unchanged. All 100 fits completed with zero warnings. Global freezing, historical reproduction and post-scoring preservation checks passed. Result construction took 427.136 seconds; the monitor completed at 427.870 seconds and the viewer exited normally. One transient monitor snapshot-write PermissionError was isolated and recovered; there was no experiment retry or scientific amendment.
+
+| Arm | Mean MAP@3 | Fold SD | Exact accuracy | Final ECE | Final Brier |
+|---|---:|---:|---:|---:|---:|
+| Factorized Category/frequency | 0.481557 | 0.084770 | 0.347878 | 0.133588 | 0.839697 |
+| E011 | 0.511887 | 0.070731 | 0.368558 | 0.149626 | 0.838084 |
+| Frequency | 0.539215 | 0.039204 | 0.402009 | 0.056271 | 0.795057 |
+
+Factorized-minus-frequency mean MAP@3 is −0.057658, sample fold SD 0.074549, positive in 1/5 folds; the registered criterion is unmet. Factorized-minus-E011 is −0.030330, sample fold SD 0.026433. Raw six-way Category accuracy is 0.356099 / 0.368513 / 0.402009 and macro-F1 is 0.189978 / 0.168469 / 0.095344 for factorized / E011 / frequency. Final marginalized Category accuracy is 0.340863 / 0.369042 / 0.402009; macro-F1 is 0.176700 / 0.182615 / 0.095344. The factorized explanation-shuffle MAP@3 decrement is 0.023696. These are numerical records only.
+
+The [complete tables](E016_RESULTS.md), [aggregate artifact](../results/E016_aggregates.json) and [execution record](E016_EXECUTION.md) preserve every registered reporting group, including null/ineligible groups. E001–E015 and the frozen folds remain unchanged. No experiment or monitor remains active; interpretation awaits user review, and no E017 is authorized.
