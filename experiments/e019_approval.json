@@ -1,0 +1,11 @@
+{
+  "experiment_id": "E019",
+  "approved_date_local": "2026-10-23",
+  "timezone": "America/New_York",
+  "authorization": "Approved, proceed with E019 exactly as preregistered. Keep E018 blocked, E001–E017 and folds unchanged, keep the monitor active during the run, and show aggregate and fold-level results before interpretation.",
+  "protocol_sha256_lf": "c16bdaddb55250e91422ec7ef0d1782d1af60df1191fcc8d134401045b4b0ad3",
+  "planned_attempt_id": "e019_attempt01",
+  "automatic_retry_authorized": false,
+  "next_experiment_authorized": false,
+  "e018_remains_blocked": true
+}

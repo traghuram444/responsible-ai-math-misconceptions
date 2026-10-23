@@ -1,0 +1,51 @@
+{
+  "experiment_id": "E019",
+  "attempt_id": "e019_attempt01",
+  "baseline_commit": "496c5332b8b2201ea89abeb3cd51ede7ecd0187f",
+  "solver_image_id": "sha256:08b0187445e3a72b9b1215968c69e536872705660a1b2fd4a6bd8694af40ddc6",
+  "statistical_image_id": "sha256:464fc81faf49a6355e4bd0f55956243cc0fee586f657937f495975c2268e6fe0",
+  "files": {
+    "docs/E019_PROTOCOL.md": "c16bdaddb55250e91422ec7ef0d1782d1af60df1191fcc8d134401045b4b0ad3",
+    "experiments/e019_approval.json": "86ec40b9d6fda4e40574c815cb9e5b3760b20154ee29a03fe3b548a4aab71786",
+    "experiments/e019_environment_lock.json": "025ed2954069c908811acfae715dabd3a9ce950f4fcc5fe52436edca54d351ea",
+    "experiments/e019_model_manifest.json": "f9bde75ccce11295251578eb3ed18e13b49010e4a2ddf967d9b22ede3c067975",
+    "experiments/e019_preservation_start.json": "b6a0b306b1b2f2cdd27cac87b4466f0dc54a1180ecdac0f10f04b5795d994bd4",
+    "repro/e019/Dockerfile": "55dadeb931d2ac0269cfb0442a64545452b8f3f265b88853518538ce03041e1b",
+    "repro/e019/download_model.py": "dd57f960ab3e5de24febed640c8865cf67b5e4fb2e6dc62b9272fca12f2721af",
+    "repro/e019/requirements.lock": "2917b8ca2125eb45e5503d06bd5c055a91140d41a8c79b656f902b05c7dd7cdb",
+    "repro/e019/resolve.py": "fb76ecfbfd419e6e8df03d4ab0c417bea194e98496e908731c1e11dd69425175",
+    "repro/e019/wheel_manifest.json": "1b11ec650fea68d62c10d1893fe790f1e35377e40597c3806a976806db8a85aa",
+    "scripts/e019_plumbing.py": "9e5a913c58ae9e439c6e18f2cdf6615f5db086c03c45412aee2d1b5127f82d60",
+    "scripts/freeze_e019.py": "1e79ca15e67e08f175100baaee50813baae14ab8cbca475312e73ef882f270c1",
+    "scripts/monitor_e019.py": "cbd713b3a6f3502f6be6a0234cbf159b81aeae0cf105adf22861115fa42aa51e",
+    "scripts/prepare_e019_inputs.py": "a28d9ca109fe6798cc07b081733414bfb52eeeaeb3c250834653359a895513c7",
+    "scripts/run_e019_checker.py": "a33b802d9aadaedc378660cf3bf5d0e7966a94cb85efba4873f875a4f7644be5",
+    "scripts/run_e019_docker.py": "88be691dfe4ae083f4ec55d38ddaab9a168fa5a6e65a343966e28ff68f85d3b4",
+    "scripts/run_e019_statistics.py": "73274ba16fd28b3154094e887fe96c62d4c73d50b24eabfbdce04d07b4c48d28",
+    "src/map_misconceptions/e019_checker.py": "8f961bffdbc593744520c911ab9d3bbec1a7048545e37c75aa27257b933c10e9",
+    "src/map_misconceptions/e019_integrity.py": "7f4f4b9e9a2b1a65b90b369ea4db783efe7487bf1e6f9379042b66c479cf54f5",
+    "src/map_misconceptions/e019_metrics.py": "34ec0173d348d3ca27d00e306480660c8a7cb8908bfcd3358c2d941acca4dd50",
+    "src/map_misconceptions/e019_publication.py": "e469d526234ca8b028d5c5d2cfebfb170e46a00e9c7d833b154458fa8f049199",
+    "src/map_misconceptions/e019_run.py": "b1391499bac4d5d554d7687e84185f2b6cd04167df227ab9e6aeb08a2abd2626",
+    "tests/test_e019.py": "e8d08a8930959b52771acd10d51c9d979bcfbc16f0d317a3d64790dd70b55fdb"
+  },
+  "preserved_files": 513,
+  "catalogue_sha256": "2b4a5cc1890ae6433ecd61c146c071d9b7a2ae7013055f4b6d65c757c7d5bc0b",
+  "pairs": 60,
+  "synthetic_receipt": {
+    "reason": "unknown_invalid_output",
+    "input_tokens": 177,
+    "generated_tokens": 272,
+    "seconds": 143.126690316014
+  },
+  "references": {
+    "results/E011_aggregates.json": "98d48fb1b9143d3f9a9c461d7b28eb89b8a9d873722b0cd622b1cf18ddb20c87",
+    "results/E016_aggregates.json": "de3fbdbf8a6e62ce5cb04b58dd9458574b3aa7dc6980c3a1be355128252e932d",
+    "results/E017_aggregates.json": "454efa9b367b999a7f99fb13d8def99be84bf0d4686173cf17313c87a97cd0d3"
+  },
+  "execution_log_prefix": {
+    "bytes": 7624,
+    "sha256": "288d24556a6068acebdc259f20c74b4f018fbfdbf34c9414e35df099438918d1"
+  },
+  "all_scientific_settings_unchanged": true
+}

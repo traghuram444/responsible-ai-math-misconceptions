@@ -1,0 +1,11 @@
+{
+  "experiment_id": "E018",
+  "approved_date_local": "2026-10-20",
+  "timezone": "America/New_York",
+  "authorization": "Approved, proceed with E018 exactly as preregistered. First establish the independent correctness verification; stop if that gate cannot be met. Keep E001–E017 and folds unchanged, and show results before interpretation.",
+  "protocol_sha256_lf": "770f2eba07a64d620aaf59e2fd6b1e8481b16be26b48f07761cf6c5f4361b42f",
+  "execution_requires_independent_verification_gate": true,
+  "planned_attempt_id": "e018_attempt01",
+  "automatic_retry_authorized": false,
+  "next_experiment_authorized": false
+}

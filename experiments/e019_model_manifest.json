@@ -1,0 +1,42 @@
+{
+  "repository": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+  "revision": "aafeb0fc6f22cbf0eaeed126eff8be45b0360a35",
+  "files": {
+    "LICENSE": {
+      "sha256": "c156170b718ec29139d3653d40ed1986fd92fb7e0959b5c71f3c48f62e6636f4",
+      "bytes": 11344
+    },
+    "README.md": {
+      "sha256": "25d4fdcfd59df5867c5a3ffe68395acea6015a3173382ca7412e4a34bf0188ee",
+      "bytes": 4969
+    },
+    "config.json": {
+      "sha256": "a48e6ab280ad87a25f06da604d486aa819b9c1bc467dae7c25fe5d05c57f5511",
+      "bytes": 656
+    },
+    "generation_config.json": {
+      "sha256": "6cdbb935125f725b568855b396e182b00c9c736fdfab1ef3970087f4ee5cac3f",
+      "bytes": 160
+    },
+    "merges.txt": {
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "bytes": 1671839
+    },
+    "model.safetensors": {
+      "sha256": "08faf1e950173bb44c11d26df28c55da7237dc55c77dbc1cbae4a5d7584540d9",
+      "bytes": 3087467144
+    },
+    "tokenizer.json": {
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "bytes": 7031645
+    },
+    "tokenizer_config.json": {
+      "sha256": "d743761ff02297cc5cdf38a612b0f78d5cdf5ceb3f251ab1d25ad353d24b1887",
+      "bytes": 7315
+    },
+    "vocab.json": {
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "bytes": 2776833
+    }
+  }
+}

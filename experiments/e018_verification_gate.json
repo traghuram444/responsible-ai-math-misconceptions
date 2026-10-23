@@ -1,0 +1,39 @@
+{
+  "experiment_id": "E018",
+  "record_type": "verification_feasibility_check_not_experiment_results",
+  "checked_date_local": "2026-10-20",
+  "timezone": "America/New_York",
+  "protocol_sha256_lf": "770f2eba07a64d620aaf59e2fd6b1e8481b16be26b48f07761cf6c5f4361b42f",
+  "status": "blocked_missing_independent_human_verification",
+  "gate_passed": false,
+  "checks_performed": [
+    "Read the approved protocol and confirmed its unchanged SHA-256.",
+    "Checked project data, artifact, experiment and documentation filenames for E018 correctness manifests, answer keys, reviewer records and sign-offs.",
+    "Confirmed that no designated qualified reviewer or signed label-blind mathematical verification was provided in the current request or established project evidence."
+  ],
+  "blocking_requirement": "Both permitted evidence routes require genuine documented human mathematical verification. No accepted reviewer sign-off is available.",
+  "accepted_signed_verification_packages": 0,
+  "authoritative_exact_version_key_status": "not_established; no external availability conclusion",
+  "source_search_performed_this_check": false,
+  "evidence_route_selected": null,
+  "private_catalogue_created": false,
+  "private_manifest_sha256": null,
+  "catalogue_entries_assessed": null,
+  "correctness_agreement_with_map_computed": false,
+  "verification_gate_claim": "The mandatory human-verification prerequisite is unmet. This is not a completed all-unknown catalogue, a failed model result, or evidence that no authoritative key exists.",
+  "external_messages_sent": false,
+  "keys_generated_or_acquired": false,
+  "e018_model_implementation_started": false,
+  "classifier_fits_started": 0,
+  "scoring_started": false,
+  "attempt_directory_created": false,
+  "monitor_started": false,
+  "action": "Stopped before key preparation, implementation and fitting, as instructed.",
+  "requirements_to_resume": [
+    "Establish an exact-version lawful primary key plus an independent label-blind human mathematical reviewer, or two distinct independent label-blind human reviewers if no admissible primary key exists.",
+    "Document mathematical competence, independence, signed derivations and selected-answer equivalence checks under the unchanged protocol.",
+    "Complete and freeze the private catalogue and manifest, accounting for unknown entries, and satisfy every remaining verification gate requirement before fitting."
+  ],
+  "protocol_amended": false,
+  "scientific_results_available": false
+}

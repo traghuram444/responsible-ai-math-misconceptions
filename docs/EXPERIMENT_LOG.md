@@ -393,3 +393,37 @@ These are information diagnostics, not real predictions or new predictive baseli
 The registered primary full-Category oracle headroom flag is true; both prespecified secondary component-headroom flags are true. These flags use the unchanged +0.020 mean and four-positive-fold rule and do not describe predictive success. Full-Category oracle all-row residual MAP@3 loss is 0.266689: 0.213391 unsupported-label loss plus 0.053298 supported-ranking loss, using equal-fold means and full-group denominators.
 
 The [complete numerical tables](E017_RESULTS.md), [aggregate artifact](../results/E017_aggregates.json), and [execution record](E017_EXECUTION.md) retain every registered real/oracle fold/question/support result, raw/final component metric and confusion matrix, joint component count, contrast and residual decomposition. Empty rare strata remain null. E001–E016 and frozen folds remain unchanged. No interpretation or next-experiment proposal is included; no experiment or monitor remains active.
+
+## E018 protocol prepared for review — 2026-10-20
+
+Following E017 interpretation, the user requested [E018 independently verified answer correctness with a matched frequency baseline](E018_PROTOCOL.md), preserving E001–E017 and frozen folds. The proposed enriched-information experiment compares correctness-grounded E011 with frequency supplied with the identical independently verified correctness signal. Original E011 and frequency remain reproduction controls. No oracle truth, label-derived answer key, new classifier, expanded tuning or post-grounding recalibration is allowed.
+
+The sole primary criterion is grounded-E011 minus grounded-frequency all-row mean MAP@3 >=0.020, strictly positive in at least four of five folds. Grounded-frequency versus ordinary-frequency improvement is a secondary information-benefit comparison and cannot substitute for learned-model success. Existing support groups, calibration eligibility and fixed review budgets remain unchanged. Unknown or unavailable-compatible-candidate cases retain original predictions and stay in primary denominators.
+
+**Awaiting approval of the exact E018 specification.** Execution additionally requires documented label-blind mathematical verification, source/rights checks where applicable, and a frozen private correctness manifest. Required human reviewers and verified keys are not yet established. Missing verification blocks execution; it does not permit substitution of E017 oracle information. No E018 key preparation, verification, implementation, fitting, pilot, scoring, attempt or monitor has started. E001–E017 records and frozen folds remain unchanged; this entry is append-only.
+
+## E018 approved but stopped at the independent verification gate — 2026-10-20
+
+The user approved E018 exactly as preregistered and explicitly required stopping if independent correctness verification could not be established. The [separate approval record](../experiments/e018_approval.json) pins the unchanged protocol SHA-256. The [verification feasibility record](../experiments/e018_verification_gate.json) records an unmet prerequisite, not experimental results.
+
+Both permitted evidence routes require genuine documented human mathematical verification. No designated qualified reviewer or signed label-blind verification was provided, and no E018 verification package was found in the checked project locations. No authoritative exact-version key has been established; no external source search was performed and no claim is made that such a key is unavailable. Even finding a primary key would not replace the required independent human check.
+
+**Stopped before key preparation, implementation or fitting.** No private catalogue/manifest or attempt directory was created; no MAP-label agreement, model scoring, oracle substitution or monitoring occurred. This is a verification feasibility blocker, not a negative predictive result or a completed all-unknown catalogue. Resumption requires the documented reviewers and evidence specified in the approved protocol. E001–E017, the E018 protocol, and frozen folds remain unchanged. No protocol relaxation, retry, alternative model or next experiment is authorized.
+
+## E019 protocol prepared for review — 2026-10-20
+
+The user requested a separate [E019 preregistration for automated correctness prediction](E019_PROTOCOL.md), preserving E018's blocked status, E001–E017 and frozen folds. The proposed checker is the official `Qwen/Qwen2.5-Math-1.5B-Instruct` at revision `aafeb0fc6f22cbf0eaeed126eff8be45b0360a35`, with a fixed zero-shot prompt, greedy CPU float32 generation, 3072 input/1024 output token limits, and explicit unknown/fallback rules. These are fallible model predictions, not independently verified keys. Only public metadata/configuration and license information have been inspected; no weights were downloaded.
+
+Five fixed arms are ordinary frequency F, historical E011 L, training-majority correctness-filtered frequency F_M, automated-correctness frequency F_A and identically automated-correctness E011 L_A. Primary H1 requires F_A to beat both F and F_M, each by mean all-row MAP@3 >=0.020 and with strictly positive differences in at least four of five folds. Secondary L_A−F_A measures incremental learned-context value and cannot replace H1. Historical tuning/calibration and all rows remain unchanged; the protocol separately specifies agreement/coverage, gain/loss, calibration and fixed-review reporting.
+
+**Awaiting approval of the exact E019 protocol.** No implementation, model execution, prompt catalogue, MAP pilot, fitting, scoring, attempt or monitor has started. E018 remains blocked and its protocol/approval/gate records are unchanged. No E001–E017 scientific files or frozen folds were changed; this log entry is append-only.
+
+## E019 approved; isolated implementation and preparation — 2026-10-23
+
+The user approved E019 exactly as preregistered, with E018 still blocked and earlier experiments/folds unchanged. The [approval record](../experiments/e019_approval.json) pins the original protocol. New implementation files preserve the fixed Qwen model, prompt, parser, CPU float32 settings, five matched arms, historical fitting/calibration, all-row denominators and complete registered reporting grid.
+
+Docker's available memory passes the 16 GiB solver resource gate without host settings changes. The official weights match the registered size and SHA-256; the separate solver environment contains a complete 24-wheel hash-locked closure and passed its offline dependency check. The historical statistical image is unchanged. A preservation inventory records 513 existing files and the original log prefix.
+
+The one authorized synthetic plumbing prompt completed: 177 input tokens, 272 generated tokens, 143.126690316014 seconds, parser status `unknown_invalid_output`. This status is retained without changing the prompt/parser or retrying. Label-free preparation found 60 distinct question/answer pairs across all 36,696 rows. No MAP model inference or correctness scoring occurred during preparation.
+
+The complete suite passed 566 tests, including the initial 38 E019 tests. Final pre-launch checks, exact lock/commit identity and the subsequent run outcome are recorded append-only in [E019 execution](E019_EXECUTION.md). The single attempt may begin only after the tested implementation and lock are committed. Results will precede interpretation; no E020 is authorized.
