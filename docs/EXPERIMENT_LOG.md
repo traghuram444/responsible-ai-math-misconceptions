@@ -427,3 +427,19 @@ Docker's available memory passes the 16 GiB solver resource gate without host se
 The one authorized synthetic plumbing prompt completed: 177 input tokens, 272 generated tokens, 143.126690316014 seconds, parser status `unknown_invalid_output`. This status is retained without changing the prompt/parser or retrying. Label-free preparation found 60 distinct question/answer pairs across all 36,696 rows. No MAP model inference or correctness scoring occurred during preparation.
 
 The complete suite passed 566 tests, including the initial 38 E019 tests. Final pre-launch checks, exact lock/commit identity and the subsequent run outcome are recorded append-only in [E019 execution](E019_EXECUTION.md). The single attempt may begin only after the tested implementation and lock are committed. Results will precede interpretation; no E020 is authorized.
+
+## E019 completed; numerical results awaiting review — 2026-10-23
+
+The approved attempt completed all 60 checker pairs and 50 historical classifier fits, without changing the locked protocol or retrying. Aggregate checker reasons were 58 invalid-output unknowns and two generation-limit unknowns; there were zero accepted binary decisions. All 36,696 rows remained in the registered denominators and used unknown fallback. No failure receipts exist. Global prediction/routing freeze and historical reproduction gates passed.
+
+| Arm | Equal-fold MAP@3 | Sample SD | Equal-fold exact accuracy |
+|---|---|---|---|
+| F | 0.539215 | 0.039204 | 0.402009 |
+| L | 0.511887 | 0.070731 | 0.368558 |
+| F_M | 0.474187 | 0.036689 | 0.402009 |
+| F_A | 0.539215 | 0.039204 | 0.402009 |
+| L_A | 0.511887 | 0.070731 | 0.368558 |
+
+F_A−F mean MAP@3 is 0.000000 with 0/5 positive folds; F_A−F_M is +0.065028 with 5/5; L_A−F_A is −0.027328 with 2/5. The registered H1 conjunction and secondary H2 flags are false. Fold summaries and sample SDs are descriptive only.
+
+The [complete numerical tables](E019_RESULTS.md), [full-precision aggregate artifact](../results/E019_aggregates.json), and append-only [execution record](E019_EXECUTION.md) retain every registered panel, including question/support results, correctness confusion and coverage, fallback states, gain/loss, calibration and fixed-review budgets. The frozen publisher validated the schema and arithmetic. All 513 pre-existing protected files, E001–E017, frozen folds, README and E018's blocked status remain unchanged. No interpretation, parser repair, alternative model or E020 is included; results await user review.

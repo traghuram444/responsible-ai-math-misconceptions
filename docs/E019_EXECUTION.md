@@ -59,3 +59,29 @@ The unchanged historical Docker image passed the complete suite: **566 tests**. 
 The initial full publication scan found no secret/local-path patterns and zero matches against 28,587 unique private response prefixes. The final pre-commit audit is repeated after lock serialization. Preservation verification passed for all 513 captured files and the original experiment-log prefix. GitHub authentication and origin were verified as the personal public repository `traghuram444/responsible-ai-math-misconceptions`.
 
 The execution preservation gate deliberately requires this existing local experiment history, including ignored private evidence, and refuses to invent missing prior artifacts on a fresh checkout. Public hashes are verification records, not a redistribution of that evidence. Reconstructing the scientific controls from lawfully acquired data and rebuilding the pinned environment are distinct from reproducing historical timestamps or private log bytes.
+
+## Completed attempt — 2026-10-23
+
+Attempt `e019_attempt01` completed at 21:49:45 UTC from pre-run commit `6f0fb14c4a1978f1d56451f2b6b80c3beebc36d3`. The execution lock SHA-256 remains `3369f0bb48694bce56fd1f386b04d658b31c7c6ac517a6929cf74c1c327895f6`. No failure receipt exists. No retry, resume, parser adjustment, model replacement or scientific-setting change occurred.
+
+All 60 distinct pairs completed; 58 were recorded as `unknown_invalid_output` and two as `unknown_generation_limit`. There were zero accepted true/false decisions. All 36,696 evaluation rows therefore used the registered unknown fallback. Generated tokens totaled 19,770. The aggregate artifact records 10,205.431395421736 checker seconds and 316.3596602892503 statistical seconds. Terminal status spans, which include different bookkeeping boundaries, were 10,205.446 and 317.034 seconds respectively. The resilient solver monitor recorded three isolated I/O failures; final status was completed. The statistical monitor recorded zero I/O failures. Neither changed computation or settings.
+
+All 50 historical classifier fits completed with zero fit warnings. All five folds' raw/final predictions and review orders were globally frozen before scoring. Historical F/L reproduction passed for ten model-fold combinations. Post-run verification checked the complete private cache and five frozen prediction-file hashes without publishing their contents, the development-freeze hash, all locked scientific files, the preparation-log prefix, and all 513 protected pre-existing files. E001–E017, frozen folds, README and E018's blocked verification records remain unchanged.
+
+The completed aggregate SHA-256 is `4ed2fb5e01eb7bf0a8546d94f28c6c3db544374fbde3112a756dd758b312ebb4`, matching the execution receipt. The frozen publisher validated the strict aggregate schema, arithmetic and complete registered grids, then generated [all numerical tables](E019_RESULTS.md) and [full-precision aggregates](../results/E019_aggregates.json). No private inputs, generated text, pair mappings or row-level outputs are included.
+
+| Arm | Equal-fold MAP@3 | Sample SD | Equal-fold exact accuracy |
+|---|---|---|---|
+| F | 0.539215 | 0.039204 | 0.402009 |
+| L | 0.511887 | 0.070731 | 0.368558 |
+| F_M | 0.474187 | 0.036689 | 0.402009 |
+| F_A | 0.539215 | 0.039204 | 0.402009 |
+| L_A | 0.511887 | 0.070731 | 0.368558 |
+
+Registered MAP@3 comparisons: F_A−F = 0.000000 (0/5 positive folds; criterion false); F_A−F_M = +0.065028 (5/5; criterion true); L_A−F_A = −0.027328 (2/5; criterion false). The primary H1 conjunction and secondary H2 flags are both false. These are numerical decision-rule records, not an interpretation. All registered question/support, correctness, fallback, gain/loss, raw/final calibration and fixed-review panels are retained, including null and zero results. Interpretation and any next experiment await user review.
+
+## Post-run publication verification — 2026-10-23
+
+The complete unchanged test suite passed again in the pinned offline, non-root historical Docker image: **566 passed in 177.65 seconds**. The public JSON is byte-identical to the completed aggregate artifact, and the Markdown exactly matches the frozen renderer; its SHA-256 is `893b82cd081f01b6f63e0df27903e8a743580370a8c1c033581644d33d82caca`. Post-publication preservation checks passed for all 513 files, all locked E019 files, and both complete pre-run documentation prefixes.
+
+The publication audit covered 293 public/proposed files, found no matching secret or local-path patterns, and verified the older 144-file public-history inventory and log prefix. The private-response scan checked 28,587 unique prefixes and found **zero matches**. Only the two generated aggregate files and append-only changes to this execution record and the experiment log are included in the results commit. The hourly E019 follow-up was removed after completion; no experiment or idle monitor remains active. Interpretation remains deferred.
