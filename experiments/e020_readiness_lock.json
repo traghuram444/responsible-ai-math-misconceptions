@@ -1,0 +1,29 @@
+{
+  "experiment_id": "E020",
+  "phase": "synthetic_readiness_only",
+  "files": {
+    "docs/E020_PROTOCOL.md": "1c018789dbcba1cbdd7d7096a7e2830c2a547304297154a76345bcde7941ede2",
+    "experiments/e020_approval.json": "1174567553a66ff28da44b7b2274aa05db906b91006aa72ef5f9d9081170b8ff",
+    "experiments/e020_environment_lock.json": "8e5c3861ab85c67e1174729f941cfb926eee34023956f8e0139f96ed65a02f8e",
+    "experiments/e020_model7_manifest.json": "65392872b99ac963d826de0e6ab4e6a009aff1db7be749e861314d82408e4c49",
+    "experiments/e020_preservation_start.json": "826f84d882d2491ac63e9a509f353c8a616156fb498c50e29408e56e62e88f00",
+    "repro/e020/download_model.py": "ed57d8bd66de2b70b82064dde669bdf0c446723ead315ca21b8d82942ab8530f",
+    "scripts/e020_readiness.py": "3214fb002e231dd6f92050d56aff6604c89e79da13ee9f4693f48a7960f427ea",
+    "scripts/monitor_e020.py": "843f4a833b64503f2f02d6c3e036eca877ec7b690c1ab59f2ee45bb105684433",
+    "scripts/prepare_e020.py": "42d0cd4e7617f17e2dd3f39197c93b2ee490132cefbc261ceab0b0a37d31acfe",
+    "scripts/publish_e020_readiness.py": "a6abf7827035641cc6d0c742f281ad0dce7c3b45a270e3a35f1e2abbf78a6804",
+    "scripts/run_e020_readiness.py": "a0a6fa6f4083803b3584fcdca5c076946a3c6cf132611a06cbd1cd963752db1e",
+    "src/map_misconceptions/e020_checker.py": "a8f08a751a3cb3242836805d1669357f642d38693df65d32c8cfbc1bf6ef3c22",
+    "src/map_misconceptions/e020_fusion.py": "a1d9b562b19e01674d108ebdfd19ea9edc1fe410283229bac82dfd1ad626122c",
+    "src/map_misconceptions/e020_integrity.py": "8120f1e12a57b249f963cfcaf326e3efdc6b7c069c5bf817defeb25cdbe7f8e8",
+    "src/map_misconceptions/e020_readiness_publication.py": "cbcbf228be47ff97cf9bed5fc9924baa9ef92a0231d41e1432ce5303763d6e58",
+    "src/map_misconceptions/e020_selection.py": "b8f358222aea1db1f869b49533f481c71121a75f6e545b5e053fa872a1b36ee6",
+    "tests/test_e020.py": "1f7deab189d2fc7b0907a61232b2a976763ef92a90938f09608e55ca4eb9fef7"
+  },
+  "preserved_files": 664,
+  "execution_prefix": {
+    "bytes": 6860,
+    "sha256": "722580ff5b53bcc409644a75232045dc84e1af53de3396c1deff510e3f2809c3"
+  },
+  "solver_image_id": "sha256:08b0187445e3a72b9b1215968c69e536872705660a1b2fd4a6bd8694af40ddc6"
+}

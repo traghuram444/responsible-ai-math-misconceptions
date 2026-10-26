@@ -1,0 +1,11 @@
+{
+  "experiment_id": "E020",
+  "approved_date": "2026-10-26",
+  "authorization": "approved,proceed",
+  "protocol_sha256_lf": "1c018789dbcba1cbdd7d7096a7e2830c2a547304297154a76345bcde7941ede2",
+  "baseline_commit": "382e2de2011e2428f365e150ea29b718e82352c6",
+  "synthetic_gate_required": true,
+  "runtime_review_above_hours": 48,
+  "e018_remains_blocked": true,
+  "automatic_retry": false
+}

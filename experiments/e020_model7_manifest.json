@@ -1,0 +1,58 @@
+{
+  "repository": "Qwen/Qwen2.5-Math-7B-Instruct",
+  "revision": "ef9926d75ab1d54532f6a30dd5e760355eb9aa4d",
+  "files": {
+    "LICENSE": {
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "bytes": 11343
+    },
+    "README.md": {
+      "sha256": "9cdd5eeb7ae423a0568a6298f85e073e2d8837de65349b8c8a47af00898a4cc5",
+      "bytes": 4957
+    },
+    "config.json": {
+      "sha256": "3a6dd7a4b3e6dd81c05ec943d837166508ceb953e1ce2baa57c84611d4765ef0",
+      "bytes": 658
+    },
+    "generation_config.json": {
+      "sha256": "071d157e94ad482562138f323df1ac3355d8bde9efce56f0a82ac2c333ee6525",
+      "bytes": 161
+    },
+    "merges.txt": {
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "bytes": 1671839
+    },
+    "tokenizer.json": {
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "bytes": 7031645
+    },
+    "tokenizer_config.json": {
+      "sha256": "d743761ff02297cc5cdf38a612b0f78d5cdf5ceb3f251ab1d25ad353d24b1887",
+      "bytes": 7315
+    },
+    "vocab.json": {
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "bytes": 2776833
+    },
+    "model.safetensors.index.json": {
+      "sha256": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028",
+      "bytes": 27752
+    },
+    "model-00001-of-00004.safetensors": {
+      "sha256": "11f73294487dca1614bd7495e2c4e50372f5794f4cd175ce62d9ec2a8e97873a",
+      "bytes": 3945441440
+    },
+    "model-00002-of-00004.safetensors": {
+      "sha256": "2b992a00b09340ac3f8e54db70509b709e2eef9f601e679682e3a50b496a7b08",
+      "bytes": 3864726352
+    },
+    "model-00003-of-00004.safetensors": {
+      "sha256": "2460a589b1d606998574e0d84162e94307a15e2eea2aac6f4ea35f0361657660",
+      "bytes": 3864726424
+    },
+    "model-00004-of-00004.safetensors": {
+      "sha256": "9e7925045deba3bb6ac461f1c2e7eabbe2a189549156dff1ec08b6c750a82bc5",
+      "bytes": 3556377672
+    }
+  }
+}
