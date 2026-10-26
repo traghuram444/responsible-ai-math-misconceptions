@@ -50,3 +50,22 @@ All thirteen allowlisted 7B files downloaded successfully from the pinned offici
 The initial publication audit passed for 309 public/proposed files with no matching secret or local-path patterns. Its scan of 28,587 unique private-response prefixes found zero matches. After adding the model/environment manifests, a current-E020-file scan covered nineteen files, including the appended experiment log, against the same 28,587 prefixes and found zero matches. The final locked tree receives another path/text audit and a current-E020 prefix scan before commit. Historical preservation was verified for all 664 captured files and the old log prefix.
 
 The authenticated account, origin, main branch and public repository identity were verified as `traghuram444/responsible-ai-math-misconceptions`. No raw data, downloaded archive/weights, individual output, private inventory or cache is included in publication. Readiness execution begins only after the sanitized plan/code/configuration commit is pushed and verified.
+
+## Synthetic readiness completed — 2026-10-26
+
+The single attempt began at 15:09:26 UTC from committed, publicly verified preparation `bcf37d49835aa7405e53e46752c0ee1a91f1e78b`. The readiness lock SHA-256 is `15259599434374d3c9106de86c23f4b13d9a0c62f5e8700b943784b16ec59a98`. G15 completed at 15:40:29 UTC and G7 at 17:17:44 UTC. Both models completed exactly twelve fixed fixtures; no technical-failure receipt exists, no retry occurred, and both monitors recorded zero I/O failures.
+
+| Checkpoint | Completed readouts | Binary correct | Insufficient-information correct | Semantic gate applies | Gate passed | Tokens/second | Projected MAP hours |
+|---|---:|---:|---:|---|---|---:|---:|
+| G15 | 12/12 | 5/10 | 0/2 | false | true | 2.778534 | 3.805376 |
+| G7 | 12/12 | 10/10 | 2/2 | true | true | 0.716011 | 14.633404 |
+
+G15 recorded two capped rationales; G7 recorded none. Both had zero technical input/content fallbacks. Recorded container peak memory was 4,532,477,952 bytes for G15 and 18,505,318,400 bytes for G7, within the unchanged 24 GiB limits. Model wall times were 1,859.430248 and 5,830.023526 seconds respectively. The combined registered projection is 66,379.606139 seconds (18.438779 hours), below the 48-hour runtime-approval boundary; it is an estimate, not a deadline.
+
+These are synthetic readiness outcomes only. No MAP catalogue, MAP inference, classifier fit, outer-fold prediction or evaluation result was produced by this stage. The smaller model's semantic accuracy does not control inclusion under the registered rule. No MAP-generalization claim follows from either checkpoint's fixture performance.
+
+The frozen publisher verified the strict aggregate schema, gate arithmetic, ordered model receipts, model/environment/readiness hashes and all 664 historical files. Both full model manifests were independently rehashed after execution. The 17-file readiness lock and both append-only prefixes remain intact. The unchanged complete test suite passed again: **603 tests in 164.76 seconds**. [Readiness tables](E020_READINESS.md) and the [full-precision aggregate receipt](../results/E020_readiness.json) are retained; aggregate SHA-256: `85a35a6c4ffdfe81323965aac4c4a52048a8b09424b438688c330a7aa3450c6b`.
+
+Status is `READY_FOR_MAP_IMPLEMENTATION_CHECK`. The authorized next phase remains contingent on complete, tested, separately locked and committed MAP orchestration/reporting. Existing readiness code and evidence will not be edited.
+
+The readiness-results publication audit passed for 314 public/proposed files, with no secret/local-path matches and zero matches against 28,587 unique private-response prefixes. The complete pre-run execution-document and experiment-log prefixes were independently compared against the pre-run commit. Only the two aggregate result files and append-only updates to these outcome records belong to the separate readiness-results commit; unfinished MAP implementation is excluded.
