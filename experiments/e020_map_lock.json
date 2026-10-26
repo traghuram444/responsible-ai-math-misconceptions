@@ -1,0 +1,38 @@
+{
+  "experiment_id": "E020",
+  "phase": "MAP_only",
+  "pairs_per_model": 60,
+  "readiness_commit": "1c9e3d54582a826aa535dbf1aeb77dbc639b359a",
+  "readiness_lock_sha256": "15259599434374d3c9106de86c23f4b13d9a0c62f5e8700b943784b16ec59a98",
+  "readiness_result_sha256": "85a35a6c4ffdfe81323965aac4c4a52048a8b09424b438688c330a7aa3450c6b",
+  "preserved_files": 664,
+  "readiness_private_inventory_sha256": "ffaa73b6d7e8eeb8b678ab6f53c439fe20e18f628f74e7fd98c1c24b474ab581",
+  "catalogue_sha256": "2b4a5cc1890ae6433ecd61c146c071d9b7a2ae7013055f4b6d65c757c7d5bc0b",
+  "files": {
+    "scripts/e020_map_checker.py": "037a777e83dab8015754ae72213e157c5579e29389fe8a6dd7955ca8b210ab14",
+    "scripts/monitor_e020_map.py": "2c828059a144c4ff1ab03cbaba41ea7d10aa8e5e66c1a6b71f3b03fecc8066e3",
+    "scripts/prepare_e020_map.py": "2bcf4ac729ea2c30c0d8013fe5dba6e3f376bd3b3aafdd41329ba3f69d5061dc",
+    "scripts/publish_e020_map.py": "9b62a9e385132d43a058caad93bc17ff17b08bc378a7d7154d19f1ff7b5a4b65",
+    "scripts/run_e020_map.py": "0ccea0ca1a4ee9a791a5edd246713f596f45e506ae20adb4ae5be7c5b8c1c021",
+    "src/map_misconceptions/e020_map_integrity.py": "6aec751f73a2ec9053edf0ed0242d084f11f4bf34a70af56c0130f55e8889401",
+    "src/map_misconceptions/e020_map_metrics.py": "d3cd6b8cacf7bed528ea5fbda2e15e443b001fc25ea3b6530bed8f6eab4ad819",
+    "src/map_misconceptions/e020_map_publication.py": "1e78833114f8e9b6c1df871b29cb85b3a3a608a7752aa105524388093e649f36",
+    "src/map_misconceptions/e020_map_run.py": "04aaa8250bb3a7a4f85efcac78e3c68d041c120d0a5225c6d47ccf762ae7ac00",
+    "src/map_misconceptions/e020_map_selection.py": "3d5778d9888a0aa7967900b035377596e674162d22302e4055c280ea86ca56bd",
+    "tests/test_e020_map.py": "471e933331d035187101e914848962de1f1a96140ce31813f61acda7b9ba8148",
+    "results/E020_readiness.json": "85a35a6c4ffdfe81323965aac4c4a52048a8b09424b438688c330a7aa3450c6b",
+    "docs/E020_READINESS.md": "09c53be0062a2005ad7e90deb94921e151f6a5fb2c3e19efb43ad2b6c0de6b9e"
+  },
+  "append_only_prefixes": {
+    "docs/E020_EXECUTION.md": {
+      "bytes": 15489,
+      "sha256": "c68b06c45f4dad588aeef0c282877fedb67645e92dd26dd3e46b13eeda1a0721"
+    },
+    "docs/EXPERIMENT_LOG.md": {
+      "bytes": 73449,
+      "sha256": "15664e967cafcf5b2f16dc1e26740f6863ee424ad80f7c1201804c5888e3070e"
+    }
+  },
+  "solver_image_id": "sha256:08b0187445e3a72b9b1215968c69e536872705660a1b2fd4a6bd8694af40ddc6",
+  "statistical_image_id": "sha256:464fc81faf49a6355e4bd0f55956243cc0fee586f657937f495975c2268e6fe0"
+}

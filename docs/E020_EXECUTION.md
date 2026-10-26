@@ -69,3 +69,35 @@ The frozen publisher verified the strict aggregate schema, gate arithmetic, orde
 Status is `READY_FOR_MAP_IMPLEMENTATION_CHECK`. The authorized next phase remains contingent on complete, tested, separately locked and committed MAP orchestration/reporting. Existing readiness code and evidence will not be edited.
 
 The readiness-results publication audit passed for 314 public/proposed files, with no secret/local-path matches and zero matches against 28,587 unique private-response prefixes. The complete pre-run execution-document and experiment-log prefixes were independently compared against the pre-run commit. Only the two aggregate result files and append-only updates to these outcome records belong to the separate readiness-results commit; unfinished MAP implementation is excluded.
+
+## MAP-phase implementation and preflight — 2026-10-26
+
+Readiness results were committed separately as `1c9e3d54582a826aa535dbf1aeb77dbc639b359a`, pushed only to the personal repository and verified against public GitHub main. The subsequent implementation uses new MAP-phase files and an additional lock; none of the seventeen readiness-locked files is edited. The existing attempt receives new `map_inputs/` and `map/` subdirectories, each created exclusively. It is a phase transition within the same approved attempt, not a retry of either synthetic checkpoint.
+
+The catalogue preparer verifies the frozen data hash and selects only the two authorized CSV columns, applying the original normalization and sorted-distinct ordering. It does not consult targets, IDs, explanations, model outputs or answer frequencies. The model containers receive only that catalogue plus read-only code/configuration/metadata and their respective official model files. No raw training CSV is mounted into either model container. Exactly sixty MAP assessments per checkpoint are permitted, G15 then G7, with unchanged two-stage settings and seed. All generated reasoning, scores, individual decisions, caches and mappings remain private.
+
+The statistical phase validates and freezes both complete checker caches before selection or agreement scoring. It uses the unchanged nine-training/three-calibration/three-evaluation question roles, original nested E011 grid and fifty classifier fits. The fixed mixture grids reuse the selected inner predictions and training-only inventories. Calibration uses the original supported-calibration-row temperature fitter; all five folds' raw/final distributions, rankings, selected weights, temperatures and fixed review orders are serialized and hash-frozen before the evaluation-truth boundary.
+
+The MAP calibration wrapper carries explicit technical-fallback provenance from the cache. This implements the existing protocol rule without editing the readiness helpers: valid C readouts, even if their numerical vector is exactly `(0,0,1)`, are not relabeled as technical fallback. Only deterministic technical fallback on every calibration and evaluation row enables the registered frequency identity for G15/G7. Pure mixture endpoints reuse their component outputs. Synthetic tests check both this distinction and exact agreement with the locked preparation helper for ordinary technical-fallback inputs; numerical zeros remain allowed.
+
+Historical reproduction checks compare F, L and F_M exact/support/question/calibration/review records against E019 with absolute tolerance 1e-10 and exact counts/nulls, alongside original selection/temperature checks. No settings may be adjusted to pass reproduction. The strict public schema verifies the complete nine-arm grids, eleven exact/calibration contrasts, five gain/loss contrasts, six review budgets, four review contrasts, both correctness audits, training-majority controls, pair/reason/fallback counts, rank changes, resource distributions, five-fold summaries and registered decision rules. It rejects arbitrary/private text, missing cells and inconsistent arithmetic.
+
+The additional private preservation inventory captures the completed readiness attempt files without publishing individual fixture filenames or digests. Both that inventory and the historical 664-file inventory are checked before/after MAP execution and before publication. The MAP lock captures the complete execution/log prefixes. The frozen publisher verifies aggregate/completion/cache/development/prediction hashes and emits only aggregate JSON and the full numerical tables; interpretation remains withheld until user review.
+
+After all final tests, scans and the additional lock are committed, launch the one MAP phase from the repository root:
+
+```powershell
+python -B scripts/run_e020_map.py
+```
+
+The independent read-only terminal viewer is:
+
+```powershell
+python -B scripts/monitor_e020_map.py
+```
+
+Progress is completed MAP pairs out of 120, followed by classifier fits out of 50. No MAP metric appears before global prediction freeze and historical-control reproduction. The viewer preserves completed counts on failure and never starts/resumes computation. The hourly follow-up is updated for this phase only while computation is active; it stops after completion/failure. No E021, changed model/prompt, retry or new analysis is authorized.
+
+Final pre-MAP verification passed **622 tests in 203.65 seconds** in the pinned offline, non-root statistical image; the targeted E020 suites passed **56 tests in 12.78 seconds** before the final full-suite run. These include a complete invented-data reporting grid, deliberate corruption/private-field rejection, all-fold freeze requirements, historical-control mismatch rejection, fixed review ties, unsupported-label union Brier, fallback provenance, pure endpoints and preparation equivalence. The checker entry point also passed a solver-image import/help check with no data/model mounts and no inference. No real MAP fit or model assessment was used as a test.
+
+The label-blind catalogue reproduced **60 distinct pairs across 36,696 rows**. The full public/proposed-file audit passed for 324 files at its snapshot, with zero secret/local-path matches and zero matches against 28,587 private-response prefixes. After the final provenance wrapper and tests were added, a current-E020 scan covered 33 public files against the same prefixes and again found zero matches. Final path/text and current-E020 scans are repeated after serialization of the additive lock. All code/protocol thresholds, frozen roles, model settings and interpretation rules remain as approved.
