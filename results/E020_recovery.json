@@ -1,0 +1,24 @@
+{
+  "experiment_id": "E020",
+  "status": "COMPLETED",
+  "phase": "reporting_recovery",
+  "results_sha256": "8a5fcfd894c4dd6b24607b330376ba4afbe0dff0f207ee1622365e6e855a8e2c",
+  "original_git_revision": "f55ea3e864b33fbc2bfa195c64473ad1dcf98358",
+  "recovery_git_revision": "d72eefcc10255bce8403e05d70615b703c128429",
+  "recovery_lock_sha256": "c87ea0fdea69036a63905e05a22e05e4968030b6449610e2f8ce1fc200cbec89",
+  "original_map_lock_sha256": "8fa454b8428548423c097221db2144402af2400c99572e320573d338eb112e11",
+  "failed_attempt_inventory_sha256": "d035cbeb8e4dc66cc5fb08311bc63f71c2555d84bedb205a2be2b2648d562854",
+  "failed_attempt_files": 180,
+  "frozen_development_sha256": "b3820bd1ae6ad804fc7c7c7ab99d0625405b0dbf62b965eef7c3cc95220bb52c",
+  "source_failure_types": [
+    "KeyError",
+    "CalledProcessError"
+  ],
+  "failed_attempt_preserved": true,
+  "category_view_reconstructed": true,
+  "new_model_calls": 0,
+  "new_classifier_fits": 0,
+  "original_statistical_seconds": 306.842,
+  "recovery_seconds": 84.37915488798171,
+  "finished_utc": "2026-10-27T13:01:04.379042+00:00"
+}
