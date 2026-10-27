@@ -1,0 +1,32 @@
+{
+  "experiment_id": "E021",
+  "protocol_sha256": "1ab62b89f1bf8fe1e4845194b7a73d7c5233264b75babff239e29c2761887091",
+  "image_id": "sha256:464fc81faf49a6355e4bd0f55956243cc0fee586f657937f495975c2268e6fe0",
+  "reference_commit": "bb7a4ec12eda409b248c187dbc1f3bad27f18a1b",
+  "protocol_commit": "587bc272b4a7abdb03ffc9bc9306b18f076a3b34",
+  "preserved_files": 545,
+  "preservation_inventory_sha256": "a66675e0f1d3e1c8df12821740d7926bc046fa4f6bc1eb74dd57ac85a89a2abb",
+  "files": {
+    "docs/E021_PROTOCOL.md": "1ab62b89f1bf8fe1e4845194b7a73d7c5233264b75babff239e29c2761887091",
+    "scripts/prepare_e021.py": "57426a34b45d01e0b737ee4d82b6dc9603ad60bf5f80345a6d92d0e17acf004f",
+    "scripts/publish_e021.py": "9d1ce7af4fae0437a2f7231452616c2c4c5f5c2244ec3ac151c60a347e035c0d",
+    "scripts/run_e021.py": "d85d6872b6c7b38953bf3646c889c31e706ddee90c994326a434d246c7b6754a",
+    "src/map_misconceptions/e021_integrity.py": "56fe2a699fd78553a218a864d409bb3d7e66c7e2f4cc60c4f651069a534979a6",
+    "src/map_misconceptions/e021_metrics.py": "3fcf96bbe460b8699f0cfad10163d89415ee6e5256fd75cf96019d25b90ccfaa",
+    "src/map_misconceptions/e021_publication.py": "ef6a5ff3bbd09f66ca35c21400f0b1e63d3ae67499132502ac06c96adaf32977",
+    "src/map_misconceptions/e021_run.py": "1f78659313e7539a6713a904feb8c65dd1fc713837cd3a3743f922ca331879a3",
+    "src/map_misconceptions/e021_selection.py": "4b0605b92d2fbbf807a59b99f8bd0119a60bfd910b7cd970e757b274a1119f69",
+    "src/map_misconceptions/e021_shuffle.py": "6716d312011312c8913be20391a20e5fb93bd742e77d7e0813d4524cbf261579",
+    "tests/test_e021.py": "9fdbe6c540e65dddb22c3031b69c8bfb6b26696e1b3f93d1d6fe5c11bc8a5cb0"
+  },
+  "append_only_prefixes": {
+    "docs/E021_EXECUTION.md": {
+      "bytes": 6660,
+      "sha256": "928a5229bd51d0d8293bb76e59e866457d0e5809df922c0875f84bd2fc2c33c4"
+    },
+    "docs/EXPERIMENT_LOG.md": {
+      "bytes": 77840,
+      "sha256": "5a46db92bdf6f624b4ec17e547bcd29d1291623422dcde61f14bd53c19fd974b"
+    }
+  }
+}
