@@ -1,0 +1,30 @@
+{
+  "experiment_id": "E020",
+  "phase": "authorized_reporting_recovery",
+  "source_commit": "f55ea3e864b33fbc2bfa195c64473ad1dcf98358",
+  "original_map_lock_sha256": "8fa454b8428548423c097221db2144402af2400c99572e320573d338eb112e11",
+  "failed_attempt_inventory_sha256": "d035cbeb8e4dc66cc5fb08311bc63f71c2555d84bedb205a2be2b2648d562854",
+  "failed_attempt_files": 180,
+  "frozen_development_sha256": "b3820bd1ae6ad804fc7c7c7ab99d0625405b0dbf62b965eef7c3cc95220bb52c",
+  "files": {
+    "src/map_misconceptions/e020_recovery_integrity.py": "0066200a69c8256923a794d2becf6305d954c1f389cbcc7a2dd5f2940fe9ee21",
+    "src/map_misconceptions/e020_recovery.py": "befd3bc06bea553662e15fc553993107ce5c2436bdeb28c11123d70d205690c4",
+    "scripts/prepare_e020_recovery.py": "bef50415e25269ea0590accf1671211eee2e559e8b397e5f91b917fda70a9a79",
+    "scripts/run_e020_recovery.py": "edb93509f5122aa49cb80b77e005974a487857c3cfd5748e7420e945764c7cb7",
+    "scripts/publish_e020_recovery.py": "7a94c70ae6a0a0e52475eb232ad8d5fd978bf10d3a2266b3fec812b1fa47b579",
+    "tests/test_e020_recovery.py": "2507c6fea9c8e3fe69dee0b0340427b6846881901037569517668baa324e42e1",
+    "docs/E020_RECOVERY.md": "db5d071068ad6949e34f3128652c6d33b5c5a43a0d4146ec77b0db4f5170f356"
+  },
+  "append_only_prefixes": {
+    "docs/E020_EXECUTION.md": {
+      "bytes": 17369,
+      "sha256": "9fe0f5a54180bff2b21ee4f4ac29ae24359e22391b7437c347dbfadf173cdf5d"
+    },
+    "docs/EXPERIMENT_LOG.md": {
+      "bytes": 74332,
+      "sha256": "fae2dbe41b2d99f27a35d14d2eb0674c9bcb49191468486324084306af976451"
+    }
+  },
+  "new_model_calls": 0,
+  "new_classifier_fits": 0
+}

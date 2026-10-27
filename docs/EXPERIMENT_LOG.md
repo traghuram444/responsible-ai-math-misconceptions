@@ -469,3 +469,9 @@ The combined registered MAP projection is 18.438779 hours, below the 48-hour app
 ## E020 MAP-phase implementation after readiness — 2026-10-26
 
 The readiness result is publicly preserved in commit `1c9e3d54582a826aa535dbf1aeb77dbc639b359a`. New phase-specific code implements the existing approved protocol without changing the readiness lock: sequential input-only checkpoint caches, training-only nested ensemble selection, original calibration, global five-fold prediction/routing freeze, matched historical reproduction and complete aggregate-only reporting. Valid C readouts remain distinct from technical fallback, as required by the preregistration. The [execution record](E020_EXECUTION.md) documents the additional lock, synthetic tests, private preservation and launch/monitor boundaries. No MAP score or scientific conclusion is available at this preparation stage; results will be reported before interpretation.
+
+## E020 technical failure; reporting-only recovery authorized — 2026-10-27
+
+All 120 checker assessments and 50 classifier fits completed, and all five folds' predictions were globally frozen. Historical validation then raised `KeyError` because E020 omitted the derived `category_raw` field used by the existing Category audit. This is a technical failure, not a scientific result. The failed attempt and both failure receipts remain unchanged.
+
+The user authorized repair and continuation. The [additive recovery specification](E020_RECOVERY.md) reconstructs only the missing historical view from the unchanged frozen arrays, preserves all scientific settings and checks, and performs zero new model calls or fits. Separate recovery provenance and aggregate-only publication will disclose the interruption. No interpretation or subsequent experiment is authorized before review.
