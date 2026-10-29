@@ -39,3 +39,24 @@ On completion the frozen publisher validates locks, preservation, strict schema 
 The complete pinned Docker suite passed **669 tests in 220.86 seconds**. The additive gate verified **366 historical files/prefixes**, in addition to all earlier nested preservation inventories. Ten protocol/implementation/test files are locked, with append-only execution/log prefixes. Lock byte SHA-256: `0dd2d4706e797cdcbae5340aadc3b63a511018a4e573dacea6bbdcd6871152f2`. The focused scan of all thirteen E022/protocol/log publication files checked **28,587** unique private response prefixes and found **zero matches**. No E022 MAP computation occurred during these checks.
 
 The repository-wide private-response-prefix scan also passed with **zero matches** across all 28,587 prefixes. Publication path/text and original historical-prefix checks passed. The approved personal repository and public visibility were verified before staging preparation. The one-shot start receipt will record the exact preparation commit and unchanged lock hash; execution starts only after its public revision is verified.
+
+
+## Completed numerical outcome - 2026-10-29
+
+The approved one-shot attempt completed at 13:07:22 UTC, from preparation commit `6f54a1a498aaacd0599595ea6451a5ae3db965cd`. Statistical wall time was 934.655451 seconds; the live status recorded 935.218 seconds. All 50 classifier fits, 45 policies and five scored folds completed, with zero new checker calls, zero fit warnings and zero monitor I/O errors. No failure receipts were present. Global freeze, historical raw-model reproduction for all 15 arm/fold combinations, data/fold hashes and nested preservation checks passed before completion. The independent viewer stops when execution completes; no idle monitor was scheduled.
+
+Aggregate SHA-256: `9578d9fc08c278751112fa1aadc52c0b1d6276e2a0b309d4ff54c455c2e6164f`. Global freeze receipt SHA-256: `f742b17fc43d553d5a8a6de95b79837ef58d1eab66db59d1f56df32072705964`. The preparation lock and protocol hashes remain as recorded above.
+
+At the primary 20% error target, L7 had 0/5 admissible development cutoffs, zero retained evaluation cases and 0/15 questions jointly passing; its separate primary criterion was not met. C50 had 2/5 admissible cutoffs, four questions with retained cases and 1/15 questions jointly passing; its separate primary criterion was not met. Frequency had 0/5 admissible cutoffs and zero retained cases. Empty retained groups have undefined risk, accuracy and MAP@3, not zero error.
+
+C50's primary five-fold coverage mean was 0.141592 (SD 0.213485, all five folds). Among its two nonempty folds, mean risk was 0.208691 (SD 0.045770), accuracy 0.791309, MAP@3 0.891717, ECE 0.114119 and Brier 0.350499. These conditional metrics use two defined folds; they are not five-fold risk estimates or matched-population model comparisons. Fold 0 retained 3,692 cases (coverage 0.480354, risk 0.176327, MAP@3 0.909534); fold 2 retained 1,705 (coverage 0.227606, risk 0.241056, MAP@3 0.873900). Folds 1, 3 and 4 retained none.
+
+At the secondary 10% target, all arms retained zero cases. At 30%, L7 had 3/5 admissible cutoffs and 3/15 jointly passing questions; coverage mean was 0.246886 over five folds, risk mean 0.251594 and MAP@3 mean 0.819021 over three nonempty folds. C50 had 4/5 admissible cutoffs and 6/15 jointly passing questions; coverage mean was 0.389894 over five folds, risk mean 0.266017 and MAP@3 mean 0.827537 over four nonempty folds. Frequency retained none at 30%. Neither secondary all-question criterion was met. Secondary targets do not replace the primary decisions.
+
+The frozen publisher is responsible for the complete registered numerical tables in `docs/E022_RESULTS.md` and `results/E022_aggregates.json`. Interpretation remains withheld pending user review. E001-E021, README, frozen folds and E018's blocked status remain unchanged. No further experiment has been started.
+
+
+Post-run verification: the complete pinned Docker suite passed **669 tests in 213.80 seconds**. The independent terminal viewer exited after completion. Publication integrity and privacy checks are recorded separately when complete.
+
+
+Final publication verification - 2026-10-29: the frozen publisher completed successfully exactly once. The public aggregate bytes match completion SHA-256 `9578d9fc08c278751112fa1aadc52c0b1d6276e2a0b309d4ff54c455c2e6164f`; strict schema, global freeze, cache provenance, all 366 additive preservation entries and earlier nested gates passed. The repository-wide scan passed for 366 publication files, with no matching secret/local-path patterns and zero matches across 28,587 unique private response prefixes. The original 144 protected public files and experiment-log prefix also passed. Post-run tests passed 669/669. Only the two E022 numerical outputs and append-only execution/log updates belong in the separate results commit; no private artifacts are published. Interpretation awaits user review.

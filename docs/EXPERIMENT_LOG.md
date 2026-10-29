@@ -511,3 +511,18 @@ The proposed new calibration allocation is explicitly different from E021's thre
 ## E022 approval and implementation — 2026-10-29
 
 The user approved the exact preregistration at `e5e6708b9c745496e51bc909342e8c5880c22f49`. Additive E022 code implements the separate L7/C50 primary decisions and frequency context with the unchanged E007 cutoff rules and frozen allocation. Twenty-one E022 synthetic tests passed; the [execution record](E022_EXECUTION.md) documents approval, reproduction/global-freeze gates, reporting checks, Docker isolation and independent monitor. Full-suite tests, publication/privacy checks and a publicly verified preparation lock/commit must precede the real-data run. No E022 scientific result is asserted at this stage.
+
+
+## E022 completed numerical results - 2026-10-29
+
+The approved cutoff-transfer experiment completed in 934.655451 statistical seconds: 50 fits, 45 frozen policies, five scored folds, zero new checker calls, zero fit warnings and no failure receipts. Preparation commit: `6f54a1a498aaacd0599595ea6451a5ae3db965cd`. Aggregate SHA-256: `9578d9fc08c278751112fa1aadc52c0b1d6276e2a0b309d4ff54c455c2e6164f`. Historical raw-model/role reproduction and preservation passed.
+
+Separate primary 20% decisions: L7 had 0/5 admissible development cutoffs and 0/15 jointly passing held-out questions; C50 had 2/5 cutoffs and 1/15 jointly passing questions. Neither primary criterion was met. Frequency had no admissible cutoffs. C50 coverage averaged 0.141592 across all five folds; conditional risk averaged 0.208691 and MAP@3 0.891717 across its two nonempty folds. All arms deferred everything at 10%; at 30%, L7/C50 had 3/4 admissible cutoffs and 3/6 jointly passing questions, respectively. Empty retained cells have null risk, accuracy and MAP@3. All numerical tables, denominators and descriptive variation are retained; secondary outcomes do not replace primary decisions.
+
+See [complete E022 numerical tables](E022_RESULTS.md), [execution record](E022_EXECUTION.md) and [aggregate JSON](../results/E022_aggregates.json). Interpretation is withheld for user review. E001-E021, README and the frozen folds remain unchanged; E018 remains blocked. No next experiment has been started.
+
+
+Post-run verification: the complete pinned Docker suite passed **669 tests in 213.80 seconds**. The independent terminal viewer exited after completion. Publication integrity and privacy checks are recorded separately when complete.
+
+
+Final publication verification - 2026-10-29: the frozen publisher completed successfully exactly once. The public aggregate bytes match completion SHA-256 `9578d9fc08c278751112fa1aadc52c0b1d6276e2a0b309d4ff54c455c2e6164f`; strict schema, global freeze, cache provenance, all 366 additive preservation entries and earlier nested gates passed. The repository-wide scan passed for 366 publication files, with no matching secret/local-path patterns and zero matches across 28,587 unique private response prefixes. The original 144 protected public files and experiment-log prefix also passed. Post-run tests passed 669/669. Only the two E022 numerical outputs and append-only execution/log updates belong in the separate results commit; no private artifacts are published. Interpretation awaits user review.
