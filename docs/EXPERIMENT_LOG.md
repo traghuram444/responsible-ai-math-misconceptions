@@ -526,3 +526,8 @@ Post-run verification: the complete pinned Docker suite passed **669 tests in 21
 
 
 Final publication verification - 2026-10-29: the frozen publisher completed successfully exactly once. The public aggregate bytes match completion SHA-256 `9578d9fc08c278751112fa1aadc52c0b1d6276e2a0b309d4ff54c455c2e6164f`; strict schema, global freeze, cache provenance, all 366 additive preservation entries and earlier nested gates passed. The repository-wide scan passed for 366 publication files, with no matching secret/local-path patterns and zero matches across 28,587 unique private response prefixes. The original 144 protected public files and experiment-log prefix also passed. Post-run tests passed 669/669. Only the two E022 numerical outputs and append-only execution/log updates belong in the separate results commit; no private artifacts are published. Interpretation awaits user review.
+
+
+## E023 approved preregistration - 2026-11-20
+
+The user authorized preregistration and execution of E023. [Protocol](E023_PROTOCOL.md) freezes a matched R5/R8 checker-signal ablation on the unchanged L7/C50 predictions. Separate review decisions require at least 2.0 fewer remaining errors per100 at 20% review and positive benefit in at least four folds; separate automation decisions retain the 20% error,100-retained,10%-coverage,all15-question rule. Neither outcome replaces the other. Protocol canonical SHA-256: `a7aabfb30dd5a8960af161f25f8237247ee571e21a7e6225fb201b971d7574ac`. No real-data E023 computation has occurred. E001-E022, README, frozen folds and blocked E018 remain unchanged. Implementation, synthetic tests, lock and public preparation commit precede execution.
