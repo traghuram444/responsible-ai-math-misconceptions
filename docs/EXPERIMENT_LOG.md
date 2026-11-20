@@ -531,3 +531,12 @@ Final publication verification - 2026-10-29: the frozen publisher completed succ
 ## E023 approved preregistration - 2026-11-20
 
 The user authorized preregistration and execution of E023. [Protocol](E023_PROTOCOL.md) freezes a matched R5/R8 checker-signal ablation on the unchanged L7/C50 predictions. Separate review decisions require at least 2.0 fewer remaining errors per100 at 20% review and positive benefit in at least four folds; separate automation decisions retain the 20% error,100-retained,10%-coverage,all15-question rule. Neither outcome replaces the other. Protocol canonical SHA-256: `a7aabfb30dd5a8960af161f25f8237247ee571e21a7e6225fb201b971d7574ac`. No real-data E023 computation has occurred. E001-E022, README, frozen folds and blocked E018 remain unchanged. Implementation, synthetic tests, lock and public preparation commit precede execution.
+
+
+## Pre-execution infrastructure blocker - 2026-11-20
+
+The E023 implementation and synthetic tests were prepared additively and all new Python files passed syntax compilation. No E023 attempt directory, model fit, feature extraction, cutoff search or scoring has been started. The approved protocol digest remains unchanged.
+
+The existing Docker engine was initially unavailable. Starting Docker Desktop produced a startup error because its internal inference socket could not be accessed. Docker therefore cannot yet run the required pinned-environment tests or experiment. The host Python environment differs from the pinned image and was not substituted. A narrowly scoped Docker repair requires permission under the user's existing restriction against changes outside this project; that permission has been requested. No factory reset, reinstallation, container/image deletion or runtime-file repair has been performed.
+
+This is a pre-execution infrastructure blocker, not an E023 scientific result or failed experiment attempt. The implementation remains unvalidated by execution until the prescribed synthetic/full Docker tests pass; it must not be locked or launched before those checks. E001-E022, README and frozen folds are unchanged. No idle monitor is active.
